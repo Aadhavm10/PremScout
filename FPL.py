@@ -13,7 +13,7 @@ import kaggle
 KAGGLE_DATASET = "meraxes10/fantasy-premier-league-dataset-2024-2025"
 LOCAL_DATA_DIR = "./data"
 HOME_ADVANTAGE_FACTOR = 1.1  # 10% bonus for home games
-CURRENT_DATE = datetime(2025, 1, 17)  # Current date for gameweek calculation
+CURRENT_DATE = datetime(2025, 1, 18)  # Current date for gameweek calculation
 
 def download_latest_dataset():
     print("Checking for updates...")
@@ -60,7 +60,7 @@ def prepare_data(players_df):
         'clean_sheets_per_90', 'points_per_game', 'form_normalized',
         'minutes', 'assists', 'goals_scored', 'yellow_cards',
         'red_cards', 'saves_per_90', 'opponent_difficulty',
-        'difficulty_adjustment', 'is_home'
+        'difficulty_adjustment', 'is_home', 'chance_of_playing_this_round'
     ]]
     target = players_df['total_points']
     
@@ -115,8 +115,9 @@ try:
         'clean_sheets_per_90', 'points_per_game', 'form_normalized',
         'minutes', 'assists', 'goals_scored', 'yellow_cards',
         'red_cards', 'saves_per_90', 'opponent_difficulty',
-        'difficulty_adjustment', 'is_home'
+        'difficulty_adjustment', 'is_home', 'chance_of_playing_this_round'
     ]].fillna(0)
+    
     
     # Make predictions
     players_df['predicted_points'] = model.predict(gameweek_features)
@@ -125,6 +126,10 @@ try:
     players_df['predicted_points'] = players_df['predicted_points'] * 0.6 / 10
     players_df['now_cost'] = players_df['now_cost'] / 10
     players_df['expected_goals'] = players_df['expected_goals'] * 0.6 / 10
+
+    #Set predicted points to 0 if chance_of_playing_this_round is 0
+    players_df.loc[players_df['chance_of_playing_this_round'] == 0, 'predicted_points'] = 0
+
 
     # Prepare output DataFrame
     output_df = players_df.sort_values("predicted_points", ascending=False)
@@ -136,7 +141,7 @@ try:
         "now_cost", "points_per_game", "form", "expected_goals",
         "minutes", "assists", "goals_scored", "yellow_cards",
         "red_cards", "saves_per_90", "total_points", "clean_sheets",
-        "opponent_difficulty", "is_home"
+        "opponent_difficulty", "is_home", 'chance_of_playing_this_round'
     ]
     
     output_df.to_csv(output_file, index=False, columns=columns_to_save)
