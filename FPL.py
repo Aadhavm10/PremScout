@@ -3,7 +3,6 @@ import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
-import joblib
 from datetime import datetime, timedelta
 
 import os
@@ -96,17 +95,12 @@ try:
     players_df['form_normalized'] = players_df['form'] / max_form
     
     # Train or load model
-    model_file = "fpl_model_with_difficulty.joblib"
-    try:
-        model = joblib.load(model_file)
-        print(f"Model loaded from {model_file}")
-    except FileNotFoundError:
-        print("Training new model...")
-        features, target = prepare_data(players_df)
-        X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
-        model = RandomForestRegressor(n_estimators=100, random_state=42)
-        model.fit(X_train, y_train)
-        joblib.dump(model, model_file)
+
+    print("Training new model...")
+    features, target = prepare_data(players_df)
+    X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
+    model = RandomForestRegressor(n_estimators=100, random_state=42)
+    model.fit(X_train, y_train)
     
     # Prepare features for prediction
     gameweek_features = players_df[[
