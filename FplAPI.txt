@@ -1,0 +1,30 @@
+cd /Users/aadhavmanimurugan/PremScout-1 && source .venv/bin/activate && python -c "
+import requests
+import json
+
+# Fetch bootstrap-static data
+print('=== BOOTSTRAP-STATIC ENDPOINT ===')
+response = requests.get('https://fantasy.premierleague.com/api/bootstrap-static/')
+data = response.json()
+
+print('Available top-level keys:')
+for key in data.keys():
+    if isinstance(data[key], list) and len(data[key]) > 0:
+        print(f'  {key}: {len(data[key])} items')
+    else:
+        print(f'  {key}: {type(data[key])}')
+
+print('\n=== PLAYER DATA FIELDS (elements) ===')
+if data['elements']:
+    player = data['elements'][0]
+    print('Fields available for each player:')
+    for field in sorted(player.keys()):
+        print(f'  {field}: {player[field]} ({type(player[field])})')
+
+print('\n=== TEAM DATA FIELDS (teams) ===')
+if data['teams']:
+    team = data['teams'][0]
+    print('Fields available for each team:')
+    for field in sorted(team.keys()):
+        print(f'  {field}: {team[field]} ({type(team[field])})')
+"
