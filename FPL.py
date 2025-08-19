@@ -10,7 +10,6 @@ import os
 
 # Constants
 FPL_BASE_URL = "https://fantasy.premierleague.com/api"
-LOCAL_DATA_DIR = "./data"
 HOME_ADVANTAGE_FACTOR = 1.1  # 10% bonus for home games
 CURRENT_DATE = datetime.now()  # Use current date
 
