@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "frontend/package.json",
@@ -9,26 +8,18 @@
       }
     },
     {
-      "src": "csv_server.py",
+      "src": "api/*.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/csv_server.py"
+      "dest": "/api/predictions.py"
     },
     {
       "src": "/(.*)",
       "dest": "/frontend/dist/$1"
     }
-  ],
-  "functions": {
-    "csv_server.py": {
-      "runtime": "python3.11"
-    }
-  },
-  "installCommand": "cd frontend && npm install && npm run build",
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/dist"
+  ]
 }
