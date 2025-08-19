@@ -34,6 +34,7 @@ interface ApiResponse {
   total_players: number
   filtered_players: number
   players: Player[]
+  last_updated?: string
 }
 
 type SortKey = keyof Player
@@ -438,7 +439,25 @@ function App() {
       )}
 
         <footer style={{ textAlign: 'center', marginTop: '20px', color: '#718096' }}>
-          <p>📊 Data refreshes automatically from the latest gameweek predictions</p>
+          <div style={{ marginBottom: '10px' }}>
+            <p>📊 Data refreshes automatically from the latest gameweek predictions</p>
+          </div>
+          {data?.last_updated && (
+            <div style={{ 
+              fontSize: '0.85rem', 
+              opacity: 0.8,
+              background: '#2d3748',
+              padding: '8px 16px',
+              borderRadius: '20px',
+              display: 'inline-block',
+              border: '1px solid #4a5568'
+            }}>
+              🕐 Last updated: {data.last_updated}
+            </div>
+          )}
+          <div style={{ marginTop: '10px', fontSize: '0.8rem', opacity: 0.6 }}>
+            🤖 Updates automatically daily at 9:00 AM UTC
+          </div>
         </footer>
       </div>
     </div>
