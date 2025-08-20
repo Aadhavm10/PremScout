@@ -135,6 +135,31 @@ function App() {
         meta = { gameweek: 0, csv_file: 'latest.csv', total_players: players.length, filtered_players: players.length }
       }
 
+      // Enrich images from FPL API
+      try {
+        console.log('[fetchData] enriching images from FPL API')
+        const respImg = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/')
+        if (respImg.ok) {
+          const fpl = await respImg.json()
+          const nameToCode: Record<string, number> = {}
+          ;(fpl?.elements || []).forEach((e: any) => {
+            const full = `${e.first_name} ${e.second_name}`.trim()
+            nameToCode[full] = e.code
+          })
+          players = players.map((p: any) => {
+            const code = nameToCode[p.name] || 0
+            const image_url = code
+              ? `https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png`
+              : undefined
+            return { ...p, player_code: code, image_url }
+          })
+        } else {
+          console.warn('[fetchData] FPL image API not ok', respImg.status)
+        }
+      } catch (e) {
+        console.warn('[fetchData] image enrich failed', e)
+      }
+
       // Filters
       const before = players.length
       if (teamFilter) players = players.filter(p => p.team?.toLowerCase().includes(teamFilter.toLowerCase()))
