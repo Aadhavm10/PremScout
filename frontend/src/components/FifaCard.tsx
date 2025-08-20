@@ -56,7 +56,7 @@ const FifaCard: React.FC<FifaCardProps> = ({ player, onClick }) => {
         <div className="fifa-player-name">{player.name}</div>
         <div className="fifa-stats">
           <div className="fifa-stat">
-            <span className="fifa-stat-label">Points</span>
+            <span className="fifa-stat-label">Predicted Points</span>
             <span className="fifa-stat-value">{player.predicted_points.toFixed(1)}</span>
           </div>
           <div className="fifa-stat">
