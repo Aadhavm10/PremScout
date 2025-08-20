@@ -1,4 +1,4 @@
-import json
+from flask import Flask, request, jsonify
 import pandas as pd
 import os
 import glob
@@ -74,24 +74,14 @@ def fetch_player_images(df):
     
     return df
 
-def _response(body: dict, status_code: int = 200):
-    return {
-        'statusCode': status_code,
-        'headers': {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, OPTIONS',
-            'Access-Control-Allow-Headers': 'Content-Type'
-        },
-        'body': json.dumps(body)
-    }
+app = Flask(__name__)
 
 
 def _build_predictions_response(query_params: dict):
     csv_file = get_latest_csv()
     if not csv_file:
         # Fallback to sample data if CSV not found
-        return _response({
+        return ({
             'gameweek': 2,
             'csv_file': 'sample_data.csv',
             'total_players': 6,
@@ -209,7 +199,7 @@ def _build_predictions_response(query_params: dict):
         df = df.sort_values(by=sort_by, ascending=ascending)
 
     players = df.to_dict('records')
-    return _response({
+    return ({
         'gameweek': gameweek,
         'csv_file': os.path.basename(csv_file),
         'total_players': len(pd.read_csv(csv_file)),
@@ -222,30 +212,53 @@ def _build_predictions_response(query_params: dict):
 def _build_teams_response():
     csv_file = get_latest_csv()
     if not csv_file:
-        return _response({'teams': ['Arsenal', 'Chelsea', 'Liverpool', 'Man City']})
+        return {'teams': ['Arsenal', 'Chelsea', 'Liverpool', 'Man City']}
     df = pd.read_csv(csv_file)
     teams = sorted(df['team'].dropna().unique().tolist())
-    return _response({'teams': teams})
+    return {'teams': teams}
+
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
 
 
-def handler(request, context):
+@app.route('/api/health', methods=['GET', 'OPTIONS'])
+def health():
+    if request.method == 'OPTIONS':
+        return ('', 200)
+    return jsonify({'status': 'ok'})
+
+
+@app.route('/api/teams', methods=['GET', 'OPTIONS'])
+def teams():
+    if request.method == 'OPTIONS':
+        return ('', 200)
     try:
-        path = request.get('path', '/api/predictions')
-        method = request.get('httpMethod', 'GET')
-
-        # CORS preflight
-        if method == 'OPTIONS':
-            return _response({'ok': True})
-
-        query_params = request.get('queryStringParameters') or {}
-
-        normalized_path = str(path or '').lower()
-        # Be permissive: default to predictions unless specifically asking for teams/health
-        if 'teams' in normalized_path and method == 'GET':
-            return _build_teams_response()
-        if 'health' in normalized_path and method == 'GET':
-            return _response({'status': 'ok'})
-        # Default: predictions
-        return _build_predictions_response(query_params)
+        data = _build_teams_response()
+        return jsonify(data)
     except Exception as e:
-        return _response({'error': str(e)}, status_code=500)
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/predictions', methods=['GET', 'OPTIONS'])
+def predictions():
+    if request.method == 'OPTIONS':
+        return ('', 200)
+    try:
+        qp = {
+            'team': request.args.get('team', ''),
+            'position': request.args.get('position', ''),
+            'search': request.args.get('search', ''),
+            'sort_by': request.args.get('sort_by', 'predicted_points'),
+            'sort_order': request.args.get('sort_order', 'desc')
+        }
+        data = _build_predictions_response(qp)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+# Vercel detects `app` as the WSGI entrypoint
