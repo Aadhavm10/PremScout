@@ -40,13 +40,19 @@ jobs:
         echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt
         echo "Last updated: $(cat last_updated.txt)"
         
+    - name: Copy files to API directory
+      run: |
+        cp gameweek_*_predictions.csv api/
+        cp last_updated.txt api/
+        echo "✅ Files copied to API directory"
+        
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action Bot"
         
         # Add all CSV files and timestamp
-        git add gameweek_*_predictions.csv last_updated.txt
+        git add gameweek_*_predictions.csv last_updated.txt api/
         
         # Check if there are changes to commit
         if git diff --staged --quiet; then
