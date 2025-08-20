@@ -10,12 +10,11 @@ def get_latest_csv():
     """Find the most recent gameweek predictions CSV file."""
     # Look in multiple possible locations for Vercel
     possible_paths = [
-        "gameweek_*_predictions.csv",  # Root directory
+        "gameweek_*_predictions.csv",  # Current directory (api/)
         "../gameweek_*_predictions.csv",  # Parent directory
         "/var/task/gameweek_*_predictions.csv",  # Vercel serverless environment
         "../../gameweek_*_predictions.csv",  # Another level up
         "/vercel/path0/gameweek_*_predictions.csv",  # Vercel build path
-        "*/gameweek_*_predictions.csv"  # Any subdirectory
     ]
     
     for pattern in possible_paths:
@@ -34,7 +33,7 @@ def get_latest_csv():
 def get_last_updated():
     """Get the last updated timestamp."""
     possible_paths = [
-        "last_updated.txt",
+        "last_updated.txt",  # Current directory (api/)
         "../last_updated.txt", 
         "/var/task/last_updated.txt",
         "../../last_updated.txt"
