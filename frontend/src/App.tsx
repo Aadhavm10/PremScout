@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import TeamOfTheWeek from './components/TeamOfTheWeek'
 import Papa from 'papaparse'
@@ -95,19 +95,52 @@ function App() {
     try {
       setLoading(true)
       setError(null)
-      // Fetch latest.csv directly from GitHub raw
-      const RAW_CSV_URL = `https://raw.githubusercontent.com/Aadhavm10/PremScout/main/latest.csv?t=${Date.now()}`
-      const resp = await fetch(RAW_CSV_URL)
-      if (!resp.ok) throw new Error('Failed to fetch predictions')
-      const csvText = await resp.text()
-
-      const parsed = Papa.parse(csvText, { header: true, dynamicTyping: true })
-      let players: Player[] = (parsed.data as any[]).filter(Boolean) as Player[]
+      console.log('[fetchData] start', { teamFilter, positionFilter, searchFilter, sortKey, sortOrder })
+      // Try local static predictions.json first (served with the build), fallback to GitHub raw CSV
+      let players: Player[] = []
+      let meta: Partial<ApiResponse> = {}
+      try {
+        const localUrl = `/predictions.json?t=${Date.now()}`
+        console.log('[fetchData] requesting local JSON', localUrl)
+        const local = await fetch(localUrl)
+        console.log('[fetchData] local JSON response', { ok: local.ok, status: local.status })
+        if (local.ok) {
+          const json = await local.json()
+          console.log('[fetchData] local JSON parsed', { count: (json?.players || []).length })
+          meta = {
+            gameweek: json.gameweek,
+            csv_file: json.csv_file,
+            total_players: json.total_players,
+            filtered_players: json.filtered_players,
+            last_updated: json.last_updated,
+            players: []
+          }
+          players = json.players || []
+        } else {
+          const txt = await local.text().catch(() => '')
+          console.warn('[fetchData] local not available; body=', txt.slice(0,200))
+          throw new Error('local not available')
+        }
+      } catch {
+        const RAW_CSV_URL = `https://raw.githubusercontent.com/Aadhavm10/PremScout/main/latest.csv?t=${Date.now()}`
+        console.log('[fetchData] requesting RAW CSV', RAW_CSV_URL)
+        const resp = await fetch(RAW_CSV_URL)
+        console.log('[fetchData] RAW CSV response', { ok: resp.ok, status: resp.status })
+        if (!resp.ok) throw new Error('Failed to fetch predictions (raw)')
+        const csvText = await resp.text()
+        console.log('[fetchData] RAW CSV length', csvText.length)
+        const parsed = Papa.parse(csvText, { header: true, dynamicTyping: true }) as any
+        if (parsed?.errors?.length) console.warn('[fetchData] papa errors', parsed.errors)
+        players = (parsed.data as any[]).filter(Boolean) as Player[]
+        meta = { gameweek: 0, csv_file: 'latest.csv', total_players: players.length, filtered_players: players.length }
+      }
 
       // Filters
+      const before = players.length
       if (teamFilter) players = players.filter(p => p.team?.toLowerCase().includes(teamFilter.toLowerCase()))
       if (positionFilter) players = players.filter(p => p.position === positionFilter)
       if (searchFilter) players = players.filter(p => (p.name || '').toLowerCase().includes(searchFilter.toLowerCase()))
+      console.log('[fetchData] filtered', { before, after: players.length })
 
       // Sorting
       players.sort((a: any, b: any) => {
@@ -117,26 +150,24 @@ function App() {
         if (av > bv) return sortOrder === 'asc' ? 1 : -1
         return 0
       })
+      console.log('[fetchData] sorted', { sortKey, sortOrder })
 
       // Derive gameweek from CSV header (optional) or leave unknown
-      const gameweek = (() => {
-        // Try to fetch from repo via last_updated or filename if needed; leave as 0 otherwise
-        return 0
-      })()
-
       const teamsSet = Array.from(new Set(players.map(p => p.team))).filter(Boolean).sort()
 
       setData({
-        gameweek,
-        csv_file: 'latest.csv',
-        total_players: players.length,
+        gameweek: meta.gameweek ?? 0,
+        csv_file: meta.csv_file ?? 'latest.csv',
+        total_players: meta.total_players ?? players.length,
         filtered_players: players.length,
         players,
-        last_updated: undefined
+        last_updated: meta.last_updated
       })
       setTeams(teamsSet)
+      console.log('[fetchData] done setData', { total: players.length })
     } catch (err: any) {
-      setError(err.message)
+      console.error('[fetchData] error', err)
+      setError(err?.message || String(err))
     } finally {
       setLoading(false)
     }
