@@ -1,7 +1,7 @@
 import json
 import os
 import glob
-import pandas as pd
+import csv
 
 
 def _cors_headers():
@@ -36,8 +36,14 @@ def handler(request, context):
             body = {'teams': ['Arsenal', 'Chelsea', 'Liverpool', 'Man City']}
             return {'statusCode': 200, 'headers': _cors_headers(), 'body': json.dumps(body)}
 
-        df = pd.read_csv(csv_file)
-        teams = sorted(df['team'].dropna().unique().tolist())
+        teams_set = set()
+        with open(csv_file, newline='') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                team_name = (row.get('team') or '').strip()
+                if team_name:
+                    teams_set.add(team_name)
+        teams = sorted(list(teams_set))
         body = {'teams': teams}
         return {'statusCode': 200, 'headers': _cors_headers(), 'body': json.dumps(body)}
     except Exception as e:

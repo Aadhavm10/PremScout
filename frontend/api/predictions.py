@@ -1,7 +1,7 @@
 import json
 import os
 import glob
-import pandas as pd
+import csv
 import requests
 
 
@@ -42,7 +42,7 @@ def get_last_updated():
     return 'Unknown'
 
 
-def fetch_player_images(df: pd.DataFrame) -> pd.DataFrame:
+def fetch_player_images(players: list) -> list:
     try:
         r = requests.get('https://fantasy.premierleague.com/api/bootstrap-static/', timeout=10)
         if r.status_code == 200:
@@ -51,14 +51,15 @@ def fetch_player_images(df: pd.DataFrame) -> pd.DataFrame:
             for p in data.get('elements', []):
                 full_name = f"{p.get('first_name','')} {p.get('second_name','')}".strip()
                 name_to_code[full_name] = p.get('code', 0)
-            df['player_code'] = df['name'].map(lambda n: name_to_code.get(n, 0))
-            df['image_url'] = df['player_code'].map(
-                lambda c: f"https://resources.premierleague.com/premierleague/photos/players/110x140/p{c}.png" if c else None
-            )
+            for pl in players:
+                code = name_to_code.get(pl.get('name', ''), 0)
+                pl['player_code'] = code
+                pl['image_url'] = f"https://resources.premierleague.com/premierleague/photos/players/110x140/p{code}.png" if code else None
     except Exception:
-        df['player_code'] = 0
-        df['image_url'] = None
-    return df
+        for pl in players:
+            pl['player_code'] = 0
+            pl['image_url'] = None
+    return players
 
 
 def handler(request, context):
@@ -90,38 +91,46 @@ def handler(request, context):
             }
             return {'statusCode': 200, 'headers': _cors_headers(), 'body': json.dumps(body)}
 
-        df = pd.read_csv(csv_file)
-        df = fetch_player_images(df)
+        with open(csv_file, newline='') as f:
+            reader = csv.DictReader(f)
+            players = [row for row in reader]
 
         try:
             gameweek = int(os.path.basename(csv_file).split('_')[1])
         except Exception:
             gameweek = 1
 
-        if team:
-            df = df[df['team'].str.contains(team, case=False, na=False)]
-        if position:
-            df = df[df['position'] == position]
-        if search:
-            df = df[df['name'].str.contains(search, case=False, na=False)]
-
-        numeric_columns = [
+        numeric_fields = [
             'predicted_points', 'now_cost', 'points_per_game', 'form', 'total_points',
             'expected_goals', 'minutes', 'assists', 'goals_scored', 'yellow_cards',
             'red_cards', 'saves_per_90', 'clean_sheets', 'opponent_difficulty'
         ]
-        for col in numeric_columns:
-            if col in df.columns:
-                df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+        for pl in players:
+            for field in numeric_fields:
+                if field in pl and pl[field] not in (None, ''):
+                    try:
+                        pl[field] = float(pl[field])
+                    except Exception:
+                        pl[field] = 0.0
 
-        if sort_by in df.columns:
-            df = df.sort_values(by=sort_by, ascending=(sort_order == 'asc'))
+        if team:
+            players = [p for p in players if team.lower() in (p.get('team', '').lower())]
+        if position:
+            players = [p for p in players if p.get('position', '') == position]
+        if search:
+            players = [p for p in players if search.lower() in (p.get('name', '').lower())]
 
-        players = df.to_dict('records')
+        reverse = (sort_order == 'desc')
+        try:
+            players.sort(key=lambda p: p.get(sort_by, 0 if sort_by in numeric_fields else ''), reverse=reverse)
+        except Exception:
+            pass
+
+        players = fetch_player_images(players)
         body = {
             'gameweek': gameweek,
             'csv_file': os.path.basename(csv_file),
-            'total_players': len(pd.read_csv(csv_file)),
+            'total_players': sum(1 for _ in open(csv_file)) - 1 if os.path.exists(csv_file) else 0,
             'filtered_players': len(players),
             'last_updated': get_last_updated(),
             'players': players,
