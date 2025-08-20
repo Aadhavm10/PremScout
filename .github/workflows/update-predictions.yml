@@ -40,6 +40,12 @@ jobs:
         echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt
         echo "Last updated: $(cat last_updated.txt)"
         
+    - name: Create latest.csv symlink copy
+      run: |
+        latest_gw=$(ls -1 gameweek_*_predictions.csv | awk -F_ '{print $2}' | sort -n | tail -1)
+        cp "gameweek_${latest_gw}_predictions.csv" latest.csv
+        echo "Using gameweek ${latest_gw} as latest.csv"
+        
     - name: Copy files to API directory
       run: |
         cp gameweek_*_predictions.csv api/
@@ -51,8 +57,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action Bot"
         
-        # Add all CSV files and timestamp
-        git add gameweek_*_predictions.csv last_updated.txt api/
+        # Add all CSV files, latest.csv, and timestamp
+        git add gameweek_*_predictions.csv latest.csv last_updated.txt
         
         # Check if there are changes to commit
         if git diff --staged --quiet; then

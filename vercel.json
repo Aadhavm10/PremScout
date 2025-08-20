@@ -9,16 +9,7 @@
         "installCommand": "npm install --legacy-peer-deps",
         "buildCommand": "npm run build"
       }
-    },
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.py"
-    }
-  ]
+  "routes": []
 }

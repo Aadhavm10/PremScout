@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import TeamOfTheWeek from './components/TeamOfTheWeek'
+import Papa from 'papaparse'
 
 interface Player {
   name: string
@@ -94,28 +95,46 @@ function App() {
     try {
       setLoading(true)
       setError(null)
-      
-      const params = new URLSearchParams({
-        team: teamFilter,
-        position: positionFilter,
-        search: searchFilter,
-        sort_by: sortKey,
-        sort_order: sortOrder,
+      // Fetch latest.csv directly from GitHub raw
+      const RAW_CSV_URL = `https://raw.githubusercontent.com/Aadhavm10/PremScout/main/latest.csv?t=${Date.now()}`
+      const resp = await fetch(RAW_CSV_URL)
+      if (!resp.ok) throw new Error('Failed to fetch predictions')
+      const csvText = await resp.text()
+
+      const parsed = Papa.parse(csvText, { header: true, dynamicTyping: true })
+      let players: Player[] = (parsed.data as any[]).filter(Boolean) as Player[]
+
+      // Filters
+      if (teamFilter) players = players.filter(p => p.team?.toLowerCase().includes(teamFilter.toLowerCase()))
+      if (positionFilter) players = players.filter(p => p.position === positionFilter)
+      if (searchFilter) players = players.filter(p => (p.name || '').toLowerCase().includes(searchFilter.toLowerCase()))
+
+      // Sorting
+      players.sort((a: any, b: any) => {
+        const av = a[sortKey] ?? 0
+        const bv = b[sortKey] ?? 0
+        if (av < bv) return sortOrder === 'asc' ? -1 : 1
+        if (av > bv) return sortOrder === 'asc' ? 1 : -1
+        return 0
       })
-      
-      const [predictionsRes, teamsRes] = await Promise.all([
-        fetch(`/api/predictions?${params}`),
-        fetch('/api/teams'),
-      ])
-      
-      if (!predictionsRes.ok) throw new Error('Failed to fetch predictions')
-      if (!teamsRes.ok) throw new Error('Failed to fetch teams')
-      
-      const predictionsData: ApiResponse = await predictionsRes.json()
-      const teamsData = await teamsRes.json()
-      
-      setData(predictionsData)
-      setTeams(teamsData.teams || [])
+
+      // Derive gameweek from CSV header (optional) or leave unknown
+      const gameweek = (() => {
+        // Try to fetch from repo via last_updated or filename if needed; leave as 0 otherwise
+        return 0
+      })()
+
+      const teamsSet = Array.from(new Set(players.map(p => p.team))).filter(Boolean).sort()
+
+      setData({
+        gameweek,
+        csv_file: 'latest.csv',
+        total_players: players.length,
+        filtered_players: players.length,
+        players,
+        last_updated: undefined
+      })
+      setTeams(teamsSet)
     } catch (err: any) {
       setError(err.message)
     } finally {
