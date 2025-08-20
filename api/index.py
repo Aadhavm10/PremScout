@@ -1,8 +1,6 @@
-from http.server import BaseHTTPRequestHandler
 import json
 import pandas as pd
 import os
-import urllib.parse
 import glob
 import requests
 
@@ -76,274 +74,178 @@ def fetch_player_images(df):
     
     return df
 
-class handler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        # Parse the URL and query parameters
-        parsed_path = urllib.parse.urlparse(self.path)
-        query_params = urllib.parse.parse_qs(parsed_path.query)
-        
-        # Set CORS headers
-        self.send_response(200)
-        self.send_header('Content-Type', 'application/json')
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
-        self.end_headers()
-        
-        try:
-            # Handle different endpoints
-            if parsed_path.path == '/api/predictions' or parsed_path.path == '/api/':
-                # Get the latest CSV file
-                csv_file = get_latest_csv()
-                if not csv_file:
-                    # Fallback to sample data if CSV not found
-                    response_data = {
-                        'gameweek': 2,
-                        'csv_file': 'sample_data.csv',
-                        'total_players': 20,
-                        'filtered_players': 20,
-                        'last_updated': get_last_updated(),
-                        'players': [
-                            {
-                                'name': 'Erling Haaland',
-                                'team': 'Man City',
-                                'position': 'FWD',
-                                'next_opponent': 'Ipswich (H)',
-                                'fixture': 'vs Ipswich',
-                                'predicted_points': 89.5,
-                                'now_cost': 15.0,
-                                'points_per_game': 8.95,
-                                'form': 9.0,
-                                'expected_goals': 1.2,
-                                'minutes': 90,
-                                'assists': 1,
-                                'goals_scored': 2,
-                                'yellow_cards': 0,
-                                'red_cards': 0,
-                                'saves_per_90': 0.0,
-                                'total_points': 17,
-                                'clean_sheets': 0,
-                                'opponent_difficulty': 2,
-                                'is_home': True,
-                                'chance_of_playing_this_round': 100,
-                                'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p223094.png',
-                                'player_code': 223094
-                            },
-                            {
-                                'name': 'Mohamed Salah',
-                                'team': 'Liverpool', 
-                                'position': 'FWD',
-                                'next_opponent': 'Brentford (A)',
-                                'fixture': 'vs Brentford',
-                                'predicted_points': 82.3,
-                                'now_cost': 12.5,
-                                'points_per_game': 7.8,
-                                'form': 8.5,
-                                'expected_goals': 1.0,
-                                'minutes': 90,
-                                'assists': 2,
-                                'goals_scored': 1,
-                                'yellow_cards': 0,
-                                'red_cards': 0,
-                                'saves_per_90': 0.0,
-                                'total_points': 13,
-                                'clean_sheets': 0,
-                                'opponent_difficulty': 3,
-                                'is_home': False,
-                                'chance_of_playing_this_round': 100,
-                                'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png',
-                                'player_code': 118748
-                            },
-                            {
-                                'name': 'Cole Palmer',
-                                'team': 'Chelsea',
-                                'position': 'MID',
-                                'next_opponent': 'Wolves (A)', 
-                                'fixture': 'vs Wolves',
-                                'predicted_points': 78.9,
-                                'now_cost': 10.5,
-                                'points_per_game': 7.2,
-                                'form': 8.0,
-                                'expected_goals': 0.8,
-                                'minutes': 85,
-                                'assists': 1,
-                                'goals_scored': 1,
-                                'yellow_cards': 0,
-                                'red_cards': 0,
-                                'saves_per_90': 0.0,
-                                'total_points': 11,
-                                'clean_sheets': 0,
-                                'opponent_difficulty': 3,
-                                'is_home': False,
-                                'chance_of_playing_this_round': 100,
-                                'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p491567.png',
-                                'player_code': 491567
-                            },
-                            {
-                                'name': 'Bukayo Saka',
-                                'team': 'Arsenal',
-                                'position': 'MID',
-                                'next_opponent': 'Aston Villa (H)',
-                                'fixture': 'vs Aston Villa',
-                                'predicted_points': 76.2,
-                                'now_cost': 10.0,
-                                'points_per_game': 6.8,
-                                'form': 7.5,
-                                'expected_goals': 0.6,
-                                'minutes': 88,
-                                'assists': 1,
-                                'goals_scored': 0,
-                                'yellow_cards': 0,
-                                'red_cards': 0,
-                                'saves_per_90': 0.0,
-                                'total_points': 9,
-                                'clean_sheets': 0,
-                                'opponent_difficulty': 4,
-                                'is_home': True,
-                                'chance_of_playing_this_round': 100,
-                                'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p491582.png',
-                                'player_code': 491582
-                            },
-                            {
-                                'name': 'Virgil van Dijk',
-                                'team': 'Liverpool',
-                                'position': 'DEF',
-                                'next_opponent': 'Brentford (A)',
-                                'fixture': 'vs Brentford',
-                                'predicted_points': 65.4,
-                                'now_cost': 6.0,
-                                'points_per_game': 5.8,
-                                'form': 6.5,
-                                'expected_goals': 0.2,
-                                'minutes': 90,
-                                'assists': 0,
-                                'goals_scored': 0,
-                                'yellow_cards': 0,
-                                'red_cards': 0,
-                                'saves_per_90': 0.0,
-                                'total_points': 8,
-                                'clean_sheets': 1,
-                                'opponent_difficulty': 3,
-                                'is_home': False,
-                                'chance_of_playing_this_round': 100,
-                                'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p134006.png',
-                                'player_code': 134006
-                            },
-                            {
-                                'name': 'Alisson',
-                                'team': 'Liverpool',
-                                'position': 'GKP',
-                                'next_opponent': 'Brentford (A)',
-                                'fixture': 'vs Brentford',
-                                'predicted_points': 52.1,
-                                'now_cost': 5.5,
-                                'points_per_game': 4.2,
-                                'form': 5.0,
-                                'expected_goals': 0.0,
-                                'minutes': 90,
-                                'assists': 0,
-                                'goals_scored': 0,
-                                'yellow_cards': 0,
-                                'red_cards': 0,
-                                'saves_per_90': 3.2,
-                                'total_points': 6,
-                                'clean_sheets': 1,
-                                'opponent_difficulty': 3,
-                                'is_home': False,
-                                'chance_of_playing_this_round': 100,
-                                'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p116695.png',
-                                'player_code': 116695
-                            }
-                        ]
-                    }
-                else:
-                    # Read the CSV
-                    df = pd.read_csv(csv_file)
-                    
-                    # Add player images
-                    df = fetch_player_images(df)
-                    
-                    # Extract gameweek from filename
-                    gameweek = 1
-                    if '_' in csv_file:
-                        try:
-                            gameweek = int(csv_file.split('_')[1])
-                        except:
-                            pass
-                    
-                    # Get filtering parameters
-                    team = query_params.get('team', [''])[0]
-                    position = query_params.get('position', [''])[0] 
-                    search = query_params.get('search', [''])[0]
-                    sort_by = query_params.get('sort_by', ['predicted_points'])[0]
-                    sort_order = query_params.get('sort_order', ['desc'])[0]
-                    
-                    # Apply filters
-                    if team:
-                        df = df[df['team'].str.contains(team, case=False, na=False)]
-                    if position:
-                        df = df[df['position'] == position]
-                    if search:
-                        df = df[df['name'].str.contains(search, case=False, na=False)]
-                    
-                    # Ensure numeric columns for sorting
-                    numeric_columns = [
-                        'predicted_points', 'now_cost', 'points_per_game', 'form', 'total_points',
-                        'expected_goals', 'minutes', 'assists', 'goals_scored', 'yellow_cards', 
-                        'red_cards', 'saves_per_90', 'clean_sheets', 'opponent_difficulty'
-                    ]
-                    
-                    for col in numeric_columns:
-                        if col in df.columns:
-                            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
-                    
-                    # Apply sorting
-                    if sort_by in df.columns:
-                        ascending = sort_order == 'asc'
-                        df = df.sort_values(by=sort_by, ascending=ascending)
-                    
-                    # Convert to dict and prepare response
-                    players = df.to_dict('records')
-                    
-                    response_data = {
-                        'gameweek': gameweek,
-                        'csv_file': os.path.basename(csv_file),
-                        'total_players': len(pd.read_csv(csv_file)),
-                        'filtered_players': len(players),
-                        'last_updated': get_last_updated(),
-                        'players': players
-                    }
-                
-            elif parsed_path.path == '/api/teams':
-                # Get teams from latest CSV
-                csv_file = get_latest_csv()
-                if csv_file:
-                    df = pd.read_csv(csv_file)
-                    teams = sorted(df['team'].unique().tolist())
-                    response_data = {'teams': teams}
-                else:
-                    # Fallback teams
-                    response_data = {'teams': ['Arsenal', 'Chelsea', 'Liverpool', 'Man City']}
-                
-            elif parsed_path.path == '/api/health':
-                # Health check
-                response_data = {'status': 'ok'}
-                
-            else:
-                # 404 for unknown endpoints
-                self.send_response(404)
-                response_data = {'error': 'Not Found'}
-                
-        except Exception as e:
-            response_data = {'error': f'Server error: {str(e)}'}
-        
-        # Send the response
-        self.wfile.write(json.dumps(response_data).encode())
-    
-    def do_OPTIONS(self):
-        # Handle CORS preflight requests
-        self.send_response(200)
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
-        self.end_headers()
+def _response(body: dict, status_code: int = 200):
+    return {
+        'statusCode': status_code,
+        'headers': {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type'
+        },
+        'body': json.dumps(body)
+    }
+
+
+def _build_predictions_response(query_params: dict):
+    csv_file = get_latest_csv()
+    if not csv_file:
+        # Fallback to sample data if CSV not found
+        return _response({
+            'gameweek': 2,
+            'csv_file': 'sample_data.csv',
+            'total_players': 6,
+            'filtered_players': 6,
+            'last_updated': get_last_updated(),
+            'players': [
+                {
+                    'name': 'Erling Haaland', 'team': 'Man City', 'position': 'FWD',
+                    'next_opponent': 'Ipswich (H)', 'fixture': 'vs Ipswich',
+                    'predicted_points': 89.5, 'now_cost': 15.0, 'points_per_game': 8.95,
+                    'form': 9.0, 'expected_goals': 1.2, 'minutes': 90, 'assists': 1, 'goals_scored': 2,
+                    'yellow_cards': 0, 'red_cards': 0, 'saves_per_90': 0.0, 'total_points': 17,
+                    'clean_sheets': 0, 'opponent_difficulty': 2, 'is_home': True,
+                    'chance_of_playing_this_round': 100,
+                    'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p223094.png',
+                    'player_code': 223094
+                },
+                {
+                    'name': 'Mohamed Salah', 'team': 'Liverpool', 'position': 'FWD',
+                    'next_opponent': 'Brentford (A)', 'fixture': 'vs Brentford',
+                    'predicted_points': 82.3, 'now_cost': 12.5, 'points_per_game': 7.8,
+                    'form': 8.5, 'expected_goals': 1.0, 'minutes': 90, 'assists': 2, 'goals_scored': 1,
+                    'yellow_cards': 0, 'red_cards': 0, 'saves_per_90': 0.0, 'total_points': 13,
+                    'clean_sheets': 0, 'opponent_difficulty': 3, 'is_home': False,
+                    'chance_of_playing_this_round': 100,
+                    'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png',
+                    'player_code': 118748
+                },
+                {
+                    'name': 'Cole Palmer', 'team': 'Chelsea', 'position': 'MID',
+                    'next_opponent': 'Wolves (A)', 'fixture': 'vs Wolves',
+                    'predicted_points': 78.9, 'now_cost': 10.5, 'points_per_game': 7.2,
+                    'form': 8.0, 'expected_goals': 0.8, 'minutes': 85, 'assists': 1, 'goals_scored': 1,
+                    'yellow_cards': 0, 'red_cards': 0, 'saves_per_90': 0.0, 'total_points': 11,
+                    'clean_sheets': 0, 'opponent_difficulty': 3, 'is_home': False,
+                    'chance_of_playing_this_round': 100,
+                    'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p491567.png',
+                    'player_code': 491567
+                },
+                {
+                    'name': 'Bukayo Saka', 'team': 'Arsenal', 'position': 'MID',
+                    'next_opponent': 'Aston Villa (H)', 'fixture': 'vs Aston Villa',
+                    'predicted_points': 76.2, 'now_cost': 10.0, 'points_per_game': 6.8,
+                    'form': 7.5, 'expected_goals': 0.6, 'minutes': 88, 'assists': 1, 'goals_scored': 0,
+                    'yellow_cards': 0, 'red_cards': 0, 'saves_per_90': 0.0, 'total_points': 9,
+                    'clean_sheets': 0, 'opponent_difficulty': 4, 'is_home': True,
+                    'chance_of_playing_this_round': 100,
+                    'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p491582.png',
+                    'player_code': 491582
+                },
+                {
+                    'name': 'Virgil van Dijk', 'team': 'Liverpool', 'position': 'DEF',
+                    'next_opponent': 'Brentford (A)', 'fixture': 'vs Brentford',
+                    'predicted_points': 65.4, 'now_cost': 6.0, 'points_per_game': 5.8,
+                    'form': 6.5, 'expected_goals': 0.2, 'minutes': 90, 'assists': 0, 'goals_scored': 0,
+                    'yellow_cards': 0, 'red_cards': 0, 'saves_per_90': 0.0, 'total_points': 8,
+                    'clean_sheets': 1, 'opponent_difficulty': 3, 'is_home': False,
+                    'chance_of_playing_this_round': 100,
+                    'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p134006.png',
+                    'player_code': 134006
+                },
+                {
+                    'name': 'Alisson', 'team': 'Liverpool', 'position': 'GKP',
+                    'next_opponent': 'Brentford (A)', 'fixture': 'vs Brentford',
+                    'predicted_points': 52.1, 'now_cost': 5.5, 'points_per_game': 4.2,
+                    'form': 5.0, 'expected_goals': 0.0, 'minutes': 90, 'assists': 0, 'goals_scored': 0,
+                    'yellow_cards': 0, 'red_cards': 0, 'saves_per_90': 3.2, 'total_points': 6,
+                    'clean_sheets': 1, 'opponent_difficulty': 3, 'is_home': False,
+                    'chance_of_playing_this_round': 100,
+                    'image_url': 'https://resources.premierleague.com/premierleague/photos/players/110x140/p116695.png',
+                    'player_code': 116695
+                }
+            ]
+        })
+
+    # Read CSV and build response
+    df = pd.read_csv(csv_file)
+    df = fetch_player_images(df)
+
+    # Extract gameweek from filename
+    gameweek = 1
+    try:
+        gameweek = int(os.path.basename(csv_file).split('_')[1])
+    except Exception:
+        pass
+
+    # Query params
+    team = (query_params.get('team') or '').strip()
+    position = (query_params.get('position') or '').strip()
+    search = (query_params.get('search') or '').strip()
+    sort_by = (query_params.get('sort_by') or 'predicted_points').strip()
+    sort_order = (query_params.get('sort_order') or 'desc').strip()
+
+    # Filters
+    if team:
+        df = df[df['team'].str.contains(team, case=False, na=False)]
+    if position:
+        df = df[df['position'] == position]
+    if search:
+        df = df[df['name'].str.contains(search, case=False, na=False)]
+
+    # Numeric columns for sorting
+    numeric_columns = [
+        'predicted_points', 'now_cost', 'points_per_game', 'form', 'total_points',
+        'expected_goals', 'minutes', 'assists', 'goals_scored', 'yellow_cards',
+        'red_cards', 'saves_per_90', 'clean_sheets', 'opponent_difficulty'
+    ]
+    for col in numeric_columns:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+
+    # Sorting
+    if sort_by in df.columns:
+        ascending = sort_order == 'asc'
+        df = df.sort_values(by=sort_by, ascending=ascending)
+
+    players = df.to_dict('records')
+    return _response({
+        'gameweek': gameweek,
+        'csv_file': os.path.basename(csv_file),
+        'total_players': len(pd.read_csv(csv_file)),
+        'filtered_players': len(players),
+        'last_updated': get_last_updated(),
+        'players': players
+    })
+
+
+def _build_teams_response():
+    csv_file = get_latest_csv()
+    if not csv_file:
+        return _response({'teams': ['Arsenal', 'Chelsea', 'Liverpool', 'Man City']})
+    df = pd.read_csv(csv_file)
+    teams = sorted(df['team'].dropna().unique().tolist())
+    return _response({'teams': teams})
+
+
+def handler(request, context):
+    try:
+        path = request.get('path', '/api/predictions')
+        method = request.get('httpMethod', 'GET')
+
+        # CORS preflight
+        if method == 'OPTIONS':
+            return _response({'ok': True})
+
+        query_params = request.get('queryStringParameters') or {}
+
+        if path == '/api/predictions' and method == 'GET':
+            return _build_predictions_response(query_params)
+        if path == '/api/teams' and method == 'GET':
+            return _build_teams_response()
+        if path == '/api/health' and method == 'GET':
+            return _response({'status': 'ok'})
+
+        return _response({'error': 'Not Found'}, status_code=404)
+    except Exception as e:
+        return _response({'error': str(e)}, status_code=500)
