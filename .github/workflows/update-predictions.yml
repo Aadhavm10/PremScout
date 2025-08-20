@@ -1,6 +1,6 @@
 name: Daily FPL Predictions Update
 
-"on":
+on:
   schedule:
     # Run daily at 9 AM UTC (you can adjust this)
     - cron: '0 9 * * *'
