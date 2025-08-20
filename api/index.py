@@ -239,13 +239,13 @@ def handler(request, context):
 
         query_params = request.get('queryStringParameters') or {}
 
-        if path == '/api/predictions' and method == 'GET':
-            return _build_predictions_response(query_params)
-        if path == '/api/teams' and method == 'GET':
+        normalized_path = str(path or '').lower()
+        # Be permissive: default to predictions unless specifically asking for teams/health
+        if 'teams' in normalized_path and method == 'GET':
             return _build_teams_response()
-        if path == '/api/health' and method == 'GET':
+        if 'health' in normalized_path and method == 'GET':
             return _response({'status': 'ok'})
-
-        return _response({'error': 'Not Found'}, status_code=404)
+        # Default: predictions
+        return _build_predictions_response(query_params)
     except Exception as e:
         return _response({'error': str(e)}, status_code=500)
