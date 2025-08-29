@@ -1,192 +1,192 @@
 name,team,position,next_opponent,fixture,predicted_points,now_cost,points_per_game,form,expected_goals,minutes,assists,goals_scored,yellow_cards,red_cards,saves_per_90,total_points,clean_sheets,opponent_difficulty,is_home,chance_of_playing_this_round
-Jurriën Timber,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,7.182040476190475,5.6,12.0,12.0,0.0486,82,1,2,1,0,0.0,24,1,1,False,
-Dango Ouattara,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,7.008828525641025,6.0,13.0,6.5,0.0462,83,0,1,0,0,0.0,13,1,4,False,100.0
-Riccardo Calafiori,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,6.924419047619051,5.6,13.0,13.0,0.078,134,2,1,1,0,0.0,26,2,1,False,
-Hugo Ekitiké,Liverpool,FWD,Arsenal,Liverpool (H) vs Arsenal,5.793488095238096,8.7,10.0,10.0,0.081,150,1,2,0,0,0.0,20,0,2,True,
-Antoine Semenyo,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,5.7414458333333345,7.2,10.5,10.5,0.0954,180,1,2,0,0,0.0,21,1,3,False,
-Josh Acheampong,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,5.710428525641024,4.0,9.0,4.5,0.0054,90,0,0,0,0,0.0,9,1,3,True,
-Daniel Ballard,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,5.6219356684981685,4.6,9.0,9.0,0.0108,98,0,1,0,0,0.0,18,1,3,True,
-Josh Cullen,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,5.5141428571428595,5.0,9.0,9.0,0.0048000000000000004,180,1,1,0,0,0.0,18,1,3,False,
-Guglielmo Vicario,Spurs,GKP,Bournemouth,Spurs (H) vs Bournemouth,5.430355906593406,5.0,9.0,9.0,0.0,180,0,0,0,0,4.0,18,2,3,True,
-Richarlison de Andrade,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,5.241115430402929,6.7,8.5,8.5,0.0528,148,1,2,1,0,0.0,17,2,3,True,
-Brennan Johnson,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,5.219330952380951,7.1,8.5,8.5,0.054000000000000006,156,0,2,1,0,0.0,17,2,3,True,
-Cody Gakpo,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,5.166652380952381,7.6,8.5,8.5,0.0156,180,2,1,0,0,0.0,17,0,2,True,
-João Pedro Junqueira de Jesus,Chelsea,FWD,Fulham,Chelsea (H) vs Fulham,5.1434452380952385,7.6,8.5,8.5,0.0414,162,2,1,0,0,0.0,17,1,3,True,
-Jordan Pickford,Everton,GKP,Wolves,Everton (A) vs Wolves,5.127210073260073,5.5,8.5,8.5,0.0,180,0,0,0,0,3.0,17,1,3,False,
-Dan Ndoye,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,4.999448430735929,6.0,8.0,8.0,0.006,148,1,1,0,0,0.0,16,0,3,True,
-David Raya Martín,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,4.8531299783549775,5.5,8.0,8.0,0.0,180,0,0,1,0,4.0,16,2,1,False,
-Jaidon Anthony,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,4.5105508116883115,5.5,7.5,7.5,0.0726,174,1,1,0,0,0.0,15,1,3,False,
+Jurriën Timber,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,7.198790476190475,5.6,12.0,12.0,0.0486,82,1,2,1,0,0.0,24,1,1,False,
+Dango Ouattara,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,7.0083875,6.0,13.0,6.5,0.0462,83,0,1,0,0,0.0,13,1,4,False,100.0
+Riccardo Calafiori,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,6.941669047619051,5.6,13.0,13.0,0.078,134,2,1,1,0,0.0,26,2,1,False,
+Hugo Ekitiké,Liverpool,FWD,Arsenal,Liverpool (H) vs Arsenal,5.795563095238095,8.7,10.0,10.0,0.081,150,1,2,0,0,0.0,20,0,2,True,
+Antoine Semenyo,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,5.761524404761905,7.2,10.5,10.5,0.0954,180,1,2,0,0,0.0,21,1,3,False,
+Josh Acheampong,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,5.742870833333333,4.0,9.0,4.5,0.0054,90,0,0,0,0,0.0,9,1,3,True,
+Daniel Ballard,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,5.615935668498168,4.6,9.0,9.0,0.0108,98,0,1,0,0,0.0,18,1,3,True,
+Josh Cullen,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,5.52147142857143,5.0,9.0,9.0,0.0048000000000000004,180,1,1,0,0,0.0,18,1,3,False,
+Guglielmo Vicario,Spurs,GKP,Bournemouth,Spurs (H) vs Bournemouth,5.438967811355311,5.0,9.0,9.0,0.0,180,0,0,0,0,4.0,18,2,3,True,
+Richarlison de Andrade,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,5.247865430402931,6.7,8.5,8.5,0.0528,148,1,2,1,0,0.0,17,2,3,True,
+Brennan Johnson,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,5.229155952380952,7.1,8.5,8.5,0.054000000000000006,156,0,2,1,0,0.0,17,2,3,True,
+Cody Gakpo,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,5.163477380952381,7.6,8.5,8.5,0.0156,180,2,1,0,0,0.0,17,0,2,True,
+João Pedro Junqueira de Jesus,Chelsea,FWD,Fulham,Chelsea (H) vs Fulham,5.140945238095239,7.6,8.5,8.5,0.0414,162,2,1,0,0,0.0,17,1,3,True,
+Jordan Pickford,Everton,GKP,Wolves,Everton (A) vs Wolves,5.125260073260073,5.5,8.5,8.5,0.0,180,0,0,0,0,3.0,17,1,3,False,
+Dan Ndoye,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,5.0415900974025964,6.0,8.0,8.0,0.006,148,1,1,0,0,0.0,16,0,3,True,
+David Raya Martín,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,4.851129978354978,5.5,8.0,8.0,0.0,180,0,0,1,0,4.0,16,2,1,False,
+Jaidon Anthony,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,4.508800811688312,5.5,7.5,7.5,0.0726,174,1,1,0,0,0.0,15,1,3,False,
+Erling Haaland,Man City,FWD,Brighton,Man City (A) vs Brighton,4.503836525974027,14.1,7.5,7.5,0.1476,162,0,2,0,0,0.0,15,1,3,False,
 Marcus Tavernier,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,4.502836525974026,5.5,7.5,7.5,0.0306,167,0,1,0,0,0.0,15,1,3,False,
-Erling Haaland,Man City,FWD,Brighton,Man City (A) vs Brighton,4.501836525974026,14.1,7.5,7.5,0.1476,162,0,2,0,0,0.0,15,1,3,False,
-Chris Wood,Nott'm Forest,FWD,West Ham,Nott'm Forest (H) vs West Ham,4.4970865259740265,7.7,7.5,7.5,0.0708,165,0,2,0,0,0.0,15,0,3,True,
-William Saliba,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,4.492038906926407,6.1,7.5,7.5,0.0,180,0,0,0,0,0.0,15,2,1,False,
-Trevoh Chalobah,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,4.223514285714287,5.0,7.0,7.0,0.024,158,0,1,0,0,0.0,14,1,3,True,
-Ryan Gravenberch,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,4.177225000000001,5.5,7.0,3.5,0.0012000000000000001,90,0,1,1,0,0.0,7,0,2,True,100.0
-Marco Bizot,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,4.166850000000001,4.5,7.0,3.5,0.0,90,0,0,0,0,3.0,7,1,3,True,
-Viktor Gyökeres,Arsenal,FWD,Liverpool,Arsenal (A) vs Liverpool,3.9183803571428575,9.0,6.5,6.5,0.07680000000000001,149,0,2,0,0,0.0,13,1,1,False,
-Mohamed Salah,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,3.9127553571428577,14.5,6.5,6.5,0.0156,180,1,1,0,0,0.0,13,0,2,True,
+William Saliba,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,4.497288906926407,6.1,7.5,7.5,0.0,180,0,0,0,0,0.0,15,2,1,False,
+Chris Wood,Nott'm Forest,FWD,West Ham,Nott'm Forest (H) vs West Ham,4.496586525974027,7.7,7.5,7.5,0.0708,165,0,2,0,0,0.0,15,0,3,True,
+Trevoh Chalobah,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,4.228764285714287,5.0,7.0,7.0,0.024,158,0,1,0,0,0.0,14,1,3,True,
+Ryan Gravenberch,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,4.174975000000001,5.5,7.0,3.5,0.0012000000000000001,90,0,1,1,0,0.0,7,0,2,True,100.0
+Marco Bizot,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,4.162850000000001,4.5,7.0,3.5,0.0,90,0,0,0,0,3.0,7,1,3,True,
+Enzo Fernández,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,3.914993452380953,6.5,6.5,6.5,0.0618,168,1,1,0,0,0.0,13,1,3,True,
+Viktor Gyökeres,Arsenal,FWD,Liverpool,Arsenal (A) vs Liverpool,3.9138803571428573,9.0,6.5,6.5,0.07680000000000001,149,0,2,0,0,0.0,13,1,1,False,
+Mohamed Salah,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,3.9120053571428572,14.5,6.5,6.5,0.0156,180,1,1,0,0,0.0,13,0,2,True,
 Moisés Caicedo Corozo,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,3.9112553571428577,5.5,6.5,6.5,0.016800000000000002,180,0,1,0,0,0.0,13,1,3,True,
-Nick Pope,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,3.910868452380952,5.0,6.5,6.5,0.0,180,1,0,0,0,2.0,13,1,4,False,
-Enzo Fernández,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,3.910493452380953,6.5,6.5,6.5,0.0618,168,1,1,0,0,0.0,13,1,3,True,
-Cristian Romero,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,3.908993452380952,5.0,6.5,6.5,0.0,180,0,0,1,0,0.0,13,2,3,True,
-Tino Livramento,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,3.9071184523809523,5.0,6.5,6.5,0.0,180,1,0,0,0,0.0,13,1,4,False,
-Mohammed Kudus,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,3.9056303571428574,6.6,6.5,6.5,0.0036,169,2,0,0,0,0.0,13,2,3,True,
-Marc Cucurella Saseta,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,3.902868452380952,6.1,6.5,6.5,0.0066,158,1,0,0,0,0.0,13,1,3,True,
-Declan Rice,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,3.606,6.5,6.0,6.0,0.0078,172,2,0,0,0,0.0,12,2,1,False,
-Jack Grealish,Everton,MID,Wolves,Everton (A) vs Wolves,3.606,6.5,6.0,6.0,0.0018,109,2,0,0,0,0.0,12,1,3,False,
-Tijjani Reijnders,Man City,MID,Brighton,Man City (A) vs Brighton,3.6045,5.7,6.0,6.0,0.0144,180,1,1,1,0,0.0,12,1,3,False,
-Rico Lewis,Man City,DEF,Brighton,Man City (A) vs Brighton,3.6045,5.0,6.0,6.0,0.0012000000000000001,155,1,0,0,0,0.0,12,1,3,False,
-Micky van de Ven,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,3.6029999999999998,4.5,6.0,6.0,0.0354,180,0,0,0,0,0.0,12,2,3,True,
-Matt O'Riley,Brighton,MID,Man City,Brighton (H) vs Man City,3.6015,5.5,6.0,6.0,0.0726,177,0,1,0,0,0.0,12,1,2,True,
-Gabriel dos Santos Magalhães,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,3.6015,6.1,6.0,6.0,0.0024000000000000002,180,0,0,0,0,0.0,12,2,1,False,
-James Tarkowski,Everton,DEF,Wolves,Everton (A) vs Wolves,3.6015,5.5,6.0,6.0,0.012,180,0,0,0,0,0.0,12,1,3,False,
+Nick Pope,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,3.910118452380952,5.0,6.5,6.5,0.0,180,1,0,0,0,2.0,13,1,4,False,
+Tino Livramento,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,3.9088684523809523,5.0,6.5,6.5,0.0,180,1,0,0,0,0.0,13,1,4,False,
+Cristian Romero,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,3.9059934523809523,5.0,6.5,6.5,0.0,180,0,0,1,0,0.0,13,2,3,True,
+Marc Cucurella Saseta,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,3.904368452380952,6.1,6.5,6.5,0.0066,158,1,0,0,0,0.0,13,1,3,True,
+Mohammed Kudus,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,3.9026303571428573,6.6,6.5,6.5,0.0036,169,2,0,0,0,0.0,13,2,3,True,
+Tijjani Reijnders,Man City,MID,Brighton,Man City (A) vs Brighton,3.6075,5.7,6.0,6.0,0.0144,180,1,1,1,0,0.0,12,1,3,False,
+Declan Rice,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,3.6075,6.5,6.0,6.0,0.0078,172,2,0,0,0,0.0,12,2,1,False,
+Jack Grealish,Everton,MID,Wolves,Everton (A) vs Wolves,3.6075,6.5,6.0,6.0,0.0018,109,2,0,0,0,0.0,12,1,3,False,
+Rico Lewis,Man City,DEF,Brighton,Man City (A) vs Brighton,3.606,5.0,6.0,6.0,0.0012000000000000001,155,1,0,0,0,0.0,12,1,3,False,
+Micky van de Ven,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,3.6045,4.5,6.0,6.0,0.0354,180,0,0,0,0,0.0,12,2,3,True,
+Matt O'Riley,Brighton,MID,Man City,Brighton (H) vs Man City,3.6045,5.5,6.0,6.0,0.0726,177,0,1,0,0,0.0,12,1,2,True,
+James Tarkowski,Everton,DEF,Wolves,Everton (A) vs Wolves,3.6045,5.5,6.0,6.0,0.012,180,0,0,0,0,0.0,12,1,3,False,
+Callum Hudson-Odoi,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,3.6029999999999998,6.0,6.0,6.0,0.0198,161,0,1,0,0,0.0,12,0,3,True,
+Gabriel dos Santos Magalhães,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,3.6029999999999998,6.1,6.0,6.0,0.0024000000000000002,180,0,0,0,0,0.0,12,2,1,False,
 James Garner,Everton,MID,Wolves,Everton (A) vs Wolves,3.5999999999999996,5.0,6.0,6.0,0.004200000000000001,180,0,1,1,0,0.0,12,1,3,False,
-Callum Hudson-Odoi,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,3.5999999999999996,6.0,6.0,6.0,0.0198,161,0,1,0,0,0.0,12,0,3,True,
 Djed Spence,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,3.5984999999999996,4.5,6.0,6.0,0.0108,180,0,0,0,0,0.0,12,2,3,True,
 João Maria Lobo Alves Palhares Costa Palhinha Gonçalves,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,3.597,5.5,6.0,6.0,0.008400000000000001,100,0,1,0,0,0.0,12,1,3,True,
-Georginio Rutter,Brighton,MID,Man City,Brighton (H) vs Man City,3.5414999999999996,6.0,6.0,3.0,0.004200000000000001,68,1,0,0,0,0.0,6,1,2,True,
-Benjamin White,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,3.5414999999999996,5.5,6.0,3.0,0.0006000000000000001,70,0,0,0,0,0.0,6,1,1,False,75.0
 Rio Ngumoha,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,3.54,4.5,6.0,3.0,0.0222,1,0,1,0,0,0.0,6,0,2,True,
-Pedro Porro Sauceda,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,3.303,5.5,5.5,5.5,0.006,180,0,0,1,0,0.0,11,2,3,True,
-Sepp van den Berg,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,3.30225,4.5,5.5,5.5,0.0126,180,0,0,0,0,0.0,11,1,4,False,
-Matthijs de Ligt,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,3.3015000000000003,5.0,5.5,5.5,0.0126,180,0,0,0,0,0.0,11,0,4,True,
+Georginio Rutter,Brighton,MID,Man City,Brighton (H) vs Man City,3.54,6.0,6.0,3.0,0.004200000000000001,68,1,0,0,0,0.0,6,1,2,True,
+Benjamin White,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,3.54,5.5,6.0,3.0,0.0006000000000000001,70,0,0,0,0,0.0,6,1,1,False,75.0
+Pedro Porro Sauceda,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,3.3045,5.6,5.5,5.5,0.006,180,0,0,1,0,0.0,11,2,3,True,
 Lucas Tolentino Coelho de Lima,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,3.3015000000000003,5.9,5.5,5.5,0.004200000000000001,180,0,1,0,0,0.0,11,0,3,False,
+Sepp van den Berg,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,3.30075,4.5,5.5,5.5,0.0126,180,0,0,0,0,0.0,11,1,4,False,
+Ismaïla Sarr,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,3.3,6.5,5.5,5.5,0.033,180,0,1,0,0,0.0,11,1,3,False,
+Matthijs de Ligt,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,3.3,5.0,5.5,5.5,0.0126,180,0,0,0,0,0.0,11,0,4,True,
 Maxence Lacroix,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,3.2992500000000002,5.0,5.5,5.5,0.006,180,0,0,1,0,0.0,11,1,3,False,
-Ismaïla Sarr,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,3.2984999999999998,6.5,5.5,5.5,0.033,180,0,1,0,0,0.0,11,1,3,False,
-Michael Kayode,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,3.2954999999999997,4.5,5.5,5.5,0.0,174,0,0,0,0,0.0,11,1,4,False,
+Robert Lynch Sánchez,Chelsea,GKP,Fulham,Chelsea (H) vs Fulham,3.29625,5.0,5.5,5.5,0.0,180,0,0,0,0,3.5,11,1,3,True,
 Dan Burn,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,3.2954999999999997,5.0,5.5,5.5,0.0006000000000000001,180,0,0,1,0,0.0,11,1,4,False,
 Marcos Senesi Barón,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,3.2954999999999997,4.5,5.5,5.5,0.0,180,0,0,0,0,0.0,11,1,3,False,
-Robert Lynch Sánchez,Chelsea,GKP,Fulham,Chelsea (H) vs Fulham,3.29475,5.0,5.5,5.5,0.0,180,0,0,0,0,3.5,11,1,3,True,
-Leny Yoro,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,3.0029999999999997,4.5,5.0,5.0,0.0108,176,1,0,0,0,0.0,10,0,4,True,
-Hjalmar Ekdal,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,3.00225,4.0,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,False,
-Michael Keane,Everton,DEF,Wolves,Everton (A) vs Wolves,3.00225,4.5,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,False,
-Bafodé Diakité,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,3.00225,4.5,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,False,
-Anton Stach,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,3.0015,5.0,5.0,5.0,0.0162,180,1,0,0,0,0.0,10,1,2,True,
-Matty Cash,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,3.0015,4.5,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,True,
+Michael Kayode,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,3.2954999999999997,4.5,5.5,5.5,0.0,174,0,0,0,0,0.0,11,1,4,False,
 Daniel Muñoz Mejía,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,3.0015,5.5,5.0,5.0,0.003,180,1,0,1,0,0.0,10,1,3,False,
+Leny Yoro,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,3.0015,4.5,5.0,5.0,0.0108,176,1,0,0,0,0.0,10,0,4,True,
 Pedro Lomba Neto,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,3.0015,7.0,5.0,5.0,0.024599999999999997,180,0,1,0,0,0.0,10,1,3,True,
+Hjalmar Ekdal,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,3.0007499999999996,4.0,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,False,
+Michael Keane,Everton,DEF,Wolves,Everton (A) vs Wolves,3.0007499999999996,4.5,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,False,
 Eliezer Mayenda Dossou,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,3.0007499999999996,5.5,5.0,5.0,0.023399999999999997,137,0,1,0,0,0.0,10,1,3,True,
-Tyrick Mitchell,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,3.0,5.0,5.0,5.0,0.0,180,0,0,1,0,0.0,10,1,3,False,
+Bafodé Diakité,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,3.0007499999999996,4.5,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,False,
 Iliman Ndiaye,Everton,MID,Wolves,Everton (A) vs Wolves,3.0,6.5,5.0,5.0,0.0438,153,0,1,0,0,0.0,10,1,3,False,
 Rayan Aït-Nouri,Man City,DEF,Brighton,Man City (A) vs Brighton,3.0,6.1,5.0,5.0,0.0024000000000000002,112,0,0,0,0,0.0,10,1,3,False,
-Mikkel Damsgaard,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,2.988,5.9,5.0,2.5,0.0036,90,0,0,0,0,0.0,5,1,4,False,
-Alexis Mac Allister,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,2.9865,6.5,5.0,2.5,0.0018,71,1,0,0,0,0.0,5,0,2,True,
-Fabian Schär,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,2.7015000000000002,5.5,4.5,4.5,0.0024000000000000002,170,0,0,0,0,0.0,9,1,4,False,
-Bukayo Saka,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,2.7015000000000002,10.0,4.5,4.5,0.0156,142,0,1,0,0,0.0,9,1,1,False,
+Anton Stach,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,3.0,5.0,5.0,5.0,0.0162,180,1,0,0,0,0.0,10,1,2,True,
+Matty Cash,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,2.9984999999999995,4.5,5.0,5.0,0.0,180,0,0,0,0,0.0,10,1,3,True,
+Tyrick Mitchell,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,2.9984999999999995,5.0,5.0,5.0,0.0,180,0,0,1,0,0.0,10,1,3,False,
+Mikkel Damsgaard,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,2.9865,5.9,5.0,2.5,0.0036,90,0,0,0,0,0.0,5,1,4,False,
+Alexis Mac Allister,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,2.985,6.5,5.0,2.5,0.0018,71,1,0,0,0,0.0,5,0,2,True,
 Alex Iwobi,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,2.7015000000000002,6.5,4.5,4.5,0.0048000000000000004,155,1,0,0,0,0.0,9,0,2,False,
 Bruno Guimarães Rodriguez Moura,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,2.7015000000000002,6.5,4.5,4.5,0.0102,180,0,1,1,0,0.0,9,1,4,False,
-Joe Rodon,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,2.6999999999999997,4.0,4.5,4.5,0.0,180,0,0,0,0,0.0,9,1,2,True,
-Nathan Collins,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,2.6999999999999997,5.0,4.5,4.5,0.0012000000000000001,180,0,0,1,0,0.0,9,1,4,False,
-James Trafford,Man City,GKP,Brighton,Man City (A) vs Brighton,2.6999999999999997,5.0,4.5,4.5,0.0,180,0,0,0,0,3.0,9,1,3,False,
-Robin Roefs,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,2.6999999999999997,4.5,4.5,4.5,0.0,180,0,0,0,0,2.0,9,1,3,True,
+Fabian Schär,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,2.7015000000000002,5.5,4.5,4.5,0.0024000000000000002,170,0,0,0,0,0.0,9,1,4,False,
+Bukayo Saka,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,2.7015000000000002,9.9,4.5,4.5,0.0156,142,0,1,0,0,0.0,9,1,1,False,
 Reinildo Mandava,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,2.6999999999999997,4.0,4.5,4.5,0.0,180,0,0,0,0,0.0,9,1,3,True,
+Nathan Collins,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,2.6999999999999997,5.0,4.5,4.5,0.0012000000000000001,180,0,0,1,0,0.0,9,1,4,False,
+Joe Rodon,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,2.6999999999999997,4.0,4.5,4.5,0.0,180,0,0,0,0,0.0,9,1,2,True,
 Pape Matar Sarr,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,2.6999999999999997,5.0,4.5,4.5,0.0018,180,1,0,0,0,0.0,9,2,3,True,
-Martin Dúbravka,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,2.4,4.0,4.0,4.0,0.0,180,0,0,0,0,2.0,8,1,3,False,100.0
-Martín Zubimendi Ibáñez,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,2.4,5.5,4.0,4.0,0.0012000000000000001,180,0,0,0,0,0.0,8,2,1,False,
-Jake O'Brien,Everton,DEF,Wolves,Everton (A) vs Wolves,2.4,5.0,4.0,4.0,0.0102,180,0,0,0,0,0.0,8,1,3,False,
-Marc Guéhi,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,2.4,4.5,4.0,4.0,0.0066,180,0,0,0,0,0.0,8,1,3,False,
-Gabriel Gudmundsson,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,2.4,4.0,4.0,4.0,0.0102,180,0,0,1,0,0.0,8,1,2,True,
-Đorđe Petrović,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,2.4,4.5,4.0,4.0,0.0,180,0,0,0,0,3.5,8,1,3,False,
-Pascal Struijk,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,2.4,4.5,4.0,4.0,0.013800000000000002,180,0,0,0,0,0.0,8,1,2,True,
-Chris Richards,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,2.4,4.5,4.0,4.0,0.0048000000000000004,180,0,0,0,0,0.0,8,1,3,False,
+Robin Roefs,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,2.6999999999999997,4.5,4.5,4.5,0.0,180,0,0,0,0,2.0,9,1,3,True,
+James Trafford,Man City,GKP,Brighton,Man City (A) vs Brighton,2.6999999999999997,5.0,4.5,4.5,0.0,180,0,0,0,0,3.0,9,1,3,False,
+Gabriel Gudmundsson,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,2.4015,4.0,4.0,4.0,0.0102,180,0,0,1,0,0.0,8,1,2,True,
+Oscar Bobb,Man City,MID,Brighton,Man City (A) vs Brighton,2.4015,5.5,4.0,4.0,0.0,164,1,0,0,0,0.0,8,1,3,False,
+Martin Dúbravka,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,2.4015,4.0,4.0,4.0,0.0,180,0,0,0,0,2.0,8,1,3,False,100.0
+Tyrone Mings,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,2.4015,4.5,4.0,4.0,0.0066,180,0,0,0,0,0.0,8,1,3,True,
+Pascal Struijk,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,2.4015,4.5,4.0,4.0,0.013800000000000002,180,0,0,0,0,0.0,8,1,2,True,
+Đorđe Petrović,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,2.4015,4.5,4.0,4.0,0.0,180,0,0,0,0,3.5,8,1,3,False,
+Chris Richards,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,2.4015,4.5,4.0,4.0,0.0048000000000000004,180,0,0,0,0,0.0,8,1,3,False,
+Elliot Anderson,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,2.4015,5.5,4.0,4.0,0.023399999999999997,180,1,0,0,0,0.0,8,0,3,True,
 Max Dowman,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,2.4,4.5,4.0,4.0,0.0048000000000000004,26,1,0,0,0,0.0,4,0,1,False,
-Oscar Bobb,Man City,MID,Brighton,Man City (A) vs Brighton,2.4,5.5,4.0,4.0,0.0,164,1,0,0,0,0.0,8,1,3,False,
-Elliot Anderson,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,2.4,5.5,4.0,4.0,0.023399999999999997,180,1,0,0,0,0.0,8,0,3,True,
-Dean Henderson,Crystal Palace,GKP,Aston Villa,Crystal Palace (A) vs Aston Villa,2.4,5.0,4.0,4.0,0.0,180,0,0,0,0,1.0,8,1,3,False,
-Tyrone Mings,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,2.4,4.5,4.0,4.0,0.0066,180,0,0,0,0,0.0,8,1,3,True,
+Martín Zubimendi Ibáñez,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,2.4,5.5,4.0,4.0,0.0012000000000000001,180,0,0,0,0,0.0,8,2,1,False,
 Chemsdine Talbi,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,2.4,5.0,4.0,4.0,0.013800000000000002,152,1,0,0,0,0.0,8,1,3,True,
+Marc Guéhi,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,2.4,4.5,4.0,4.0,0.0066,180,0,0,0,0,0.0,8,1,3,False,
+Jake O'Brien,Everton,DEF,Wolves,Everton (A) vs Wolves,2.4,5.0,4.0,4.0,0.0102,180,0,0,0,0,0.0,8,1,3,False,
+Dean Henderson,Crystal Palace,GKP,Aston Villa,Crystal Palace (A) vs Aston Villa,2.4,5.0,4.0,4.0,0.0,180,0,0,0,0,1.0,8,1,3,False,
 Lucas Digne,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,2.4,4.5,4.0,4.0,0.0,153,0,0,0,0,0.0,8,1,3,True,
-Igor Thiago Nascimento Rodrigues,Brentford,FWD,Sunderland,Brentford (A) vs Sunderland,2.394,6.0,4.0,4.0,0.0678,180,0,1,0,0,0.0,8,1,4,False,
-Hamed Traorè,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,2.121,4.5,4.0,2.0,0.0,16,1,0,0,0,0.0,4,0,3,False,
+Igor Thiago Nascimento Rodrigues,Brentford,FWD,Sunderland,Brentford (A) vs Sunderland,2.3955,6.0,4.0,4.0,0.0678,180,0,1,0,0,0.0,8,1,4,False,
+Hamed Traorè,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,2.1165,4.5,4.0,2.0,0.0,16,1,0,0,0,0.0,4,0,3,False,
 David Brooks,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,2.1,5.0,3.5,3.5,0.0216,149,1,0,1,0,0.0,7,1,3,False,
-Quilindschy Hartman,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,2.1,4.0,3.5,3.5,0.0,180,0,0,0,0,0.0,7,1,3,False,
-Yehor Yarmoliuk,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,2.1,5.0,3.5,3.5,0.0066,168,0,0,0,0,0.0,7,1,4,False,
-Adam Smith,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,2.1,4.5,3.5,3.5,0.0,179,0,0,0,0,0.0,7,1,3,False,
-Trai Hume,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,2.1,4.5,3.5,3.5,0.0018,180,0,0,0,0,0.0,7,1,3,True,
 Keane Lewis-Potter,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,2.1,5.0,3.5,3.5,0.0072,158,0,0,0,0,0.0,7,1,4,False,
-Mats Wieffer,Brighton,MID,Man City,Brighton (H) vs Man City,2.1,5.0,3.5,3.5,0.0012000000000000001,174,0,0,1,0,0.0,7,0,2,True,
-Granit Xhaka,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,2.1,5.0,3.5,3.5,0.003,180,0,0,0,0,0.0,7,1,3,True,
-Maxime Estève,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,2.1,4.0,3.5,3.5,0.003,172,0,0,0,0,0.0,7,1,3,False,
-Kieran Trippier,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,2.1,5.0,3.5,3.5,0.0,165,0,0,0,0,0.0,7,1,4,False,
-Hannibal Mejbri,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,2.1,5.0,3.5,3.5,0.003,144,0,0,0,0,0.0,7,1,3,False,
 Kyle Walker,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,2.1,4.5,3.5,3.5,0.0006000000000000001,180,0,0,0,0,0.0,7,1,3,False,
-John Stones,Man City,DEF,Brighton,Man City (A) vs Brighton,2.097,5.5,3.5,3.5,0.0,171,0,0,0,0,0.0,7,1,3,False,
-Rodrigo Muniz Carvalho,Fulham,FWD,Chelsea,Fulham (A) vs Chelsea,2.097,5.5,3.5,3.5,0.0312,94,0,1,1,0,0.0,7,0,2,False,
+Trai Hume,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,2.1,4.5,3.5,3.5,0.0018,180,0,0,0,0,0.0,7,1,3,True,
+Quilindschy Hartman,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,2.1,4.0,3.5,3.5,0.0,180,0,0,0,0,0.0,7,1,3,False,
+Maxime Estève,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,2.1,4.0,3.5,3.5,0.003,172,0,0,0,0,0.0,7,1,3,False,
+Adam Smith,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,2.1,4.5,3.5,3.5,0.0,179,0,0,0,0,0.0,7,1,3,False,
+Mats Wieffer,Brighton,MID,Man City,Brighton (H) vs Man City,2.1,5.0,3.5,3.5,0.0012000000000000001,174,0,0,1,0,0.0,7,0,2,True,
+Kieran Trippier,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,2.1,5.0,3.5,3.5,0.0,165,0,0,0,0,0.0,7,1,4,False,
+Yehor Yarmoliuk,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,2.1,5.0,3.5,3.5,0.0066,168,0,0,0,0,0.0,7,1,4,False,
+Hannibal Mejbri,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,2.1,5.0,3.5,3.5,0.003,144,0,0,0,0,0.0,7,1,3,False,
+Granit Xhaka,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,2.1,5.0,3.5,3.5,0.003,180,0,0,0,0,0.0,7,1,3,True,
 Simon Adingra,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,2.097,5.5,3.5,3.5,0.008400000000000001,137,1,0,1,0,0.0,7,1,3,True,
+Rodrigo Muniz Carvalho,Fulham,FWD,Chelsea,Fulham (A) vs Chelsea,2.097,5.5,3.5,3.5,0.0312,94,0,1,1,0,0.0,7,0,2,False,
 Rúben dos Santos Gato Alves Dias,Man City,DEF,Brighton,Man City (A) vs Brighton,2.097,5.5,3.5,3.5,0.0,180,0,0,0,0,0.0,7,1,3,False,
-Emile Smith Rowe,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,2.094,5.9,3.5,3.5,0.0474,32,0,1,0,0,0.0,7,0,2,False,
+John Stones,Man City,DEF,Brighton,Man City (A) vs Brighton,2.097,5.5,3.5,3.5,0.0,171,0,0,0,0,0.0,7,1,3,False,
 Morgan Gibbs-White,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,2.094,7.5,3.5,3.5,0.0294,164,1,0,0,0,0.0,7,0,3,True,
-Federico Chiesa,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,2.094,6.5,3.5,3.5,0.009600000000000001,18,0,1,0,0,0.0,7,0,2,True,
 Rayan Cherki,Man City,MID,Brighton,Man City (A) vs Brighton,2.094,6.5,3.5,3.5,0.0036,70,0,1,0,0,0.0,7,0,3,False,
-Caoimhín Kelleher,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,1.803,4.5,3.0,3.0,0.0,180,0,0,1,0,2.0,6,1,4,False,100.0
+Emile Smith Rowe,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,2.0925,5.9,3.5,3.5,0.0474,32,0,1,0,0,0.0,7,0,2,False,
+Federico Chiesa,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,2.0925,6.5,3.5,3.5,0.009600000000000001,18,0,1,0,0,0.0,7,0,2,True,
 Lucas Estella Perri,Leeds,GKP,Newcastle,Leeds (H) vs Newcastle,1.803,4.5,3.0,3.0,0.0,180,0,0,0,0,0.5,6,1,2,True,
-Joachim Andersen,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,1.8014999999999999,4.5,3.0,3.0,0.0,180,0,0,0,0,0.0,6,0,2,False,
-Amadou Onana,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.7999999999999998,5.0,3.0,3.0,0.013800000000000002,153,0,0,1,0,0.0,6,1,3,True,
-Bernd Leno,Fulham,GKP,Chelsea,Fulham (A) vs Chelsea,1.7999999999999998,5.0,3.0,3.0,0.0,180,0,0,0,0,3.0,6,0,2,False,
-Harry Wilson,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.7999999999999998,5.5,3.0,3.0,0.004200000000000001,118,1,0,0,0,0.0,6,0,2,False,
-Tyler Adams,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,1.7999999999999998,5.0,3.0,3.0,0.0018,177,0,0,1,0,0.0,6,1,3,False,
-Lukas Nmecha,Leeds,FWD,Newcastle,Leeds (H) vs Newcastle,1.7999999999999998,5.0,3.0,3.0,0.051000000000000004,44,0,1,0,0,0.0,6,0,2,True,
-William Osula,Newcastle,FWD,Leeds,Newcastle (A) vs Leeds,1.7999999999999998,5.5,3.0,3.0,0.009600000000000001,15,0,1,0,0,0.0,6,0,4,False,
-Wilson Isidor,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,1.7999999999999998,5.5,3.0,3.0,0.0024000000000000002,41,0,1,0,0,0.0,6,0,3,True,
+Caoimhín Kelleher,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,1.803,4.5,3.0,3.0,0.0,180,0,0,1,0,2.0,6,1,4,False,100.0
+Joachim Andersen,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,1.803,4.5,3.0,3.0,0.0,180,0,0,0,0,0.0,6,0,2,False,
+Adrien Truffert,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,1.8014999999999999,4.5,3.0,3.0,0.0,180,0,0,0,0,0.0,6,1,3,False,
 Virgil van Dijk,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,1.7999999999999998,6.0,3.0,3.0,0.0108,180,0,0,0,0,0.0,6,0,2,True,
-Adrien Truffert,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,1.7999999999999998,4.5,3.0,3.0,0.0,180,0,0,0,0,0.0,6,1,3,False,
-Reece James,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,1.797,5.5,3.0,3.0,0.0,99,0,0,1,0,0.0,6,1,3,True,
-Martin Ødegaard,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,1.797,8.0,3.0,3.0,0.008400000000000001,127,0,0,0,0,0.0,6,1,1,False,
-Eberechi Eze,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,1.764,7.5,3.0,1.5,0.0144,83,0,0,0,0,0.0,3,1,1,False,
-Archie Gray,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,1.764,5.0,3.0,1.5,0.0,70,0,0,0,0,0.0,3,1,3,True,
-Cole Palmer,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,1.761,10.5,3.0,1.5,0.0102,90,0,0,0,0,0.0,3,1,3,True,
-Yasin Ayari,Brighton,MID,Man City,Brighton (H) vs Man City,1.503,5.0,2.5,2.5,0.009,156,0,0,0,0,0.0,5,0,2,True,
-Jayden Bogle,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,1.503,4.5,2.5,2.5,0.0006000000000000001,172,0,0,1,0,0.0,5,1,2,True,100.0
-André Trindade da Costa Neto,Wolves,MID,Everton,Wolves (H) vs Everton,1.503,5.5,2.5,2.5,0.0,116,0,0,0,0,0.0,5,0,3,True,
-Frank Onyeka,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,1.503,5.0,2.5,2.5,0.0,42,1,0,0,0,0.0,5,0,4,False,
-Noah Sadiki,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,1.5014999999999998,5.0,2.5,2.5,0.0,180,0,0,0,0,0.0,5,1,3,True,
+Martin Ødegaard,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,1.7985,8.0,3.0,3.0,0.008400000000000001,127,0,0,0,0,0.0,6,1,1,False,
+Bernd Leno,Fulham,GKP,Chelsea,Fulham (A) vs Chelsea,1.7985,5.0,3.0,3.0,0.0,180,0,0,0,0,3.0,6,0,2,False,
+Harry Wilson,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.7985,5.5,3.0,3.0,0.004200000000000001,118,1,0,0,0,0.0,6,0,2,False,
+Tyler Adams,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,1.7985,5.0,3.0,3.0,0.0018,177,0,0,1,0,0.0,6,1,3,False,
+Reece James,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,1.7985,5.5,3.0,3.0,0.0,99,0,0,1,0,0.0,6,1,3,True,
+Lukas Nmecha,Leeds,FWD,Newcastle,Leeds (H) vs Newcastle,1.7985,5.0,3.0,3.0,0.051000000000000004,44,0,1,0,0,0.0,6,0,2,True,
+Wilson Isidor,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,1.7985,5.5,3.0,3.0,0.0024000000000000002,41,0,1,0,0,0.0,6,0,3,True,
+Amadou Onana,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.7985,5.0,3.0,3.0,0.013800000000000002,153,0,0,1,0,0.0,6,1,3,True,
+William Osula,Newcastle,FWD,Leeds,Newcastle (A) vs Leeds,1.7985,5.5,3.0,3.0,0.009600000000000001,15,0,1,0,0,0.0,6,0,4,False,
+Eberechi Eze,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,1.7684999999999997,7.5,3.0,1.5,0.0144,83,0,0,0,0,0.0,3,1,1,False,
+Archie Gray,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,1.7684999999999997,5.0,3.0,1.5,0.0,70,0,0,0,0,0.0,3,1,3,True,
+Cole Palmer,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,1.767,10.5,3.0,1.5,0.0102,90,0,0,0,0,0.0,3,1,3,True,
 Wilfried Gnonto,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,1.5014999999999998,5.5,2.5,2.5,0.008400000000000001,131,0,0,0,0,0.0,5,1,2,True,
 Endo Wataru,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,1.5014999999999998,5.0,2.5,2.5,0.0,31,1,0,0,0,0.0,5,0,2,True,
-Yankuba Minteh,Brighton,MID,Man City,Brighton (H) vs Man City,1.5,5.9,2.5,2.5,0.0102,158,0,0,0,0,0.0,5,1,2,True,
-Adam Wharton,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,1.5,5.0,2.5,2.5,0.0,171,0,0,0,0,0.0,5,1,3,False,
-Estêvão Almeida de Oliveira Gonçalves,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,1.5,6.5,2.5,2.5,0.0378,112,1,0,1,0,0.0,5,0,3,True,
+Jayden Bogle,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,1.5014999999999998,4.5,2.5,2.5,0.0006000000000000001,172,0,0,1,0,0.0,5,1,2,True,100.0
+Ola Aina,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,1.5014999999999998,5.0,2.5,2.5,0.0,180,0,0,1,0,0.0,5,0,3,True,
+Frank Onyeka,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,1.5014999999999998,5.0,2.5,2.5,0.0,42,1,0,0,0,0.0,5,0,4,False,
+Noah Sadiki,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,1.5014999999999998,5.0,2.5,2.5,0.0,180,0,0,0,0,0.0,5,1,3,True,
+André Trindade da Costa Neto,Wolves,MID,Everton,Wolves (H) vs Everton,1.5014999999999998,5.5,2.5,2.5,0.0,116,0,0,0,0,0.0,5,0,3,True,
+Yasin Ayari,Brighton,MID,Man City,Brighton (H) vs Man City,1.5014999999999998,5.0,2.5,2.5,0.009,156,0,0,0,0,0.0,5,0,2,True,
+Morgan Rogers,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.5014999999999998,7.0,2.5,2.5,0.006,180,0,0,0,0,0.0,5,1,3,True,100.0
+Anthony Elanga,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.5014999999999998,7.0,2.5,2.5,0.034199999999999994,167,0,0,0,0,0.0,5,1,4,False,
 Habib Diarra,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,1.5,5.5,2.5,2.5,0.013800000000000002,169,0,0,0,0,0.0,5,1,3,True,
-Idrissa Gana Gueye,Everton,MID,Wolves,Everton (A) vs Wolves,1.5,5.5,2.5,2.5,0.0036,180,0,0,0,0,0.0,5,1,3,False,
-Sandro Tonali,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.5,5.5,2.5,2.5,0.0054,155,0,0,0,0,0.0,5,1,4,False,
-Morgan Rogers,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.5,7.0,2.5,2.5,0.006,180,0,0,0,0,0.0,5,1,3,True,100.0
 Youri Tielemans,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.5,6.0,2.5,2.5,0.0024000000000000002,180,0,0,0,0,0.0,5,1,3,True,
 Mason Mount,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,1.5,6.0,2.5,2.5,0.0072,132,0,0,0,0,0.0,5,1,4,True,
-Saša Lukić,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.5,5.0,2.5,2.5,0.0,180,0,0,1,0,0.0,5,0,2,False,
-Anthony Elanga,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.5,7.0,2.5,2.5,0.034199999999999994,167,0,0,0,0,0.0,5,1,4,False,
-Harvey Barnes,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.5,6.5,2.5,2.5,0.013800000000000002,164,0,0,0,0,0.0,5,1,4,False,
-Daniel James,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,1.5,5.5,2.5,2.5,0.0126,142,0,0,0,0,0.0,5,1,2,True,
 John McGinn,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.5,5.5,2.5,2.5,0.003,156,0,0,0,0,0.0,5,1,3,True,
-Ola Aina,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,1.5,5.0,2.5,2.5,0.0,180,0,0,1,0,0.0,5,0,3,True,
+Yankuba Minteh,Brighton,MID,Man City,Brighton (H) vs Man City,1.5,5.9,2.5,2.5,0.0102,158,0,0,0,0,0.0,5,1,2,True,
+Estêvão Almeida de Oliveira Gonçalves,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,1.5,6.5,2.5,2.5,0.0378,112,1,0,1,0,0.0,5,0,3,True,
+Saša Lukić,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.5,5.0,2.5,2.5,0.0,180,0,0,1,0,0.0,5,0,2,False,
+Sandro Tonali,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.5,5.5,2.5,2.5,0.0054,155,0,0,0,0,0.0,5,1,4,False,
+Daniel James,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,1.5,5.5,2.5,2.5,0.0126,142,0,0,0,0,0.0,5,1,2,True,
+Harvey Barnes,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.5,6.5,2.5,2.5,0.013800000000000002,164,0,0,0,0,0.0,5,1,4,False,
 Omar Alderete,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,1.5,4.0,2.5,2.5,0.0036,127,1,0,0,0,0.0,5,0,3,True,
-Emmanuel Agbadou,Wolves,DEF,Everton,Wolves (H) vs Everton,1.2,4.5,2.0,2.0,0.0072,180,0,0,0,0,0.0,4,0,3,True,
-Joelinton Cássio Apolinário de Lira,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.2,6.0,2.0,2.0,0.0018,157,0,0,1,0,0.0,4,1,4,False,
-Nikola Milenković,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,1.2,5.5,2.0,2.0,0.0,180,0,0,0,0,0.0,4,0,3,True,
-Marshall Munetsi,Wolves,MID,Everton,Wolves (H) vs Everton,1.2,5.5,2.0,2.0,0.0066,180,0,0,0,0,0.0,4,0,3,True,
-Matz Sels,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,1.2,5.0,2.0,2.0,0.0,180,0,0,1,0,2.5,4,0,3,True,
+Adam Wharton,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,1.5,5.0,2.5,2.5,0.0,171,0,0,0,0,0.0,5,1,3,False,
+Idrissa Gana Gueye,Everton,MID,Wolves,Everton (A) vs Wolves,1.5,5.5,2.5,2.5,0.0036,180,0,0,0,0,0.0,5,1,3,False,
 Bruno Borges Fernandes,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,1.2,9.0,2.0,2.0,0.058199999999999995,180,0,0,0,0,0.0,4,0,4,True,
-Carlos Baleba,Brighton,MID,Man City,Brighton (H) vs Man City,1.2,5.0,2.0,2.0,0.0012000000000000001,113,0,0,0,0,0.0,4,1,2,True,
-Ibrahim Sangaré,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,1.2,5.0,2.0,2.0,0.0018,177,0,0,0,0,0.0,4,0,3,True,
-Jørgen Strand Larsen,Wolves,FWD,Everton,Wolves (H) vs Everton,1.2,6.5,2.0,2.0,0.0288,158,0,0,0,0,0.0,4,0,3,True,
-Matheus Santos Carneiro da Cunha,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,1.2,8.1,2.0,2.0,0.0474,180,0,0,0,0,0.0,4,0,4,True,
-James Ward-Prowse,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.2,5.9,2.0,2.0,0.0066,160,0,0,0,0,0.0,4,0,3,False,
-Jarrod Bowen,West Ham,FWD,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.2,7.8,2.0,2.0,0.0144,180,0,0,0,0,0.0,4,0,3,False,
-Tim Iroegbunam,Everton,MID,Wolves,Everton (A) vs Wolves,1.2,5.0,2.0,2.0,0.0048000000000000004,140,0,0,2,0,0.0,4,2,3,False,
-Kenny Tete,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,1.2,4.5,2.0,2.0,0.0,180,0,0,0,0,0.0,4,0,2,False,
-Sander Berge,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.2,5.0,2.0,2.0,0.0,155,0,0,0,0,0.0,4,0,2,False,
-El Hadji Malick Diouf,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.2,4.5,2.0,2.0,0.009600000000000001,180,1,0,0,0,0.0,4,0,3,False,
-Lucas Bergvall,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,1.2,5.5,2.0,2.0,0.0072,83,0,0,0,0,0.0,4,1,3,True,
-Kiernan Dewsbury-Hall,Everton,MID,Wolves,Everton (A) vs Wolves,1.2,5.0,2.0,2.0,0.0,180,0,0,1,0,0.0,4,1,3,False,
 Tanaka Ao,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,1.2,5.0,2.0,2.0,0.0054,147,0,0,0,0,0.0,4,1,2,True,
+Kenny Tete,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,1.2,4.5,2.0,2.0,0.0,180,0,0,0,0,0.0,4,0,2,False,
+Jørgen Strand Larsen,Wolves,FWD,Everton,Wolves (H) vs Everton,1.2,6.5,2.0,2.0,0.0288,158,0,0,0,0,0.0,4,0,3,True,
 Rodrigo Bentancur,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,1.2,5.5,2.0,2.0,0.0,109,0,0,0,0,0.0,4,1,3,True,
+Carlos Baleba,Brighton,MID,Man City,Brighton (H) vs Man City,1.2,5.0,2.0,2.0,0.0012000000000000001,113,0,0,0,0,0.0,4,1,2,True,
 Florian Wirtz,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,1.2,8.4,2.0,2.0,0.011399999999999999,160,0,0,0,0,0.0,4,0,2,True,
 Dominik Szoboszlai,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,1.2,6.5,2.0,2.0,0.006,180,0,0,0,0,0.0,4,0,2,True,
+Tim Iroegbunam,Everton,MID,Wolves,Everton (A) vs Wolves,1.2,5.0,2.0,2.0,0.0048000000000000004,140,0,0,2,0,0.0,4,2,3,False,
+Sander Berge,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.2,5.0,2.0,2.0,0.0,155,0,0,0,0,0.0,4,0,2,False,
+Marshall Munetsi,Wolves,MID,Everton,Wolves (H) vs Everton,1.2,5.5,2.0,2.0,0.0066,180,0,0,0,0,0.0,4,0,3,True,
+Ibrahim Sangaré,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,1.2,5.0,2.0,2.0,0.0018,177,0,0,0,0,0.0,4,0,3,True,
+Emmanuel Agbadou,Wolves,DEF,Everton,Wolves (H) vs Everton,1.2,4.5,2.0,2.0,0.0072,180,0,0,0,0,0.0,4,0,3,True,
 Mitoma Kaoru,Brighton,MID,Man City,Brighton (H) vs Man City,1.2,6.4,2.0,2.0,0.0132,172,0,0,1,0,0.0,4,1,2,True,
+Matheus Santos Carneiro da Cunha,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,1.2,8.1,2.0,2.0,0.0474,180,0,0,0,0,0.0,4,0,4,True,
 Jérémy Doku,Man City,MID,Brighton,Man City (A) vs Brighton,1.2,6.4,2.0,2.0,0.0,101,0,0,0,0,0.0,4,1,3,False,
 Nico González Iglesias,Man City,MID,Brighton,Man City (A) vs Brighton,1.2,6.0,2.0,2.0,0.003,164,0,0,1,0,0.0,4,1,3,False,
 Bryan Mbeumo,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,1.2,8.0,2.0,2.0,0.0252,180,0,0,0,0,0.0,4,0,4,True,
+Jarrod Bowen,West Ham,FWD,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.2,7.8,2.0,2.0,0.0144,180,0,0,0,0,0.0,4,0,3,False,
+James Ward-Prowse,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.2,5.9,2.0,2.0,0.0066,160,0,0,0,0,0.0,4,0,3,False,
+Nikola Milenković,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,1.2,5.5,2.0,2.0,0.0,180,0,0,0,0,0.0,4,0,3,True,
+Matz Sels,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,1.2,5.0,2.0,2.0,0.0,180,0,0,1,0,2.5,4,0,3,True,
+El Hadji Malick Diouf,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.2,4.5,2.0,2.0,0.009600000000000001,180,1,0,0,0,0.0,4,0,3,False,
 Altay Bayındır,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,1.2,5.0,2.0,2.0,0.0,180,0,0,0,0,2.0,4,0,4,True,
+Joelinton Cássio Apolinário de Lira,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,1.2,6.0,2.0,2.0,0.0018,157,0,0,1,0,0.0,4,1,4,False,
 Luke Shaw,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,1.2,4.5,2.0,2.0,0.0,165,0,0,0,0,0.0,4,0,4,True,
-Bernardo Mota Veiga de Carvalho e Silva,Man City,MID,Brighton,Man City (A) vs Brighton,1.2,6.5,2.0,2.0,0.0,101,0,0,0,0,0.0,4,1,3,False,
+Kiernan Dewsbury-Hall,Everton,MID,Wolves,Everton (A) vs Wolves,1.2,5.0,2.0,2.0,0.0,180,0,0,1,0,0.0,4,1,3,False,
+Lucas Bergvall,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,1.2,5.5,2.0,2.0,0.0072,83,0,0,0,0,0.0,4,1,3,True,
+Bernardo Mota Veiga de Carvalho e Silva,Man City,MID,Brighton,Man City (A) vs Brighton,1.2,6.4,2.0,2.0,0.0,101,0,0,0,0,0.0,4,1,3,False,
 Josh King,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.2,4.5,2.0,2.0,0.020999999999999998,146,0,0,0,0,0.0,4,0,2,False,
 Lyle Foster,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,1.2,5.0,2.0,2.0,0.0132,158,0,0,0,0,0.0,4,1,3,False,
 Jacob Bruun Larsen,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,1.2,5.5,2.0,2.0,0.0012000000000000001,95,0,0,0,0,0.0,4,1,3,False,
@@ -196,13 +196,13 @@ Lesley Ugochukwu,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,1.2,5.0,2.0,2.0,0.00
 Alex Scott,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,1.2,5.0,2.0,2.0,0.003,138,0,0,1,0,0.0,4,1,3,False,
 Ollie Watkins,Aston Villa,FWD,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.2,9.0,2.0,2.0,0.0294,180,0,0,0,0,0.0,4,1,3,True,
 Kevin Schade,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,1.2,7.0,2.0,2.0,0.006,123,0,0,0,0,0.0,4,1,4,False,100.0
-Jorge Cuenca Barreno,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,1.1955,4.5,2.0,1.0,0.0,83,0,0,0,0,0.0,2,0,2,False,
-Fábio Freitas Gouveia Carvalho,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,1.1955,5.0,2.0,1.0,0.0018,90,0,0,0,0,0.0,2,0,4,False,
-Ryan Sessegnon,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.1955,5.4,2.0,1.0,0.0,61,0,0,0,0,0.0,2,0,2,False,75.0
-Pau Torres,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.1955,4.5,2.0,1.0,0.004200000000000001,90,0,0,0,0,0.0,2,0,3,True,
-Tosin Adarabioyo,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,1.1955,4.5,2.0,1.0,0.0,90,0,0,0,0,0.0,2,0,3,True,100.0
-Emiliano Martínez Romero,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.1955,5.0,2.0,1.0,0.0,90,0,0,0,0,1.0,2,0,3,True,100.0
-Guido Rodríguez,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.1955,5.0,2.0,1.0,0.0018,70,0,0,0,0,0.0,2,0,3,False,
+Jorge Cuenca Barreno,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,1.1985,4.5,2.0,1.0,0.0,83,0,0,0,0,0.0,2,0,2,False,
+Fábio Freitas Gouveia Carvalho,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,1.1985,5.0,2.0,1.0,0.0018,90,0,0,0,0,0.0,2,0,4,False,
+Ryan Sessegnon,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,1.1985,5.4,2.0,1.0,0.0,61,0,0,0,0,0.0,2,0,2,False,75.0
+Pau Torres,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.1985,4.5,2.0,1.0,0.004200000000000001,90,0,0,0,0,0.0,2,0,3,True,
+Tosin Adarabioyo,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,1.1985,4.5,2.0,1.0,0.0,90,0,0,0,0,0.0,2,0,3,True,100.0
+Emiliano Martínez Romero,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,1.1985,5.0,2.0,1.0,0.0,90,0,0,0,0,1.0,2,0,3,True,100.0
+Guido Rodríguez,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,1.1985,5.0,2.0,1.0,0.0018,70,0,0,0,0,0.0,2,0,3,False,
 Mathias Jensen,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,0.8999999999999999,5.0,1.5,1.5,0.0078,79,0,0,0,0,0.0,3,0,4,False,
 Malo Gusto,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,0.8999999999999999,5.0,1.5,1.5,0.0012000000000000001,79,0,0,0,0,0.0,3,0,3,True,
 Josh Laurent,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,0.8999999999999999,5.0,1.5,1.5,0.0066,83,0,0,0,0,0.0,3,0,3,False,
@@ -251,7 +251,7 @@ Fer López González,Wolves,MID,Everton,Wolves (H) vs Everton,0.6,5.4,1.0,0.5,0.
 Freddie Potts,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.6,4.5,1.0,0.5,0.0,45,0,0,0,0,0.0,1,0,3,False,
 João Pedro Ferreira da Silva,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,0.6,5.5,1.0,0.5,0.0,11,0,0,0,0,0.0,1,0,3,True,
 Donyell Malen,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.6,5.4,1.0,1.0,0.0018,32,0,0,0,0,0.0,2,0,3,True,
-Gabriel Martinelli Silva,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.6,7.0,1.0,0.5,0.0012000000000000001,59,0,0,0,0,0.0,1,0,1,False,
+Gabriel Martinelli Silva,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.6,6.9,1.0,0.5,0.0012000000000000001,59,0,0,0,0,0.0,1,0,1,False,
 Ryan Yates,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,0.6,5.0,1.0,1.0,0.0,8,0,0,0,0,0.0,2,0,3,True,
 James McAtee,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,0.6,5.5,1.0,0.5,0.0,18,0,0,0,0,0.0,1,0,3,True,
 Lewis Miley,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.6,4.5,1.0,1.0,0.0018,31,0,0,0,0,0.0,2,0,4,False,
@@ -270,7 +270,7 @@ Patrick Roberts,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,0.6,5.4,1.0
 Enzo Le Fée,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,0.6,4.9,1.0,1.0,0.0024000000000000002,41,0,0,0,0,0.0,2,0,3,True,
 Nathan Aké,Man City,DEF,Brighton,Man City (A) vs Brighton,0.6,5.5,1.0,0.5,0.008400000000000001,67,0,0,0,0,0.0,1,0,3,False,
 Loum Tchaouna,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,0.6,5.0,1.0,1.0,0.0048000000000000004,23,0,0,0,0,0.0,2,0,3,False,
-Ian Maatsen,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.6,4.5,1.0,0.5,0.0012000000000000001,26,0,0,0,0,0.0,1,0,3,True,
+Ian Maatsen,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.6,4.4,1.0,0.5,0.0012000000000000001,26,0,0,0,0,0.0,1,0,3,True,
 Ethan Nwaneri,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.6,5.4,1.0,0.5,0.0012000000000000001,52,0,0,0,0,0.0,1,0,1,False,
 Zian Flemming,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,0.6,5.5,1.0,1.0,0.0,20,0,0,0,0,0.0,2,0,3,False,
 Wilson Odobert,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.6,5.4,1.0,1.0,0.015,22,0,0,0,0,0.0,2,0,3,True,
@@ -278,73 +278,74 @@ Leandro Trossard,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.6,6.9,1.0,0.5,
 Carlos Henrique Casimiro,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,0.6,5.5,1.0,1.0,0.0,116,0,0,1,0,0.0,2,0,4,True,
 Rodrigo 'Rodri' Hernandez Cascante,Man City,MID,Brighton,Man City (A) vs Brighton,0.6,6.4,1.0,0.5,0.003,15,0,0,0,0,0.0,1,0,3,False,100.0
 Jackson Tchatchoua,Wolves,DEF,Everton,Wolves (H) vs Everton,0.6,4.5,1.0,1.0,0.0,55,0,0,0,0,0.0,1,0,3,True,
-Maxim De Cuyper,Brighton,DEF,Man City,Brighton (H) vs Man City,0.6,4.5,1.0,1.0,0.0,156,0,0,1,0,0.0,2,0,2,True,
 Brajan Gruda,Brighton,MID,Man City,Brighton (H) vs Man City,0.6,5.4,1.0,1.0,0.0222,12,0,0,0,0,0.0,2,0,2,True,
-Andrey Nascimento dos Santos,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.6,4.5,1.0,1.0,0.0186,39,0,0,0,0,0.0,2,0,3,True,
 Rico Henry,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.6,4.5,1.0,1.0,0.0,93,0,0,0,0,0.0,2,0,4,False,
+Andrey Nascimento dos Santos,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.6,4.5,1.0,1.0,0.0186,39,0,0,0,0,0.0,2,0,3,True,
+Maxim De Cuyper,Brighton,DEF,Man City,Brighton (H) vs Man City,0.6,4.5,1.0,1.0,0.0,156,0,0,1,0,0.0,2,0,2,True,
 Jamie Bynoe-Gittens,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.6,6.4,1.0,1.0,0.004200000000000001,66,0,0,0,0,0.0,2,0,3,True,
-Abdukodir Khusanov,Man City,DEF,Brighton,Man City (A) vs Brighton,0.5985,5.4,1.0,0.5,0.0,8,0,0,0,0,0.0,1,0,3,False,
-Matheus Nunes,Man City,DEF,Brighton,Man City (A) vs Brighton,0.5985,5.4,1.0,0.5,0.0,24,0,0,0,0,0.0,1,0,3,False,
-Mathys Tel,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.5985,6.4,1.0,0.5,0.0,5,0,0,0,0,0.0,1,0,3,True,
-Harrison Armstrong,Everton,MID,Wolves,Everton (A) vs Wolves,0.5985,4.5,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,3,False,100.0
-Kevin Danso,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.5985,4.4,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,3,True,
-Ben Winterburn,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,0.5985,4.5,1.0,0.5,0.0,6,0,0,0,0,0.0,1,0,3,False,
-Cristhian Mosquera,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,0.5985,5.4,1.0,0.5,0.0,26,0,0,0,0,0.0,1,0,1,False,
-Antoni Milambo,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,0.5985,5.5,1.0,0.5,0.0,45,0,0,0,0,0.0,1,0,4,False,
-Jack Hinshelwood,Brighton,MID,Man City,Brighton (H) vs Man City,0.5985,5.4,1.0,0.5,0.0,45,0,0,0,0,0.0,1,0,2,True,
-Chris Rigg,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,0.5985,4.9,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,3,True,
-Adama Traoré Diarra,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,0.5985,5.4,1.0,0.5,0.0,24,0,0,0,0,0.0,1,0,2,False,
-James Milner,Brighton,MID,Man City,Brighton (H) vs Man City,0.5985,5.0,1.0,0.5,0.0,2,0,0,0,0,0.0,1,0,2,True,
-Malick Thiaw,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,0.5985,5.0,1.0,0.5,0.0,9,0,0,0,0,0.0,1,0,4,False,
-Sam Byram,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,0.5985,4.0,1.0,0.5,0.0,7,0,0,0,0,0.0,1,0,2,True,
-James Hill,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,0.5985,4.0,1.0,1.0,0.0,3,0,0,0,0,0.0,2,0,3,False,
-Mikel Merino Zazón,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.5985,5.9,1.0,0.5,0.0,7,0,0,0,0,0.0,1,0,1,False,
-Jacob Ramsey,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.5985,5.5,1.0,0.5,0.0,14,0,0,0,0,0.0,1,0,4,False,
-Ayden Heaven,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,0.5985,4.0,1.0,0.5,0.0,3,0,0,0,0,0.0,1,0,4,True,
-Sean Longstaff,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.5985,4.9,1.0,1.0,0.0,33,0,0,0,0,0.0,2,0,2,True,
-Noah Okafor,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.5985,5.5,1.0,1.0,0.0,24,0,0,0,0,0.0,1,0,2,True,75.0
-Joe Worrall,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.5985,4.0,1.0,0.5,0.0,7,0,0,0,0,0.0,1,0,3,False,
-Marcus Edwards,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,0.5985,4.9,1.0,0.5,0.0,5,0,0,0,0,0.0,1,0,3,False,
-Wesley Fofana,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,0.5985,4.5,1.0,0.5,0.0,21,0,0,0,0,0.0,1,0,3,True,100.0
-Joe Gomez,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.5985,5.0,1.0,0.5,0.0,18,0,0,0,0,0.0,1,0,2,True,100.0
-Lewis Hall,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,0.5985,5.5,1.0,0.5,0.0,14,0,0,0,0,0.0,1,0,4,False,
-Arnaud Kalimuendo,Nott'm Forest,FWD,West Ham,Nott'm Forest (H) vs West Ham,0.5985,6.0,1.0,1.0,0.0,19,0,0,0,0,0.0,1,0,3,True,
-Harvey Elliott,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,0.5985,5.4,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,2,True,
-Hwang Hee-chan,Wolves,MID,Everton,Wolves (H) vs Everton,0.5985,5.9,1.0,1.0,0.0,20,0,0,0,0,0.0,2,0,3,True,
-Andy Irving,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.5985,4.5,1.0,0.5,0.0,8,0,0,0,0,0.0,1,0,3,False,
-Kristoffer Ajer,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.5985,4.5,1.0,0.5,0.0,5,0,0,0,0,0.0,1,0,4,False,
-Odsonne Édouard,Crystal Palace,FWD,Aston Villa,Crystal Palace (A) vs Aston Villa,0.5985,5.0,1.0,0.5,0.0,2,0,0,0,0,0.0,1,0,3,False,
-Santiago Ignacio Bueno,Wolves,DEF,Everton,Wolves (H) vs Everton,0.5985,4.5,1.0,0.5,0.0,34,0,0,0,0,0.0,1,0,3,True,
-Dominic Solanke-Mitchell,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,0.5985,7.3,1.0,1.0,0.012,31,0,0,0,0,0.0,2,0,3,True,100.0
+Dominic Solanke-Mitchell,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,0.599,7.3,1.0,1.0,0.012,31,0,0,0,0,0.0,2,0,3,True,100.0
+Kevin Danso,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.597,4.4,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,3,True,
+Ben Winterburn,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,0.597,4.5,1.0,0.5,0.0,6,0,0,0,0,0.0,1,0,3,False,
+Cristhian Mosquera,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,0.597,5.4,1.0,0.5,0.0,26,0,0,0,0,0.0,1,0,1,False,
+Sam Byram,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,0.597,4.0,1.0,0.5,0.0,7,0,0,0,0,0.0,1,0,2,True,
+Jack Hinshelwood,Brighton,MID,Man City,Brighton (H) vs Man City,0.597,5.4,1.0,0.5,0.0,45,0,0,0,0,0.0,1,0,2,True,
+Chris Rigg,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,0.597,4.9,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,3,True,
+Adama Traoré Diarra,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,0.597,5.4,1.0,0.5,0.0,24,0,0,0,0,0.0,1,0,2,False,
+James Milner,Brighton,MID,Man City,Brighton (H) vs Man City,0.597,5.0,1.0,0.5,0.0,2,0,0,0,0,0.0,1,0,2,True,
+Harrison Armstrong,Everton,MID,Wolves,Everton (A) vs Wolves,0.597,4.5,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,3,False,100.0
+Malick Thiaw,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,0.597,5.0,1.0,0.5,0.0,9,0,0,0,0,0.0,1,0,4,False,
+Lewis Hall,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,0.597,5.5,1.0,0.5,0.0,14,0,0,0,0,0.0,1,0,4,False,
+James Hill,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,0.597,4.0,1.0,1.0,0.0,3,0,0,0,0,0.0,2,0,3,False,
+Jacob Ramsey,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.597,5.5,1.0,0.5,0.0,14,0,0,0,0,0.0,1,0,4,False,
+Ayden Heaven,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,0.597,4.0,1.0,0.5,0.0,3,0,0,0,0,0.0,1,0,4,True,
+Sean Longstaff,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.597,4.9,1.0,1.0,0.0,33,0,0,0,0,0.0,2,0,2,True,
+Noah Okafor,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.597,5.5,1.0,1.0,0.0,24,0,0,0,0,0.0,1,0,2,True,75.0
+Joe Worrall,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.597,4.0,1.0,0.5,0.0,7,0,0,0,0,0.0,1,0,3,False,
+Marcus Edwards,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,0.597,4.9,1.0,0.5,0.0,5,0,0,0,0,0.0,1,0,3,False,
+Joe Gomez,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.597,5.0,1.0,0.5,0.0,18,0,0,0,0,0.0,1,0,2,True,100.0
+Matheus Nunes,Man City,DEF,Brighton,Man City (A) vs Brighton,0.597,5.4,1.0,0.5,0.0,24,0,0,0,0,0.0,1,0,3,False,
+Abdukodir Khusanov,Man City,DEF,Brighton,Man City (A) vs Brighton,0.597,5.4,1.0,0.5,0.0,8,0,0,0,0,0.0,1,0,3,False,
+Wesley Fofana,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,0.597,4.5,1.0,0.5,0.0,21,0,0,0,0,0.0,1,0,3,True,100.0
+Antoni Milambo,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,0.597,5.4,1.0,0.5,0.0,45,0,0,0,0,0.0,1,0,4,False,
+Mathys Tel,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.597,6.4,1.0,0.5,0.0,5,0,0,0,0,0.0,1,0,3,True,
+Arnaud Kalimuendo,Nott'm Forest,FWD,West Ham,Nott'm Forest (H) vs West Ham,0.597,6.0,1.0,1.0,0.0,19,0,0,0,0,0.0,1,0,3,True,
+Harvey Elliott,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,0.597,5.4,1.0,0.5,0.0,1,0,0,0,0,0.0,1,0,2,True,
+Kristoffer Ajer,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.597,4.5,1.0,0.5,0.0,5,0,0,0,0,0.0,1,0,4,False,
+Hwang Hee-chan,Wolves,MID,Everton,Wolves (H) vs Everton,0.597,5.9,1.0,1.0,0.0,20,0,0,0,0,0.0,2,0,3,True,
+Santiago Ignacio Bueno,Wolves,DEF,Everton,Wolves (H) vs Everton,0.597,4.5,1.0,0.5,0.0,34,0,0,0,0,0.0,1,0,3,True,
+Odsonne Édouard,Crystal Palace,FWD,Aston Villa,Crystal Palace (A) vs Aston Villa,0.597,5.0,1.0,0.5,0.0,2,0,0,0,0,0.0,1,0,3,False,
+Andy Irving,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.597,4.5,1.0,0.5,0.0,8,0,0,0,0,0.0,1,0,3,False,
+Mikel Merino Zazón,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.596,5.9,1.0,0.5,0.0,7,0,0,0,0,0.0,1,0,1,False,
+Amad Diallo,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,0.5958,6.4,1.0,1.0,0.0102,86,0,0,0,0,0.0,2,0,4,True,
 Ki-Jana Hoever,Wolves,DEF,Everton,Wolves (H) vs Everton,0.5958,4.0,1.0,1.0,0.0,106,0,0,0,0,0.0,2,0,3,True,
-Amad Diallo,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,0.5925499999999999,6.4,1.0,1.0,0.0102,86,0,0,0,0,0.0,2,0,4,True,
-Jenson Seelt,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,0.5898,4.0,1.0,1.0,0.0,133,0,0,0,0,0.0,2,0,3,True,100.0
-Alisson Becker,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,0.58905,5.5,1.0,1.0,0.0,180,0,0,0,0,1.0,2,0,2,True,
-Phil Foden,Man City,MID,Brighton,Man City (A) vs Brighton,0.588,8.0,1.0,0.5,0.0108,15,0,0,0,0,0.0,1,0,3,False,100.0
+Jenson Seelt,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,0.5905499999999999,4.0,1.0,1.0,0.0,133,0,0,0,0,0.0,2,0,3,True,100.0
+Alisson Becker,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,0.5898,5.5,1.0,1.0,0.0,180,0,0,0,0,1.0,2,0,2,True,
 Benjamin Sesko,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,0.588,7.5,1.0,1.0,0.0066,62,0,0,0,0,0.0,2,0,4,True,
-Omar Marmoush,Man City,MID,Brighton,Man City (A) vs Brighton,0.5627,8.4,1.0,1.0,0.0462,77,0,0,0,0,0.0,2,0,3,False,
-Aaron Hickey,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.3824660714285714,4.0,0.5,0.5,0.0,13,0,0,1,0,0.0,1,0,4,False,
-Myles Lewis-Skelly,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,0.2939875,5.4,0.5,0.5,0.0,44,0,0,1,0,0.0,1,0,1,False,
-Ibrahima Konaté,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.28391250000000007,5.5,0.5,0.5,0.0,180,0,0,1,0,0.0,1,0,2,True,
-Jean-Clair Todibo,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.2817875,4.4,0.5,0.5,0.0,126,0,0,0,0,0.0,1,0,3,False,
-Mads Hermansen,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.2807875,4.5,0.5,0.5,0.0,180,0,0,0,0,2.0,1,0,3,False,
-Milos Kerkez,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.2789125,6.0,0.5,0.5,0.0,149,0,0,1,0,0.0,1,0,2,True,
-Diego Gómez Amarilla,Brighton,MID,Man City,Brighton (H) vs Man City,0.2758946428571429,5.0,0.5,0.5,0.0018,44,0,0,1,0,0.0,1,0,2,True,
-Hugo Bueno López,Wolves,DEF,Everton,Wolves (H) vs Everton,0.2743946428571429,4.5,0.5,0.5,0.0036,63,0,0,1,0,0.0,1,0,3,True,
+Phil Foden,Man City,MID,Brighton,Man City (A) vs Brighton,0.588,8.0,1.0,0.5,0.0108,15,0,0,0,0,0.0,1,0,3,False,100.0
+Omar Marmoush,Man City,MID,Brighton,Man City (A) vs Brighton,0.5652,8.4,1.0,1.0,0.0462,77,0,0,0,0,0.0,2,0,3,False,
+Aaron Hickey,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.3730910714285714,4.0,0.5,0.5,0.0,13,0,0,1,0,0.0,1,0,4,False,
+Myles Lewis-Skelly,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,0.2917375000000001,5.4,0.5,0.5,0.0,44,0,0,1,0,0.0,1,0,1,False,
+Ibrahima Konaté,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.2857875,5.5,0.5,0.5,0.0,180,0,0,1,0,0.0,1,0,2,True,
+Jean-Clair Todibo,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.2822875000000001,4.4,0.5,0.5,0.0,126,0,0,0,0,0.0,1,0,3,False,
+Mads Hermansen,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.28003750000000005,4.5,0.5,0.5,0.0,180,0,0,0,0,2.0,1,0,3,False,
+Diego Gómez Amarilla,Brighton,MID,Man City,Brighton (H) vs Man City,0.27864464285714285,5.0,0.5,0.5,0.0018,44,0,0,1,0,0.0,1,0,2,True,
+Hugo Bueno López,Wolves,DEF,Everton,Wolves (H) vs Everton,0.27751964285714287,4.5,0.5,0.5,0.0036,63,0,0,1,0,0.0,1,0,3,True,
+Milos Kerkez,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.27741250000000006,6.0,0.5,0.5,0.0,149,0,0,1,0,0.0,1,0,2,True,
 Danny Welbeck,Brighton,FWD,Man City,Brighton (H) vs Man City,0.27053750000000004,6.4,0.5,0.5,0.09359999999999999,111,0,0,0,0,0.0,1,0,2,True,
-Aaron Wan-Bissaka,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.2648196428571428,4.5,0.5,0.5,0.0,180,0,0,0,0,0.0,1,0,3,False,
-Anthony Gordon,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.25881964285714293,7.5,0.5,0.5,0.0618,137,0,0,0,1,0.0,1,1,4,False,100.0
-Takai Kōta,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Aaron Wan-Bissaka,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.26856964285714285,4.5,0.5,0.5,0.0,180,0,0,0,0,0.0,1,0,3,False,
+Anthony Gordon,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.2605696428571429,7.5,0.5,0.5,0.0618,137,0,0,0,1,0.0,1,1,4,False,100.0
+Ryan Trevitt,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
+Crysencio Summerville,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Levi Samuels Colwill,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Mateo Kovačić,Man City,MID,Brighton,Man City (A) vs Brighton,0.0,6.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-James Maddison,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,6.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Radu Drăgușin,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Bastien Meupiyou Menadjou,Wolves,DEF,Everton,Wolves (H) vs Everton,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Son Heung-min,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,8.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Will Lankshear,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Claudio Echeverri,Man City,MID,Brighton,Man City (A) vs Brighton,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Sverre Nypan,Man City,MID,Brighton,Man City (A) vs Brighton,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Vitaly Janelt,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
-Kaelan Casey,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Connor Roberts,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
+Christian Nørgaard,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,0.0
+Shurandy Sambo,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Elyh Harrison,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,0.0
 Jordan Beyer,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Lisandro Martínez,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,0.0
@@ -352,10 +353,10 @@ Noussair Mazraoui,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,0.0,4.9,0.0,0.0,0.0
 Gustavo Nunes Fernandes Gomes,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
 Mike Penders,Chelsea,GKP,Fulham,Chelsea (H) vs Fulham,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Owen Dodgson,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Shurandy Sambo,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Sávio Moreira de Oliveira,Man City,MID,Brighton,Man City (A) vs Brighton,0.0,6.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Julio Enciso Espínola,Brighton,MID,Man City,Brighton (H) vs Man City,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
-Dejan Kulusevski,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,6.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Destiny Udogie,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Ashley Phillips,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Leon Chiwome,Wolves,FWD,Everton,Wolves (H) vs Everton,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Carl Rushworth,Brighton,GKP,Man City,Brighton (H) vs Man City,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
 Darwin Núñez Ribeiro,Liverpool,FWD,Arsenal,Liverpool (H) vs Arsenal,0.0,6.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
 Oluwaseun Adewumi,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
@@ -363,346 +364,345 @@ Marcus Bettinelli,Man City,GKP,Brighton,Man City (A) vs Brighton,0.0,4.0,0.0,0.0
 Mamadou Sarr,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Joško Gvardiol,Man City,DEF,Brighton,Man City (A) vs Brighton,0.0,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Kjell Scherpen,Brighton,GKP,Man City,Brighton (H) vs Man City,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
-Leon Chiwome,Wolves,FWD,Everton,Wolves (H) vs Everton,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Joe Hodge,Wolves,MID,Everton,Wolves (H) vs Everton,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Takai Kōta,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Boubacar Traoré,Wolves,MID,Everton,Wolves (H) vs Everton,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Benoît Badiashile Mukinayi,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,0.0,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Luca Koleosho,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Gonçalo Manuel Ganchinho Guedes,Wolves,MID,Everton,Wolves (H) vs Everton,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Yves Bissouma,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Christian Nørgaard,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,0.0
+Son Heung-min,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,8.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Vitor de Oliveira Nunes dos Reis,Man City,DEF,Brighton,Man City (A) vs Brighton,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Yang Min-hyeok,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Pervis Estupiñán Tenorio,Brighton,DEF,Man City,Brighton (H) vs Man City,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Connor Roberts,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Marcus Rashford,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,0.0,7.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,0.0
-Pierre Ekwah Elimby,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Filip Marschall,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Leon Bailey,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Enzo Barrenechea,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Nicolás Domínguez,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Lewis O'Brien,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Marko Stamenić,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Luis Guilherme Lira dos Santos,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Joe Gauci,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Ezri Konsa Ngoyo,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,4.5,3.0,1.5,0.0,65,0,0,0,1,0.0,3,1,3,True,0.0
 Tyler Morton,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
-Leon Bailey,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Eiran Cashin,Brighton,DEF,Man City,Brighton (H) vs Man City,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Matt Turner,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Kaelan Casey,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Aji Alese,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Enzo Barrenechea,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Dennis Cirkin,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Leo Fuhr Hjelde,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Luke O'Nien,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Ezri Konsa Ngoyo,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,4.5,3.0,1.5,0.0,65,0,0,0,1,0.0,3,1,3,True,0.0
+Pierre Ekwah Elimby,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Romaine Mundle,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Crysencio Summerville,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Ryan Trevitt,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
-Nicolás Domínguez,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Malick Yalcouyé,Brighton,MID,Man City,Brighton (H) vs Man City,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
-Ashley Phillips,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Evan Ferguson,Brighton,FWD,Man City,Brighton (H) vs Man City,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
-Toby Collyer,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,0.0
-Destiny Udogie,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Radu Drăgușin,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Odysseas Vlachodimos,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
-Will Lankshear,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Dejan Kulusevski,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,6.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Kai Havertz,Arsenal,FWD,Liverpool,Arsenal (A) vs Liverpool,0.0,7.4,1.0,0.5,0.0,30,0,0,0,0,0.0,1,0,1,False,0.0
-Gabriel Fernando de Jesus,Arsenal,FWD,Liverpool,Arsenal (A) vs Liverpool,0.0,6.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,0.0
-Isaac Hayden,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
-Matt Turner,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Solly March,Brighton,MID,Man City,Brighton (H) vs Man City,0.0,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Toby Collyer,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,0.0
+Gabriel Fernando de Jesus,Arsenal,FWD,Liverpool,Arsenal (A) vs Liverpool,0.0,6.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,0.0
+Julio Enciso Espínola,Brighton,MID,Man City,Brighton (H) vs Man City,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Odysseas Vlachodimos,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
+Joe Gauci,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Filip Marschall,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+James Maddison,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,6.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Evan Ferguson,Brighton,FWD,Man City,Brighton (H) vs Man City,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Carlos Miguel dos Santos Pereira,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Isaac Hayden,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
+Mikey Moore,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Joe White,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
 Alexander Isak,Newcastle,FWD,Leeds,Newcastle (A) vs Leeds,0.0,10.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
 Adam Webster,Brighton,DEF,Man City,Brighton (H) vs Man City,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
 Andrew Moran,Brighton,MID,Man City,Brighton (H) vs Man City,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
 Leander Dendoncker,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Carlos Miguel dos Santos Pereira,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Mikey Moore,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Yang Min-hyeok,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Cheick Doucouré,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Illia Zabarnyi,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Lewis Cook,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Norberto Murara Neto,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Roméo Lavia,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Charlie Crew,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Kendry Páez Andrade,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Malcolm Ebiowei,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Mykhailo Mudryk,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Joe Gelhardt,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Jeremie Frimpong,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.0,5.9,1.0,0.5,0.0006000000000000001,59,0,0,0,0,0.0,1,0,2,True,0.0
 Matheus França de Oliveira,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 David Ozoh,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Nathan Patterson,Everton,DEF,Wolves,Everton (A) vs Wolves,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Chadi Riad Dnanou,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Mads Roerslev Rasmussen,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
 Nicolas Jackson,Chelsea,FWD,Fulham,Chelsea (H) vs Fulham,0.0,6.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Eddie Nketiah,Crystal Palace,FWD,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
+Ethan Ampadu,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.0,5.0,3.0,1.5,0.0,77,0,0,0,0,0.0,3,1,2,True,0.0
+Mykhailo Mudryk,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Luke Harris,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,0.0
+Steven Benda,Fulham,GKP,Chelsea,Fulham (A) vs Chelsea,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,0.0
 Vitalii Mykolenko,Everton,DEF,Wolves,Everton (A) vs Wolves,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Mateo Joseph Fernández-Regatillo,Leeds,FWD,Newcastle,Leeds (H) vs Newcastle,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
-Ethan Ampadu,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.0,5.0,3.0,1.5,0.0,77,0,0,0,0,0.0,3,1,2,True,0.0
 Jarrad Branthwaite,Everton,DEF,Wolves,Everton (A) vs Wolves,0.0,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Luke Harris,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,0.0
+Illia Zabarnyi,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
+Charlie Crew,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
 Christopher Nkunku,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.0,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
-Enes Ünal,Bournemouth,FWD,Spurs,Bournemouth (A) vs Spurs,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Jeremie Frimpong,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,0.0,5.9,1.0,0.5,0.0006000000000000001,59,0,0,0,0,0.0,1,0,2,True,0.0
-Kendry Páez Andrade,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
+Norberto Murara Neto,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
+Lewis Cook,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,0.0,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Luis Díaz Marulanda,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,0.0,8.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
+Jayden Meghoma,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
 Caleb Kporha,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
+Nathan Patterson,Everton,DEF,Wolves,Everton (A) vs Wolves,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
+Mads Roerslev Rasmussen,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
+Roméo Lavia,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,0.0
 Rob Holding,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Zeki Amdouni,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,0.0,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Jayden Meghoma,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,0.0
-Joe Gelhardt,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,0.0
-Steven Benda,Fulham,GKP,Chelsea,Fulham (A) vs Chelsea,0.0,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,0.0
+Enes Ünal,Bournemouth,FWD,Spurs,Bournemouth (A) vs Spurs,0.0,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
 Jenson Metcalfe,Everton,MID,Wolves,Everton (A) vs Wolves,0.0,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,0.0
-Benjamin Lecomte,Fulham,GKP,Chelsea,Fulham (A) vs Chelsea,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
-Karl Darlow,Leeds,GKP,Newcastle,Leeds (H) vs Newcastle,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Brayden Clarke,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Luka Vušković,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Ahmed Abdullahi,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Ismeal Kabia,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Arthur Masuaku,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,100.0
-Nordi Mukiele,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Willy Boly,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Kepa Arrizabalaga Revuelta,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-James Wright,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Brandon Austin,Spurs,GKP,Bournemouth,Spurs (H) vs Bournemouth,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Jason Steele,Brighton,GKP,Man City,Brighton (H) vs Man City,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Illan Meslier,Leeds,GKP,Newcastle,Leeds (H) vs Newcastle,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Andreas Hoelgebaum Pereira,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.07432321428571428,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
-Antonín Kinský,Spurs,GKP,Bournemouth,Spurs (H) vs Bournemouth,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Kadan Young,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Zépiqueno Redmond,Aston Villa,FWD,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Ben Broggio,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Charalampos Kostoulas,Brighton,FWD,Man City,Brighton (H) vs Man City,-0.07432321428571428,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Dane Scarlett,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Simon Moore,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Pedro Cardoso de Lima,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Enso González Medina,Wolves,MID,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Tawanda Chirewa,Wolves,MID,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Daniel Bentley,Wolves,GKP,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Alfie Pond,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Joe Anderson,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Lino da Cruz Sousa,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Angus Gunn,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Tariq Lamptey,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Giorgi Mamardashvili,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,-0.07432321428571428,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Tom McGill,Brighton,GKP,Man City,Brighton (H) vs Man City,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Karl Hein,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,-0.07432321428571428,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Fábio Soares Silva,Wolves,FWD,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Anthony Patterson,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Nathan Fraser,Wolves,FWD,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Tom Edozie,Wolves,MID,Everton,Wolves (H) vs Everton,-0.07432321428571428,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Alex Murphy,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Nathaniel Clyne,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Sven Botman,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.07544821428571429,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Julián Araujo Zúñiga,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Benjamin Arthur,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Manuel Akanji,Man City,DEF,Brighton,Man City (A) vs Brighton,-0.07544821428571429,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Matt Targett,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Michael Obafemi,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Ashley Barnes,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Aaron Ramsdale,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,-0.07544821428571429,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Tom King,Everton,GKP,Wolves,Everton (A) vs Wolves,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Ederson Santana de Moraes,Man City,GKP,Brighton,Man City (A) vs Brighton,-0.07544821428571429,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Aaron Ramsey,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Daniel Adu-Adjei,Bournemouth,FWD,Spurs,Bournemouth (A) vs Spurs,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Julio Soler Barreto,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Wes Foderingham,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Callum Marshall,West Ham,FWD,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Hannes Delcroix,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Ellery Balcombe,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Tom Heaton,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-André Onana,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,-0.07544821428571429,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
-Krisztián Hegyi,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Walter Benítez,Crystal Palace,GKP,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Alphonse Areola,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.07544821428571429,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Matai Akinmboni,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Will Dennis,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Axel Tuanzebe,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
-Iwan Morgan,Brentford,FWD,Sunderland,Brentford (A) vs Sunderland,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Hákon Rafn Valdimarsson,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Joshua Zirkzee,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.07544821428571429,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
-Chido Obi,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Zach Marsh,Crystal Palace,FWD,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.07544821428571429,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Etienne Green,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Tyrell Malacia,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.07544821428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Lamare Bogarde,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.0764482142857143,4.0,0.0,0.0,0.0,16,0,0,1,0,0.0,0,0,3,True,
-Álex Moreno Lopera,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07657321428571429,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Oleksandr Zinchenko,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.07657321428571429,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Patrick Bamford,Leeds,FWD,Newcastle,Leeds (H) vs Newcastle,-0.07657321428571429,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Jorrel Hato,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,-0.07657321428571429,4.9,0.0,0.0,0.0,21,0,0,1,0,0.0,0,0,3,True,
-Taiwo Awoniyi,Nott'm Forest,FWD,West Ham,Nott'm Forest (H) vs West Ham,-0.07657321428571429,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Andrew Robertson,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.07744821428571429,6.0,0.0,0.0,0.0,30,0,0,0,0,0.0,0,0,2,True,
-Rasmus Højlund,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.07769821428571427,6.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Kobbie Mainoo,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.07769821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Yoane Wissa,Brentford,FWD,Sunderland,Brentford (A) vs Sunderland,-0.07769821428571427,7.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,75.0
-Luís Hemir Silva Semedo,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Joël Veltman,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Igor Julio dos Santos de Paulo,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
-Issa Diop,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
-Sam Johnstone,Wolves,GKP,Everton,Wolves (H) vs Everton,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Timothée Pembélé,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Ferdi Kadıoğlu,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.4,0.0,0.0,0.0,44,0,0,2,0,0.0,0,0,2,True,
-Zak Johnson,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Yerson Mosquera Valdelamar,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Jakub Kiwior,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.08244821428571426,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Abdallah Sima,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08244821428571426,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Niall Huggins,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Diego Coppola,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Samuel Amissah,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
-Olivier Boscagli,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Tommy Setford,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Yasin Özcan,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Saša Kalajdžić,Wolves,FWD,Everton,Wolves (H) vs Everton,-0.08244821428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Milan Aleksić,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Jacob Slater,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Nazarii Rusyn,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Maldini Kacurri,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Ben Davies,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Albert Sambi Lokonga,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Nectarios Triantis,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Fábio Ferreira Vieira,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.08244821428571426,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Manor Solomon,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,-0.08244821428571426,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,50.0
-Jay Matete,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Bryan Gil Salvatierra,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Harrison Jones,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Josh Nichols,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Alan Browne,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Abdoullah Ba,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Andrés García,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,25.0
-Ian Poveda-Ocampo,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Dan Neil,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Charlie Tasker,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Callum Olusesi,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Facundo Buonanotte,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Blondy Nna Noukeu,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-David Mota Veiga Teixeira do Carmo,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Adrian Mazilu,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Harrison Reed,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
-Filip Jörgensen,Chelsea,GKP,Fulham,Chelsea (H) vs Fulham,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Alex Cairns,Leeds,GKP,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Jamaldeen Jimoh-Aloba,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Rhys Williams,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Amara Nallo,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Konstantinos Tsimikas,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Jaka Bijol,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
-Freddie Woodman,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Largie Ramazani,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Sebastiaan Bornauw,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
-Ármin Pécsi,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-James Justin,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Dominic Calvert-Lewin,Leeds,FWD,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,75.0
-Triston Rowe,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Tyrique George,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,-0.08244821428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Bradley Burrowes,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Sam Proctor,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Gabriel Słonina,Chelsea,GKP,Fulham,Chelsea (H) vs Fulham,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Darko Gyabi,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Joe Knight,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Calvin Ramsay,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Jair Paula da Cunha Filho,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Martial Godo,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
-James McConnell,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Douglas Luiz Soares de Paulo,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,-0.08244821428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Stefan Bajčetić Maquieira,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Aarón Anselmino,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Samuel Iling-Junior,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Tom Cairney,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.08244821428571426,5.0,0.0,0.0,0.0,24,0,0,1,0,0.0,0,0,2,False,
-Eric da Silva Moreira,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Jeremy Sarmiento Morante,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Sam Greenwood,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Tom Watson,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08244821428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
-Dário Luís Essugo,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Isaac Schmidt,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Trey Nyoni,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Lewis Dobbin,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Felipe Rodrigues da Silva,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Giovanni Leoni,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08244821428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Omar Richards,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08244821428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Zach Abbott,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08244821428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
-Ross Barkley,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08244821428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,25.0
-Conor Bradley,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08344821428571426,5.0,0.0,0.0,0.0,10,0,0,1,0,0.0,0,0,2,True,50.0
-Maxwel Cornet,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08357321428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Harry Amass,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Matthew Cox,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-George Earthy,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,100.0
-Kim Ji-soo,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Rio Cardines,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Harry Tyrer,Everton,GKP,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Lewis Orford,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Diego León Blanco,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Bashir Humphreys,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
-Ollie Scarles,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Alejandro Garnacho Ferreyra,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,6.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Tyler Fredricson,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Mark Travers,Everton,GKP,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Darko Churlinov,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Dermot Mee,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Enock Agyei,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Daichi Kamada,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,25.0
-Jaydon Banel,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Julian Eyestone,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Stefan Ortega Moreno,Man City,GKP,Brighton,Man City (A) vs Brighton,-0.08357321428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Asher Agbinone,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Naouirou Ahamada,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Konstantinos Mavropanos,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08357321428571426,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Jesurun Rak-Sakyi,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Lucas Pires Silva,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-İlkay Gündoğan,Man City,MID,Brighton,Man City (A) vs Brighton,-0.08357321428571426,6.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Kaden Rodney,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Manuel Benson Hedilazio,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Franco Umeh-Chibueze,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Kalvin Phillips,Man City,MID,Brighton,Man City (A) vs Brighton,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Callan McKenna,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Alex Paulsen,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Antony dos Santos,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Jack Moorhouse,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
-Harrison Ashby,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Emil Krafth,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Emerson Palmieri dos Santos,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08357321428571426,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Miodrag Pivaš,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Remi Matthews,Crystal Palace,GKP,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Martin Sherif,Everton,FWD,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Antoñito Cordero Campillo,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,100.0
-Joe Willock,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,100.0
-Tyler Onyango,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Garang Kuol,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Elijah Campbell,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Tyler Dibling,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08357321428571426,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Chris Mepham,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Sean Neave,Newcastle,FWD,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Zain Silcott-Duberry,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Seung-Soo Park,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Dominic Sadi,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Benjamin Fredrick,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Yunus Emre Konak,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Myles Peart-Harris,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Philip Billing,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Romain Faivre,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Luis Sinisterra Lucumí,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,100.0
-Jamaal Lascelles,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Mike Trésor Ndayishimiye,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Isaac Heath,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Reece Welch,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Václav Hladký,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Jadon Sancho,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Romelle Donovan,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Jayce Fitzgerald,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Jack Fletcher,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Remy Rees-Dottin,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Sékou Koné,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
-Séamus Coleman,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Paris Maghoma,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,75.0
-Ben Gannon-Doak,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Ethan Wheatley,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
-Coby Ebere,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Roman Dixon,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Owen Bevan,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Mark Gillespie,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,-0.08357321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
-Borna Sosa,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08357321428571426,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Callum Bates,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Max Weiß,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,-0.08357321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Stefanos Tzimas,Brighton,FWD,Man City,Brighton (H) vs Man City,-0.08469821428571427,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Reiss Nelson,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.08469821428571427,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
-Jayden Danns,Liverpool,FWD,Arsenal,Liverpool (H) vs Arsenal,-0.08469821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
-Youssef Ramalho Chermiti,Everton,FWD,Wolves,Everton (A) vs Wolves,-0.08582321428571427,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Nico O'Reilly,Man City,DEF,Brighton,Man City (A) vs Brighton,-0.08582321428571427,4.9,0.0,0.0,0.0,24,0,0,1,0,0.0,0,0,3,False,
-Edson Álvarez Velázquez,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08582321428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
-Armando Broja,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,-0.08582321428571427,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
-Ethan Pinnock,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.08582321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,75.0
-Adam Aznou,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08582321428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
-Matt Doherty,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.09814821428571426,4.5,0.0,0.0,0.0,180,0,0,2,0,0.0,0,0,3,True,
-Toti Gomes,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.10074107142857137,4.5,-1.0,-1.0,0.0,138,0,0,0,1,0.0,-2,0,3,True,
-Maximilian Kilman,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.1116160714285714,4.4,0.0,0.0,0.011399999999999999,180,0,0,1,0,0.0,0,0,3,False,
+Tyrell Malacia,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Anthony Patterson,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Ismeal Kabia,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Julián Araujo Zúñiga,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Luka Vušković,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Charalampos Kostoulas,Brighton,FWD,Man City,Brighton (H) vs Man City,-0.07932321428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Hannes Delcroix,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Alphonse Areola,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.07932321428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Antonín Kinský,Spurs,GKP,Bournemouth,Spurs (H) vs Bournemouth,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Aaron Ramsdale,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,-0.07932321428571427,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Sven Botman,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.07932321428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Jason Steele,Brighton,GKP,Man City,Brighton (H) vs Man City,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Dane Scarlett,Spurs,FWD,Bournemouth,Spurs (H) vs Bournemouth,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Illan Meslier,Leeds,GKP,Newcastle,Leeds (H) vs Newcastle,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Daniel Adu-Adjei,Bournemouth,FWD,Spurs,Bournemouth (A) vs Spurs,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Ahmed Abdullahi,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Joshua Zirkzee,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.07932321428571427,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
+Iwan Morgan,Brentford,FWD,Sunderland,Brentford (A) vs Sunderland,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Brayden Clarke,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Kepa Arrizabalaga Revuelta,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Kadan Young,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Giorgi Mamardashvili,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,-0.07932321428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Nathan Fraser,Wolves,FWD,Everton,Wolves (H) vs Everton,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Fábio Soares Silva,Wolves,FWD,Everton,Wolves (H) vs Everton,-0.07932321428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Karl Hein,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Aaron Ramsey,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Ederson Santana de Moraes,Man City,GKP,Brighton,Man City (A) vs Brighton,-0.07932321428571427,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Enso González Medina,Wolves,MID,Everton,Wolves (H) vs Everton,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Michael Obafemi,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Manuel Akanji,Man City,DEF,Brighton,Man City (A) vs Brighton,-0.07932321428571427,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Tom Edozie,Wolves,MID,Everton,Wolves (H) vs Everton,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Tawanda Chirewa,Wolves,MID,Everton,Wolves (H) vs Everton,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Joe Anderson,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Nathaniel Clyne,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Alfie Pond,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Pedro Cardoso de Lima,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Zépiqueno Redmond,Aston Villa,FWD,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Willy Boly,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.07932321428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+André Onana,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,-0.07932321428571427,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
+Callum Marshall,West Ham,FWD,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.07932321428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Tariq Lamptey,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.07932321428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Tom McGill,Brighton,GKP,Man City,Brighton (H) vs Man City,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Daniel Bentley,Wolves,GKP,Everton,Wolves (H) vs Everton,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Walter Benítez,Crystal Palace,GKP,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+James Wright,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Simon Moore,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Matt Targett,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Tom King,Everton,GKP,Wolves,Everton (A) vs Wolves,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Benjamin Arthur,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Alex Murphy,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Ben Broggio,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08082321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Tom Heaton,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Angus Gunn,Nott'm Forest,GKP,West Ham,Nott'm Forest (H) vs West Ham,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Will Dennis,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Brandon Austin,Spurs,GKP,Bournemouth,Spurs (H) vs Bournemouth,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Etienne Green,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Nordi Mukiele,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Arthur Masuaku,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,100.0
+Julio Soler Barreto,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Karl Darlow,Leeds,GKP,Newcastle,Leeds (H) vs Newcastle,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Benjamin Lecomte,Fulham,GKP,Chelsea,Fulham (A) vs Chelsea,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
+Ellery Balcombe,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Krisztián Hegyi,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Wes Foderingham,West Ham,GKP,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Matai Akinmboni,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Lino da Cruz Sousa,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Hákon Rafn Valdimarsson,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.08082321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Jorrel Hato,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,-0.08157321428571426,4.9,0.0,0.0,0.0,21,0,0,1,0,0.0,0,0,3,True,
+Álex Moreno Lopera,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08157321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Taiwo Awoniyi,Nott'm Forest,FWD,West Ham,Nott'm Forest (H) vs West Ham,-0.08157321428571426,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Rasmus Højlund,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.08157321428571426,6.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Patrick Bamford,Leeds,FWD,Newcastle,Leeds (H) vs Newcastle,-0.08157321428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Kobbie Mainoo,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08157321428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Ashley Barnes,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,-0.08157321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Oleksandr Zinchenko,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.08157321428571426,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Yoane Wissa,Brentford,FWD,Sunderland,Brentford (A) vs Sunderland,-0.08157321428571426,7.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,75.0
+Chido Obi,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.08157321428571426,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Axel Tuanzebe,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.08157321428571426,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
+Lamare Bogarde,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08294821428571428,4.0,0.0,0.0,0.0,16,0,0,1,0,0.0,0,0,3,True,
+Andrew Robertson,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08507321428571427,5.9,0.0,0.0,0.0,30,0,0,0,0,0.0,0,0,2,True,
+Andrés García,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,25.0
+Lewis Orford,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Joël Veltman,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08544821428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Issa Diop,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
+Sam Johnstone,Wolves,GKP,Everton,Wolves (H) vs Everton,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Martin Sherif,Everton,FWD,Wolves,Everton (A) vs Wolves,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Timothée Pembélé,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Abdoullah Ba,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Zak Johnson,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Niall Huggins,Sunderland,DEF,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Romain Faivre,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Jakub Kiwior,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.08544821428571427,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Olivier Boscagli,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Saša Kalajdžić,Wolves,FWD,Everton,Wolves (H) vs Everton,-0.08544821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Ferdi Kadıoğlu,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08544821428571427,4.4,0.0,0.0,0.0,44,0,0,2,0,0.0,0,0,2,True,
+Harrison Jones,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Alan Browne,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Ben Davies,Spurs,DEF,Bournemouth,Spurs (H) vs Bournemouth,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Albert Sambi Lokonga,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Callum Bates,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Ethan Pinnock,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.08544821428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,75.0
+Borna Sosa,Crystal Palace,DEF,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08544821428571427,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Roman Dixon,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Nazarii Rusyn,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Luís Hemir Silva Semedo,Sunderland,FWD,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Callum Olusesi,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Remy Rees-Dottin,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Zain Silcott-Duberry,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Josh Nichols,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Emerson Palmieri dos Santos,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08544821428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Charlie Tasker,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Maldini Kacurri,Arsenal,DEF,Liverpool,Arsenal (A) vs Liverpool,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Nectarios Triantis,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Jay Matete,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Mark Travers,Everton,GKP,Wolves,Everton (A) vs Wolves,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Séamus Coleman,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Facundo Buonanotte,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08544821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Sékou Koné,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Tyler Fredricson,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Isaac Schmidt,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Amara Nallo,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Lewis Dobbin,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08544821428571427,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Konstantinos Tsimikas,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08544821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Miodrag Pivaš,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Zach Abbott,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Harry Amass,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+İlkay Gündoğan,Man City,MID,Brighton,Man City (A) vs Brighton,-0.08544821428571427,6.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Felipe Rodrigues da Silva,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Dominic Calvert-Lewin,Leeds,FWD,Newcastle,Leeds (H) vs Newcastle,-0.08544821428571427,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,75.0
+Harrison Ashby,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Diego León Blanco,Man Utd,DEF,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Sean Neave,Newcastle,FWD,Leeds,Newcastle (A) vs Leeds,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Harrison Reed,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
+Rhys Williams,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Ross Barkley,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08544821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,25.0
+Yunus Emre Konak,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Lucas Pires Silva,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Romelle Donovan,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Filip Jörgensen,Chelsea,GKP,Fulham,Chelsea (H) vs Fulham,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Aarón Anselmino,Chelsea,DEF,Fulham,Chelsea (H) vs Fulham,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Ethan Wheatley,Man Utd,FWD,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
+Jadon Sancho,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Philip Billing,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08544821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Antony dos Santos,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,5.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Darko Gyabi,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Stefan Ortega Moreno,Man City,GKP,Brighton,Man City (A) vs Brighton,-0.08544821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Eric da Silva Moreira,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Alejandro Garnacho Ferreyra,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08544821428571427,6.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Sam Greenwood,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,-0.08544821428571427,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Alex Paulsen,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,-0.08544821428571427,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Seung-Soo Park,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08544821428571427,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Maxwel Cornet,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08694821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Largie Ramazani,Leeds,MID,Newcastle,Leeds (H) vs Newcastle,-0.08694821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Gabriel Słonina,Chelsea,GKP,Fulham,Chelsea (H) vs Fulham,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Jacob Slater,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Bashir Humphreys,Burnley,DEF,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
+Harry Tyrer,Everton,GKP,Wolves,Everton (A) vs Wolves,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Ollie Scarles,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+George Earthy,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,100.0
+Konstantinos Mavropanos,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08694821428571425,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Kim Ji-soo,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Václav Hladký,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Matthew Cox,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Paris Maghoma,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,75.0
+Rio Cardines,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Freddie Woodman,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+James McConnell,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Daichi Kamada,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,25.0
+Trey Nyoni,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,-0.08694821428571425,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Jaydon Banel,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Giovanni Leoni,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Julian Eyestone,Brentford,GKP,Sunderland,Brentford (A) vs Sunderland,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Calvin Ramsay,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Asher Agbinone,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Tommy Setford,Arsenal,GKP,Liverpool,Arsenal (A) vs Liverpool,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Naouirou Ahamada,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Diego Coppola,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Jesurun Rak-Sakyi,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Dermot Mee,Man Utd,GKP,Burnley,Man Utd (H) vs Burnley,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Darko Churlinov,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Enock Agyei,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Kaden Rodney,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Yerson Mosquera Valdelamar,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Franco Umeh-Chibueze,Crystal Palace,MID,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Ármin Pécsi,Liverpool,GKP,Arsenal,Liverpool (H) vs Arsenal,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Jayce Fitzgerald,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+James Justin,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Igor Julio dos Santos de Paulo,Brighton,DEF,Man City,Brighton (H) vs Man City,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
+Kalvin Phillips,Man City,MID,Brighton,Man City (A) vs Brighton,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Callan McKenna,Bournemouth,GKP,Spurs,Bournemouth (A) vs Spurs,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Manuel Benson Hedilazio,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Jack Moorhouse,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,100.0
+Jack Fletcher,Man Utd,MID,Burnley,Man Utd (H) vs Burnley,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,True,
+Tyler Onyango,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Elijah Campbell,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Ben Gannon-Doak,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Jamaldeen Jimoh-Aloba,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Alex Cairns,Leeds,GKP,Newcastle,Leeds (H) vs Newcastle,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Adrian Mazilu,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Joe Knight,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+David Mota Veiga Teixeira do Carmo,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Jair Paula da Cunha Filho,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Omar Richards,Nott'm Forest,DEF,West Ham,Nott'm Forest (H) vs West Ham,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Dominic Sadi,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Benjamin Fredrick,Brentford,DEF,Sunderland,Brentford (A) vs Sunderland,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Ian Poveda-Ocampo,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08694821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Dan Neil,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08694821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Abdallah Sima,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08694821428571425,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Milan Aleksić,Sunderland,MID,Brentford,Sunderland (H) vs Brentford,-0.08694821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Myles Peart-Harris,Brentford,MID,Sunderland,Brentford (A) vs Sunderland,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Martial Godo,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
+Dário Luís Essugo,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Tom Watson,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
+Jeremy Sarmiento Morante,Brighton,MID,Man City,Brighton (H) vs Man City,-0.08694821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Tom Cairney,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.08694821428571425,4.9,0.0,0.0,0.0,24,0,0,1,0,0.0,0,0,2,False,
+Samuel Iling-Junior,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08694821428571425,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Samuel Amissah,Fulham,DEF,Chelsea,Fulham (A) vs Chelsea,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
+Luis Sinisterra Lucumí,Bournemouth,MID,Spurs,Bournemouth (A) vs Spurs,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,100.0
+Yasin Özcan,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Blondy Nna Noukeu,Sunderland,GKP,Brentford,Sunderland (H) vs Brentford,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Stefan Bajčetić Maquieira,Liverpool,MID,Arsenal,Liverpool (H) vs Arsenal,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Chris Mepham,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Tyler Dibling,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08694821428571425,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Garang Kuol,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Isaac Heath,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Douglas Luiz Soares de Paulo,Nott'm Forest,MID,West Ham,Nott'm Forest (H) vs West Ham,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Reece Welch,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Bryan Gil Salvatierra,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,-0.08694821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Manor Solomon,Spurs,MID,Bournemouth,Spurs (H) vs Bournemouth,-0.08694821428571425,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,50.0
+Tyrique George,Chelsea,MID,Fulham,Chelsea (H) vs Fulham,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Owen Bevan,Bournemouth,DEF,Spurs,Bournemouth (A) vs Spurs,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Fábio Ferreira Vieira,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.08694821428571425,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Mark Gillespie,Newcastle,GKP,Leeds,Newcastle (A) vs Leeds,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Max Weiß,Burnley,GKP,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Sam Proctor,Aston Villa,GKP,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Bradley Burrowes,Aston Villa,MID,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Coby Ebere,Everton,MID,Wolves,Everton (A) vs Wolves,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Triston Rowe,Aston Villa,DEF,Crystal Palace,Aston Villa (H) vs Crystal Palace,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,True,
+Emil Krafth,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Remi Matthews,Crystal Palace,GKP,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Jaka Bijol,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
+Joe Willock,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,100.0
+Antoñito Cordero Campillo,Newcastle,MID,Leeds,Newcastle (A) vs Leeds,-0.08694821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,100.0
+Sebastiaan Bornauw,Leeds,DEF,Newcastle,Leeds (H) vs Newcastle,-0.08694821428571425,4.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,100.0
+Mike Trésor Ndayishimiye,Burnley,MID,Man Utd,Burnley (A) vs Man Utd,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Jamaal Lascelles,Newcastle,DEF,Leeds,Newcastle (A) vs Leeds,-0.08694821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,4,False,
+Edson Álvarez Velázquez,West Ham,MID,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.08769821428571425,4.9,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Stefanos Tzimas,Brighton,FWD,Man City,Brighton (H) vs Man City,-0.08769821428571425,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Nico O'Reilly,Man City,DEF,Brighton,Man City (A) vs Brighton,-0.08769821428571425,4.9,0.0,0.0,0.0,24,0,0,1,0,0.0,0,0,3,False,
+Youssef Ramalho Chermiti,Everton,FWD,Wolves,Everton (A) vs Wolves,-0.08769821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Reiss Nelson,Arsenal,MID,Liverpool,Arsenal (A) vs Liverpool,-0.08769821428571425,5.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,1,False,
+Jayden Danns,Liverpool,FWD,Arsenal,Liverpool (H) vs Arsenal,-0.08769821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,True,
+Adam Aznou,Everton,DEF,Wolves,Everton (A) vs Wolves,-0.08769821428571425,4.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
+Andreas Hoelgebaum Pereira,Fulham,MID,Chelsea,Fulham (A) vs Chelsea,-0.08769821428571425,5.4,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,2,False,
+Zach Marsh,Crystal Palace,FWD,Aston Villa,Crystal Palace (A) vs Aston Villa,-0.08769821428571425,4.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,
+Armando Broja,Burnley,FWD,Man Utd,Burnley (A) vs Man Utd,-0.08769821428571425,5.5,0.0,0.0,0.0,0,0,0,0,0,0.0,0,0,3,False,75.0
+Conor Bradley,Liverpool,DEF,Arsenal,Liverpool (H) vs Arsenal,-0.09057321428571426,5.0,0.0,0.0,0.0,10,0,0,1,0,0.0,0,0,2,True,50.0
+Matt Doherty,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.10114821428571423,4.5,0.0,0.0,0.0,180,0,0,2,0,0.0,0,0,3,True,
+Toti Gomes,Wolves,DEF,Everton,Wolves (H) vs Everton,-0.10336607142857135,4.5,-1.0,-1.0,0.0,138,0,0,0,1,0.0,-2,0,3,True,
+Maximilian Kilman,West Ham,DEF,Nott'm Forest,West Ham (A) vs Nott'm Forest,-0.1101160714285714,4.4,0.0,0.0,0.011399999999999999,180,0,0,1,0,0.0,0,0,3,False,
