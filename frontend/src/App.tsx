@@ -135,24 +135,79 @@ function App() {
         meta = { gameweek: 0, csv_file: 'latest.csv', total_players: players.length, filtered_players: players.length }
       }
 
-      // Enrich images from FPL API
+      // Enrich images from FPL API using image proxy to bypass CORS
       try {
         console.log('[fetchData] enriching images from FPL API')
         const respImg = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/')
         if (respImg.ok) {
           const fpl = await respImg.json()
           const nameToCode: Record<string, number> = {}
+          console.log('[fetchData] FPL API returned', fpl?.elements?.length, 'players')
+
           ;(fpl?.elements || []).forEach((e: any) => {
             const full = `${e.first_name} ${e.second_name}`.trim()
             nameToCode[full] = e.code
+
+            // Also add last name only mapping for better matching
+            if (e.second_name) {
+              nameToCode[e.second_name] = e.code
+            }
           })
+
+          console.log('[fetchData] Created name mapping for', Object.keys(nameToCode).length, 'players')
+
           players = players.map((p: any) => {
-            const code = nameToCode[p.name] || 0
-            const image_url = code
-              ? `https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png`
-              : undefined
+            let code = nameToCode[p.name] || 0
+
+            // Try fuzzy matching if exact match fails
+            if (!code && p.name) {
+              // Try to find by last name
+              const nameParts = p.name.split(' ')
+              const lastName = nameParts[nameParts.length - 1]
+              code = nameToCode[lastName] || 0
+
+              // Try to find by partial match
+              if (!code) {
+                const matchKey = Object.keys(nameToCode).find(key =>
+                  key.toLowerCase().includes(lastName.toLowerCase()) ||
+                  p.name.toLowerCase().includes(key.toLowerCase().split(' ').pop()?.toLowerCase() || '')
+                )
+                if (matchKey) {
+                  code = nameToCode[matchKey]
+                }
+              }
+            }
+
+            let image_url = undefined
+            if (code) {
+              // Use image proxy service to bypass CORS issues - this works on Vercel!
+              image_url = `https://images.weserv.nl/?url=resources.premierleague.com/premierleague/photos/players/250x250/p${code}.png&w=250&h=250&fit=cover&a=attention`
+              console.log(`Generated proxied image for ${p.name}: code ${code}`)
+            } else {
+              console.log(`No player code found for ${p.name}`)
+              // Fallback to generated avatar for players not found
+              const nameParts = (p.name || '').split(' ')
+              const initials = nameParts.length > 1
+                ? `${nameParts[0][0]}${nameParts[nameParts.length - 1][0]}`.toUpperCase()
+                : (nameParts[0] || '?').substring(0, 2).toUpperCase()
+
+              const getPositionColor = (position: string) => {
+                switch (position) {
+                  case 'GKP': return { bg: 'f56565', text: 'ffffff' }
+                  case 'DEF': return { bg: '38a169', text: 'ffffff' }
+                  case 'MID': return { bg: '3182ce', text: 'ffffff' }
+                  case 'FWD': return { bg: 'd69e2e', text: 'ffffff' }
+                  default: return { bg: '718096', text: 'ffffff' }
+                }
+              }
+
+              const colors = getPositionColor(p.position)
+              image_url = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(p.name)}&backgroundColor=${colors.bg}&textColor=${colors.text}&fontSize=40`
+            }
+
             return { ...p, player_code: code, image_url }
           })
+          console.log('[fetchData] enriched images for', players.filter(p => p.image_url).length, 'players')
         } else {
           console.warn('[fetchData] FPL image API not ok', respImg.status)
         }
@@ -400,8 +455,8 @@ function App() {
             <div className="modal-header">
               <div className="player-info">
                 {selectedPlayer.image_url && (
-                  <img 
-                    src={selectedPlayer.image_url} 
+                  <img
+                    src={selectedPlayer.image_url}
                     alt={selectedPlayer.name}
                     className="player-image"
                     onError={(e) => {

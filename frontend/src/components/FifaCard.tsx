@@ -7,6 +7,7 @@ interface Player {
   predicted_points: number
   now_cost: number
   image_url?: string
+  player_code?: number
 }
 
 interface FifaCardProps {
@@ -31,25 +32,30 @@ const FifaCard: React.FC<FifaCardProps> = ({ player, onClick }) => {
     return rating
   }
 
+  const [imageError, setImageError] = React.useState(false)
+
+  const handleImageError = () => {
+    setImageError(true)
+  }
+
   return (
-    <div 
-      className="fifa-card" 
+    <div
+      className="fifa-card"
       onClick={onClick}
     >
       <div className="fifa-player-image">
-        {player.image_url ? (
-          <img 
-            src={player.image_url} 
+        {player.image_url && !imageError ? (
+          <img
+            src={player.image_url}
             alt={player.name}
-            onError={(e) => {
-              e.currentTarget.style.display = 'none'
-              e.currentTarget.nextElementSibling!.style.display = 'flex'
-            }}
+            onError={handleImageError}
+            style={{ maxWidth: '100%', maxHeight: '100%', borderRadius: '8px' }}
           />
-        ) : null}
-        <div className="fifa-placeholder" style={{ display: player.image_url ? 'none' : 'flex' }}>
-          <span>⚽</span>
-        </div>
+        ) : (
+          <div className="fifa-placeholder" style={{ display: 'flex' }}>
+            <span>{player.position}</span>
+          </div>
+        )}
       </div>
       
       <div className="fifa-player-info">
