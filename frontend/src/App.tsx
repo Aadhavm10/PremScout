@@ -108,34 +108,39 @@ function App() {
       let players: Player[] = []
       let meta: Partial<ApiResponse> = {}
       try {
-        // Try local API first (development mode)
-        const apiUrl = `http://localhost:5000/api/predictions?t=${Date.now()}`
-        console.log('[fetchData] requesting local API', apiUrl)
-        const apiResp = await fetch(apiUrl)
-        console.log('[fetchData] local API response', { ok: apiResp.ok, status: apiResp.status })
-        if (apiResp.ok) {
-          const json = await apiResp.json()
-          console.log('[fetchData] local API parsed', { count: (json?.players || []).length })
-          meta = {
-            gameweek: json.gameweek,
-            csv_file: json.csv_file,
-            total_players: json.total_players,
-            filtered_players: json.filtered_players,
-            last_updated: json.last_updated,
-            players: []
-          }
-          players = json.players || []
-        } else {
-          console.warn('[fetchData] local API not available, trying static JSON')
+        // Check if we're in development (localhost) vs production
+        const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
 
-          // Fallback to local static predictions.json
+        if (isDevelopment) {
+          // Try local API first (development mode only)
+          const apiUrl = `http://localhost:5000/api/predictions?t=${Date.now()}`
+          console.log('[fetchData] requesting local API', apiUrl)
+          const apiResp = await fetch(apiUrl)
+          console.log('[fetchData] local API response', { ok: apiResp.ok, status: apiResp.status })
+          if (apiResp.ok) {
+            const json = await apiResp.json()
+            console.log('[fetchData] local API parsed', { count: (json?.players || []).length })
+            meta = {
+              gameweek: json.gameweek,
+              csv_file: json.csv_file,
+              total_players: json.total_players,
+              filtered_players: json.filtered_players,
+              last_updated: json.last_updated,
+              players: []
+            }
+            players = json.players || []
+          } else {
+            throw new Error('local API not available')
+          }
+        } else {
+          // Production mode - try static predictions.json
           const localUrl = `/predictions.json?t=${Date.now()}`
-          console.log('[fetchData] requesting local JSON', localUrl)
+          console.log('[fetchData] requesting static JSON', localUrl)
           const local = await fetch(localUrl)
-          console.log('[fetchData] local JSON response', { ok: local.ok, status: local.status })
+          console.log('[fetchData] static JSON response', { ok: local.ok, status: local.status })
           if (local.ok) {
             const json = await local.json()
-            console.log('[fetchData] local JSON parsed', { count: (json?.players || []).length })
+            console.log('[fetchData] static JSON parsed', { count: (json?.players || []).length })
             meta = {
               gameweek: json.gameweek,
               csv_file: json.csv_file,
@@ -147,8 +152,8 @@ function App() {
             players = json.players || []
           } else {
             const txt = await local.text().catch(() => '')
-            console.warn('[fetchData] local JSON not available; body=', txt.slice(0,200))
-            throw new Error('local sources not available')
+            console.warn('[fetchData] static JSON not available; body=', txt.slice(0,200))
+            throw new Error('static JSON not available')
           }
         }
       } catch {

@@ -55,14 +55,21 @@ jobs:
             rows = list(csv.DictReader(f))
         numeric = {'predicted_points','now_cost','points_per_game','form','total_points',
                    'expected_goals','minutes','assists','goals_scored','yellow_cards',
-                   'red_cards','saves_per_90','clean_sheets','opponent_difficulty'}
+                   'red_cards','saves_per_90','clean_sheets','opponent_difficulty',
+                   'player_code','chance_of_playing_this_round'}
         for r in rows:
             for k in list(r):
                 if k in numeric:
                     try:
-                        r[k] = float(r[k])
+                        val = r[k]
+                        if val == '' or val == 'NaN' or val is None:
+                            r[k] = None
+                        else:
+                            r[k] = float(val)
                     except:
-                        r[k] = 0.0
+                        r[k] = None
+                elif r[k] == '' or r[k] == 'NaN':
+                    r[k] = None
         gameweek = int(os.path.basename(latest).split('_')[1])
         os.makedirs('frontend/public', exist_ok=True)
         out = {
@@ -73,7 +80,8 @@ jobs:
           "last_updated": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
           "players": rows
         }
-        with open('frontend/public/predictions.json','w') as f: json.dump(out, f)
+        with open('frontend/public/predictions.json','w') as f: json.dump(out, f, indent=2)
+        print(f"✅ Created predictions.json with {len(rows)} players including image data")
         PY
         
     - name: Commit and push changes
