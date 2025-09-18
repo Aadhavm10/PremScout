@@ -109,25 +109,30 @@ const TeamOfTheWeek: React.FC<TeamOfTheWeekProps> = ({ players, onPlayerClick })
     ...bestEleven.fwd
   ].reduce((sum, player) => sum + player.now_cost, 0)
 
+  const averagePoints = totalPoints / 11
+
   return (
     <div className="team-of-the-week">
       <div className="totw-header">
-        <div className="totw-title-section">
-          <h1>PremScout - FPL Predictions</h1>
-          <h2>Team of the Week</h2>
-        </div>
-        <div className="totw-stats">
-          <div className="totw-stat">
-            <span className="totw-stat-value">{totalPoints.toFixed(1)}</span>
-            <span className="totw-stat-label">Total Points</span>
+        <div className="totw-stats-compact">
+          <div className="totw-stat-compact">
+            <span className="stat-value">{totalPoints.toFixed(1)}</span>
+            <span className="stat-label">Points</span>
           </div>
-          <div className="totw-stat">
-            <span className="totw-stat-value">£{totalCost.toFixed(1)}m</span>
-            <span className="totw-stat-label">Total Cost</span>
+          <div className="stat-separator">•</div>
+          <div className="totw-stat-compact">
+            <span className="stat-value">£{totalCost.toFixed(1)}m</span>
+            <span className="stat-label">Cost</span>
           </div>
-          <div className="totw-stat">
-            <span className="totw-stat-value">{bestEleven.formation}</span>
-            <span className="totw-stat-label">Best Formation</span>
+          <div className="stat-separator">•</div>
+          <div className="totw-stat-compact">
+            <span className="stat-value">{averagePoints.toFixed(1)}</span>
+            <span className="stat-label">Avg</span>
+          </div>
+          <div className="stat-separator">•</div>
+          <div className="totw-stat-compact">
+            <span className="stat-value">{bestEleven.formation}</span>
+            <span className="stat-label">Formation</span>
           </div>
         </div>
       </div>

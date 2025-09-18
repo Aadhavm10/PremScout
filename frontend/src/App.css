@@ -134,9 +134,10 @@ body {
 
 .column-toggles summary {
   cursor: pointer;
-  font-weight: 500;
-  color: #4a5568;
+  font-weight: 600;
+  color: #ffffff;
   padding: 8px 0;
+  font-size: 14px;
 }
 
 .column-grid {
@@ -145,8 +146,10 @@ body {
   gap: 8px;
   margin-top: 10px;
   padding: 15px;
-  background-color: #f7fafc;
-  border-radius: 6px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .column-toggle {
@@ -155,6 +158,16 @@ body {
   gap: 6px;
   font-size: 13px;
   cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.column-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffd700;
 }
 
 .column-toggle input {
@@ -586,51 +599,12 @@ body {
 
 .totw-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  padding: 40px 50px;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(26, 54, 93, 0.85) 50%, rgba(45, 55, 72, 0.85) 100%);
-  border-radius: 25px;
-  backdrop-filter: blur(20px);
-  border: 3px solid;
-  border-image: linear-gradient(45deg, rgba(255, 215, 0, 0.5), rgba(255, 255, 255, 0.3), rgba(99, 179, 237, 0.5)) 1;
-  box-shadow: 
-    0 25px 50px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    0 0 60px rgba(255, 215, 0, 0.1);
+  margin-bottom: 30px;
   position: relative;
-  overflow: hidden;
 }
 
-.totw-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.05), transparent);
-  pointer-events: none;
-}
-
-.totw-header::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
-  transform: rotate(45deg);
-  pointer-events: none;
-  animation: shimmer 3s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
 
 .totw-title-section {
   text-align: left;
@@ -772,6 +746,49 @@ body {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 2;
+}
+
+/* Compact Stats Layout */
+.totw-stats-compact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.totw-stat-compact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffa500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.stat-separator {
+  color: rgba(255, 215, 0, 0.6);
+  font-size: 1.2rem;
+  margin: 0 5px;
 }
 
 .football-pitch {

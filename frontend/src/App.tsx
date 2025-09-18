@@ -74,6 +74,7 @@ const columnConfig = [
 
 function App() {
   const [data, setData] = useState<ApiResponse | null>(null)
+  const [filteredData, setFilteredData] = useState<ApiResponse | null>(null)
   const [teams, setTeams] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -234,35 +235,24 @@ function App() {
 
       console.log('[fetchData] prepared image sources for', players.length, 'players')
 
-      // Filters
-      const before = players.length
-      if (teamFilter) players = players.filter(p => p.team?.toLowerCase().includes(teamFilter.toLowerCase()))
-      if (positionFilter) players = players.filter(p => p.position === positionFilter)
-      if (searchFilter) players = players.filter(p => (p.name || '').toLowerCase().includes(searchFilter.toLowerCase()))
-      console.log('[fetchData] filtered', { before, after: players.length })
-
-      // Sorting
-      players.sort((a: any, b: any) => {
-        const av = a[sortKey] ?? 0
-        const bv = b[sortKey] ?? 0
-        if (av < bv) return sortOrder === 'asc' ? -1 : 1
-        if (av > bv) return sortOrder === 'asc' ? 1 : -1
-        return 0
-      })
-      console.log('[fetchData] sorted', { sortKey, sortOrder })
-
-      // Derive gameweek from CSV header (optional) or leave unknown
+      // Derive teams list from unfiltered data
       const teamsSet = Array.from(new Set(players.map(p => p.team))).filter(Boolean).sort()
 
-      setData({
+      // Store unfiltered data for Team of the Week
+      const unfilteredData = {
         gameweek: meta.gameweek ?? 0,
         csv_file: meta.csv_file ?? 'latest.csv',
         total_players: meta.total_players ?? players.length,
         filtered_players: players.length,
         players,
         last_updated: meta.last_updated
-      })
+      }
+
+      setData(unfilteredData)
       setTeams(teamsSet)
+
+      // Apply initial filters to create filtered data for table
+      applyFiltersToData(unfilteredData)
       console.log('[fetchData] done setData', { total: players.length })
     } catch (err: any) {
       console.error('[fetchData] error', err)
@@ -274,19 +264,60 @@ function App() {
 
   useEffect(() => {
     fetchData()
-  }, [teamFilter, positionFilter, searchFilter, sortKey, sortOrder])
+  }, [])
 
   const handleSort = (key: SortKey) => {
+    let newSortOrder = sortOrder
     if (sortKey === key) {
-      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')
+      newSortOrder = sortOrder === 'asc' ? 'desc' : 'asc'
+      setSortOrder(newSortOrder)
     } else {
       setSortKey(key)
+      newSortOrder = 'desc'
       setSortOrder('desc')
+    }
+
+    // Re-apply filters with new sort after state updates
+    if (data) {
+      setTimeout(() => applyFiltersToData(data), 0)
     }
   }
 
+  const applyFiltersToData = (sourceData: ApiResponse) => {
+    let filteredPlayers = [...sourceData.players]
+
+    // Apply filters
+    if (teamFilter) {
+      filteredPlayers = filteredPlayers.filter(p => p.team?.toLowerCase().includes(teamFilter.toLowerCase()))
+    }
+    if (positionFilter) {
+      filteredPlayers = filteredPlayers.filter(p => p.position === positionFilter)
+    }
+    if (searchFilter) {
+      filteredPlayers = filteredPlayers.filter(p => (p.name || '').toLowerCase().includes(searchFilter.toLowerCase()))
+    }
+
+    // Apply sorting
+    filteredPlayers.sort((a: any, b: any) => {
+      const av = a[sortKey] ?? 0
+      const bv = b[sortKey] ?? 0
+      if (av < bv) return sortOrder === 'asc' ? -1 : 1
+      if (av > bv) return sortOrder === 'asc' ? 1 : -1
+      return 0
+    })
+
+    // Set filtered data for table
+    setFilteredData({
+      ...sourceData,
+      filtered_players: filteredPlayers.length,
+      players: filteredPlayers
+    })
+  }
+
   const handleFilter = () => {
-    fetchData()
+    if (data) {
+      applyFiltersToData(data)
+    }
   }
 
   const formatValue = (value: any, column: typeof columnConfig[0]) => {
@@ -353,20 +384,63 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      {data && (
-        <div className="info-overlay">
-          <p>
-            📅 Gameweek {data.gameweek} • 👥 {data.filtered_players} of {data.total_players} players
-            <br />
-            📁 Source: {data.csv_file}
-          </p>
-        </div>
-      )}
+      {/* Main Title */}
+      <div style={{
+        textAlign: 'center',
+        marginBottom: '30px',
+        padding: '30px 40px',
+        background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 54, 93, 0.8) 50%, rgba(45, 55, 72, 0.9) 100%)',
+        borderRadius: '20px',
+        backdropFilter: 'blur(20px)',
+        border: '2px solid rgba(255, 215, 0, 0.3)',
+        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 215, 0, 0.1)',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.05), transparent)',
+          pointerEvents: 'none'
+        }}></div>
+        <h1 style={{
+          color: 'white',
+          fontSize: '3.5rem',
+          fontWeight: '800',
+          margin: '0',
+          background: 'linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffa500 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          textShadow: '0 0 30px rgba(255, 215, 0, 0.8)',
+          letterSpacing: '-1px',
+          fontFamily: '"Poppins", "Inter", -apple-system, BlinkMacSystemFont, sans-serif',
+          position: 'relative',
+          zIndex: 2
+        }}>
+          PremScout
+        </h1>
+        <p style={{
+          color: 'rgba(255, 255, 255, 0.9)',
+          fontSize: '1.1rem',
+          margin: '8px 0 0 0',
+          fontWeight: '500',
+          letterSpacing: '0.5px',
+          fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif',
+          position: 'relative',
+          zIndex: 2
+        }}>
+          Fantasy Premier League Points Predictor
+        </p>
+      </div>
 
       {/* Team of the Week - Full Width */}
       {data && (
-        <TeamOfTheWeek 
-          players={data.players} 
+        <TeamOfTheWeek
+          players={data.players}
           onPlayerClick={openPlayerModal}
         />
       )}
@@ -419,8 +493,8 @@ function App() {
         </div>
       </div>
 
-      {data && (
-        <div className="table-container">
+      {filteredData && (
+        <div className="table-container" style={{ maxHeight: '60vh', overflow: 'auto' }}>
           <table className="players-table">
             <thead>
               <tr>
@@ -443,7 +517,7 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {data.players.map((player, index) => (
+              {filteredData.players.map((player, index) => (
                 <tr key={`${player.name}-${index}`}>
                   {visibleColumnConfig.map(col => (
                     <td key={col.key} className={col.type === 'number' ? 'number' : ''}>
@@ -588,23 +662,31 @@ function App() {
       )}
 
         <footer style={{ textAlign: 'center', marginTop: '20px', color: '#718096' }}>
-          <div style={{ marginBottom: '10px' }}>
-            <p>📊 Data refreshes automatically from the latest gameweek predictions</p>
-          </div>
-          {data?.last_updated && (
-            <div style={{ 
-              fontSize: '0.85rem', 
-              opacity: 0.8,
-              background: '#2d3748',
-              padding: '8px 16px',
-              borderRadius: '20px',
-              display: 'inline-block',
-              border: '1px solid #4a5568'
-            }}>
-              🕐 Last updated: {data.last_updated}
+          {data && (
+            <div style={{ marginBottom: '15px' }}>
+              <div style={{
+                fontSize: '0.9rem',
+                background: '#2d3748',
+                padding: '10px 16px',
+                borderRadius: '8px',
+                display: 'inline-block',
+                marginBottom: '10px',
+                border: '1px solid #4a5568'
+              }}>
+                📅 Gameweek {data.gameweek} • 👥 {filteredData?.filtered_players || 0} of {data.total_players} players • 📁 {data.csv_file}
+              </div>
+              {data?.last_updated && (
+                <div style={{
+                  fontSize: '0.8rem',
+                  opacity: 0.7,
+                  marginTop: '5px'
+                }}>
+                  🕐 Last updated: {data.last_updated}
+                </div>
+              )}
             </div>
           )}
-          <div style={{ marginTop: '10px', fontSize: '0.8rem', opacity: 0.6 }}>
+          <div style={{ marginBottom: '10px', fontSize: '0.8rem', opacity: 0.6 }}>
             🤖 Updates automatically daily at 9:00 AM UTC
           </div>
           <div style={{
