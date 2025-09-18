@@ -25,8 +25,16 @@ interface Player {
   opponent_difficulty: number
   is_home: boolean
   chance_of_playing_this_round: number
-  image_url?: string
+  // Image-related fields
   player_code?: number
+  web_name?: string
+  display_name?: string
+  image_url_primary?: string
+  image_url_secondary?: string
+  image_url_tertiary?: string
+  imageSources?: string[]
+  currentImageIndex?: number
+  imageError?: boolean
 }
 
 interface ApiResponse {
@@ -100,13 +108,14 @@ function App() {
       let players: Player[] = []
       let meta: Partial<ApiResponse> = {}
       try {
-        const localUrl = `/predictions.json?t=${Date.now()}`
-        console.log('[fetchData] requesting local JSON', localUrl)
-        const local = await fetch(localUrl)
-        console.log('[fetchData] local JSON response', { ok: local.ok, status: local.status })
-        if (local.ok) {
-          const json = await local.json()
-          console.log('[fetchData] local JSON parsed', { count: (json?.players || []).length })
+        // Try local API first (development mode)
+        const apiUrl = `http://localhost:5000/api/predictions?t=${Date.now()}`
+        console.log('[fetchData] requesting local API', apiUrl)
+        const apiResp = await fetch(apiUrl)
+        console.log('[fetchData] local API response', { ok: apiResp.ok, status: apiResp.status })
+        if (apiResp.ok) {
+          const json = await apiResp.json()
+          console.log('[fetchData] local API parsed', { count: (json?.players || []).length })
           meta = {
             gameweek: json.gameweek,
             csv_file: json.csv_file,
@@ -117,9 +126,30 @@ function App() {
           }
           players = json.players || []
         } else {
-          const txt = await local.text().catch(() => '')
-          console.warn('[fetchData] local not available; body=', txt.slice(0,200))
-          throw new Error('local not available')
+          console.warn('[fetchData] local API not available, trying static JSON')
+
+          // Fallback to local static predictions.json
+          const localUrl = `/predictions.json?t=${Date.now()}`
+          console.log('[fetchData] requesting local JSON', localUrl)
+          const local = await fetch(localUrl)
+          console.log('[fetchData] local JSON response', { ok: local.ok, status: local.status })
+          if (local.ok) {
+            const json = await local.json()
+            console.log('[fetchData] local JSON parsed', { count: (json?.players || []).length })
+            meta = {
+              gameweek: json.gameweek,
+              csv_file: json.csv_file,
+              total_players: json.total_players,
+              filtered_players: json.filtered_players,
+              last_updated: json.last_updated,
+              players: []
+            }
+            players = json.players || []
+          } else {
+            const txt = await local.text().catch(() => '')
+            console.warn('[fetchData] local JSON not available; body=', txt.slice(0,200))
+            throw new Error('local sources not available')
+          }
         }
       } catch {
         const RAW_CSV_URL = `https://raw.githubusercontent.com/Aadhavm10/PremScout/main/latest.csv?t=${Date.now()}`
@@ -135,85 +165,69 @@ function App() {
         meta = { gameweek: 0, csv_file: 'latest.csv', total_players: players.length, filtered_players: players.length }
       }
 
-      // Enrich images from FPL API using image proxy to bypass CORS
-      try {
-        console.log('[fetchData] enriching images from FPL API')
-        const respImg = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/')
-        if (respImg.ok) {
-          const fpl = await respImg.json()
-          const nameToCode: Record<string, number> = {}
-          console.log('[fetchData] FPL API returned', fpl?.elements?.length, 'players')
+      // Enhanced image handling: CSV now includes pre-calculated image URLs
+      console.log('[fetchData] processing image data from CSV')
+      players = players.map((p: any) => {
+        // Generate fallback avatar if no player code or image URLs
+        const generateFallbackAvatar = () => {
+          const nameParts = (p.name || '').split(' ')
+          const initials = nameParts.length > 1
+            ? `${nameParts[0][0]}${nameParts[nameParts.length - 1][0]}`.toUpperCase()
+            : (nameParts[0] || '?').substring(0, 2).toUpperCase()
 
-          ;(fpl?.elements || []).forEach((e: any) => {
-            const full = `${e.first_name} ${e.second_name}`.trim()
-            nameToCode[full] = e.code
-
-            // Also add last name only mapping for better matching
-            if (e.second_name) {
-              nameToCode[e.second_name] = e.code
+          const getPositionColor = (position: string) => {
+            switch (position) {
+              case 'GKP': return { bg: 'f56565', text: 'ffffff' }
+              case 'DEF': return { bg: '38a169', text: 'ffffff' }
+              case 'MID': return { bg: '3182ce', text: 'ffffff' }
+              case 'FWD': return { bg: 'd69e2e', text: 'ffffff' }
+              default: return { bg: '718096', text: 'ffffff' }
             }
-          })
+          }
 
-          console.log('[fetchData] Created name mapping for', Object.keys(nameToCode).length, 'players')
-
-          players = players.map((p: any) => {
-            let code = nameToCode[p.name] || 0
-
-            // Try fuzzy matching if exact match fails
-            if (!code && p.name) {
-              // Try to find by last name
-              const nameParts = p.name.split(' ')
-              const lastName = nameParts[nameParts.length - 1]
-              code = nameToCode[lastName] || 0
-
-              // Try to find by partial match
-              if (!code) {
-                const matchKey = Object.keys(nameToCode).find(key =>
-                  key.toLowerCase().includes(lastName.toLowerCase()) ||
-                  p.name.toLowerCase().includes(key.toLowerCase().split(' ').pop()?.toLowerCase() || '')
-                )
-                if (matchKey) {
-                  code = nameToCode[matchKey]
-                }
-              }
-            }
-
-            let image_url = undefined
-            if (code) {
-              // Use image proxy service to bypass CORS issues - this works on Vercel!
-              image_url = `https://images.weserv.nl/?url=resources.premierleague.com/premierleague/photos/players/250x250/p${code}.png&w=250&h=250&fit=cover&a=attention`
-              console.log(`Generated proxied image for ${p.name}: code ${code}`)
-            } else {
-              console.log(`No player code found for ${p.name}`)
-              // Fallback to generated avatar for players not found
-              const nameParts = (p.name || '').split(' ')
-              const initials = nameParts.length > 1
-                ? `${nameParts[0][0]}${nameParts[nameParts.length - 1][0]}`.toUpperCase()
-                : (nameParts[0] || '?').substring(0, 2).toUpperCase()
-
-              const getPositionColor = (position: string) => {
-                switch (position) {
-                  case 'GKP': return { bg: 'f56565', text: 'ffffff' }
-                  case 'DEF': return { bg: '38a169', text: 'ffffff' }
-                  case 'MID': return { bg: '3182ce', text: 'ffffff' }
-                  case 'FWD': return { bg: 'd69e2e', text: 'ffffff' }
-                  default: return { bg: '718096', text: 'ffffff' }
-                }
-              }
-
-              const colors = getPositionColor(p.position)
-              image_url = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(p.name)}&backgroundColor=${colors.bg}&textColor=${colors.text}&fontSize=40`
-            }
-
-            return { ...p, player_code: code, image_url }
-          })
-          console.log('[fetchData] enriched images for', players.filter(p => p.image_url).length, 'players')
-        } else {
-          console.warn('[fetchData] FPL image API not ok', respImg.status)
+          const colors = getPositionColor(p.position)
+          return `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(p.name)}&backgroundColor=${colors.bg}&textColor=${colors.text}&fontSize=40`
         }
-      } catch (e) {
-        console.warn('[fetchData] image enrich failed', e)
-      }
+
+        // Create image sources array in order of preference
+        const imageSources = []
+
+        // Add primary image URL if available
+        if (p.image_url_primary) {
+          imageSources.push(p.image_url_primary)
+        }
+
+        // Add secondary image URL if available
+        if (p.image_url_secondary) {
+          imageSources.push(p.image_url_secondary)
+        }
+
+        // Add tertiary image URL if available
+        if (p.image_url_tertiary) {
+          imageSources.push(p.image_url_tertiary)
+        }
+
+        // If we have a player code but no pre-calculated URLs, generate them
+        if (p.player_code && imageSources.length === 0) {
+          imageSources.push(
+            `https://images.weserv.nl/?url=resources.premierleague.com/premierleague/photos/players/250x250/p${p.player_code}.png&w=250&h=250&fit=cover&a=attention`,
+            `https://resources.premierleague.com/premierleague/photos/players/110x140/p${p.player_code}.png`,
+            `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.player_code}.png`
+          )
+        }
+
+        // Add fallback avatar as final option
+        imageSources.push(generateFallbackAvatar())
+
+        return {
+          ...p,
+          imageSources,
+          currentImageIndex: 0,
+          imageError: false
+        }
+      })
+
+      console.log('[fetchData] prepared image sources for', players.length, 'players')
 
       // Filters
       const before = players.length

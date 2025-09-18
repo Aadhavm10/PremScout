@@ -276,6 +276,23 @@ def generate_predictions(
         players_df['opponent_difficulty'] = players_df['team'].map(lambda x: fixture_info.get(x, {}).get('difficulty', 0))
         players_df['fixture'] = players_df['team'].map(lambda x: fixture_info.get(x, {}).get('fixture_string', ''))
 
+        # Add image-related data for better frontend matching
+        # Store original FPL data for image matching
+        players_df['player_code'] = players_df['code']  # Player code for images
+        players_df['web_name'] = players_df['web_name']  # Short name used by FPL
+        players_df['display_name'] = players_df['first_name'] + ' ' + players_df['second_name']  # Full name
+
+        # Pre-calculate image URLs for multiple sources
+        players_df['image_url_primary'] = players_df['code'].apply(
+            lambda code: f"https://images.weserv.nl/?url=resources.premierleague.com/premierleague/photos/players/250x250/p{code}.png&w=250&h=250&fit=cover&a=attention" if code else ""
+        )
+        players_df['image_url_secondary'] = players_df['code'].apply(
+            lambda code: f"https://resources.premierleague.com/premierleague/photos/players/110x140/p{code}.png" if code else ""
+        )
+        players_df['image_url_tertiary'] = players_df['code'].apply(
+            lambda code: f"https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_{code}.png" if code else ""
+        )
+
         # Calculate difficulty adjustment with home advantage
         players_df['difficulty_adjustment'] = (6 - players_df['opponent_difficulty']) / 10
         players_df.loc[players_df['is_home'] == True, 'difficulty_adjustment'] *= HOME_ADVANTAGE_FACTOR
@@ -390,7 +407,10 @@ def generate_predictions(
                 "now_cost", "points_per_game", "form", "expected_goals",
                 "minutes", "assists", "goals_scored", "yellow_cards",
                 "red_cards", "saves_per_90", "total_points", "clean_sheets",
-                "opponent_difficulty", "is_home", 'chance_of_playing_this_round'
+                "opponent_difficulty", "is_home", 'chance_of_playing_this_round',
+                # Image-related fields
+                "player_code", "web_name", "display_name",
+                "image_url_primary", "image_url_secondary", "image_url_tertiary"
             ]
             
             # Handle name field (FPL API uses first_name + second_name)
@@ -406,6 +426,11 @@ def generate_predictions(
             # Drop missing columns gracefully
             columns_to_save = [c for c in columns_to_save if c in output_df.columns]
             output_df.to_csv(output_file, index=False, columns=columns_to_save)
+
+            # Also create/update latest.csv as a copy of the current predictions
+            latest_file = "latest.csv"
+            output_df.to_csv(latest_file, index=False, columns=columns_to_save)
+            print(f"Updated {latest_file} with current predictions")
 
         return output_df, next_gameweek, output_file
     except FileNotFoundError as e:

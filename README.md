@@ -20,6 +20,10 @@ PremScout is your **intelligent FPL assistant** that:
 - **Mobile Responsive** - Perfect experience on all devices
 - **Daily Auto-Updates** - Fresh predictions every morning
 
+
+## Issues
+- Not all players have images due to premier league api not having them (for example player joined team late)
+
 ## Quick Start - Run Locally
 
 ### Prerequisites
