@@ -588,6 +588,47 @@ function App() {
           <div style={{ marginTop: '10px', fontSize: '0.8rem', opacity: 0.6 }}>
             🤖 Updates automatically daily at 9:00 AM UTC
           </div>
+          <div style={{
+            marginTop: '20px',
+            fontSize: '1rem',
+            opacity: 1,
+            padding: '15px',
+            background: 'rgba(66, 153, 225, 0.1)',
+            borderRadius: '8px',
+            border: '1px solid rgba(66, 153, 225, 0.2)'
+          }}>
+            <a
+              href="https://github.com/Aadhavm10/PremScout"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#4299e1',
+                textDecoration: 'none',
+                marginRight: '30px',
+                fontWeight: '500',
+                transition: 'color 0.2s ease'
+              }}
+              onMouseEnter={(e) => e.target.style.color = '#63b3ed'}
+              onMouseLeave={(e) => e.target.style.color = '#4299e1'}
+            >
+              GitHub: PremScout
+            </a>
+            <a
+              href="https://aadhavmani.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#4299e1',
+                textDecoration: 'none',
+                fontWeight: '500',
+                transition: 'color 0.2s ease'
+              }}
+              onMouseEnter={(e) => e.target.style.color = '#63b3ed'}
+              onMouseLeave={(e) => e.target.style.color = '#4299e1'}
+            >
+              Check out my other projects
+            </a>
+          </div>
         </footer>
       </div>
     </div>
