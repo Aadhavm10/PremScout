@@ -17,33 +17,79 @@ interface FifaCardProps {
   onClick: () => void
 }
 
+// Determine card rarity based on predicted points
+const getCardRarity = (points: number): 'special' | 'gold' | 'silver' | 'bronze' => {
+  if (points >= 8) return 'special'
+  if (points >= 6) return 'gold'
+  if (points >= 4) return 'silver'
+  return 'bronze'
+}
+
+const rarityStyles = {
+  special: {
+    bg: 'bg-gradient-to-br from-purple-900 via-fuchsia-900 to-purple-900',
+    border: 'border-purple-400/50',
+    glow: 'shadow-[0_0_30px_rgba(168,85,247,0.4)]',
+    text: 'text-purple-300',
+    pointsColor: 'text-purple-200',
+  },
+  gold: {
+    bg: 'bg-gradient-to-br from-yellow-900 via-amber-900 to-yellow-900',
+    border: 'border-amber-400/50',
+    glow: 'shadow-[0_0_20px_rgba(251,191,36,0.3)]',
+    text: 'text-amber-300',
+    pointsColor: 'text-amber-200',
+  },
+  silver: {
+    bg: 'bg-gradient-to-br from-slate-700 via-slate-600 to-slate-700',
+    border: 'border-slate-400/50',
+    glow: 'shadow-[0_0_15px_rgba(148,163,184,0.2)]',
+    text: 'text-slate-300',
+    pointsColor: 'text-slate-200',
+  },
+  bronze: {
+    bg: 'bg-gradient-to-br from-orange-950 via-stone-900 to-orange-950',
+    border: 'border-orange-700/50',
+    glow: 'shadow-[0_0_10px_rgba(234,88,12,0.2)]',
+    text: 'text-orange-400',
+    pointsColor: 'text-orange-300',
+  },
+}
+
+const getPositionColor = (position: string) => {
+  switch (position) {
+    case 'GKP': return 'bg-red-600'
+    case 'DEF': return 'bg-green-600'
+    case 'MID': return 'bg-blue-600'
+    case 'FWD': return 'bg-amber-600'
+    default: return 'bg-gray-600'
+  }
+}
+
 const FifaCard: React.FC<FifaCardProps> = ({ player, onClick }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const [imageLoading, setImageLoading] = useState(true)
   const [allImagesFailed, setAllImagesFailed] = useState(false)
   const [imageLoaded, setImageLoaded] = useState(false)
 
   const imageSources = player.imageSources || []
+  const rarity = getCardRarity(player.predicted_points)
+  const rarityStyle = rarityStyles[rarity]
 
   // Reset state when player changes and preload image
   useEffect(() => {
     setCurrentImageIndex(0)
-    setImageLoading(true)
     setAllImagesFailed(false)
     setImageLoaded(false)
 
-    // Preload the first image to reduce flash
+    // Preload the first image
     if (imageSources.length > 0) {
       const firstImage = new Image()
       firstImage.onload = () => setImageLoaded(true)
       firstImage.onerror = () => {
-        // If first image fails, try next one
         if (imageSources.length > 1) {
           setCurrentImageIndex(1)
-          setImageLoading(true)
         } else {
           setAllImagesFailed(true)
-          setImageLoading(false)
         }
       }
       firstImage.src = imageSources[0]
@@ -51,25 +97,15 @@ const FifaCard: React.FC<FifaCardProps> = ({ player, onClick }) => {
   }, [player.name, imageSources])
 
   const handleImageLoad = () => {
-    setImageLoading(false)
     setImageLoaded(true)
   }
 
   const handleImageError = () => {
-    console.log(`Image failed for ${player.name}, trying next source...`, {
-      currentIndex: currentImageIndex,
-      totalSources: imageSources.length,
-      failedUrl: imageSources[currentImageIndex]
-    })
-
     // Try next image source
     if (currentImageIndex < imageSources.length - 1) {
       setCurrentImageIndex(prev => prev + 1)
-      setImageLoading(true)
     } else {
-      // All images failed, show placeholder
       setAllImagesFailed(true)
-      setImageLoading(false)
     }
   }
 
@@ -77,25 +113,29 @@ const FifaCard: React.FC<FifaCardProps> = ({ player, onClick }) => {
     return imageSources[currentImageIndex] || ''
   }
 
-  const getPositionColor = (position: string) => {
-    switch (position) {
-      case 'GKP': return '#f56565' // Red
-      case 'DEF': return '#38a169' // Green
-      case 'MID': return '#3182ce' // Blue
-      case 'FWD': return '#d69e2e' // Gold
-      default: return '#718096'    // Gray
-    }
-  }
-
   const shouldShowImage = imageSources.length > 0 && !allImagesFailed
   const currentImageUrl = getCurrentImageUrl()
 
   return (
     <div
-      className="fifa-card"
       onClick={onClick}
+      className={`
+        group relative w-40 h-56 cursor-pointer rounded-2xl p-3
+        border-2 backdrop-blur-sm
+        transition-all duration-300 ease-out
+        hover:scale-105 hover:-translate-y-2 hover:rotate-1
+        ${rarityStyle.bg}
+        ${rarityStyle.border}
+        ${rarityStyle.glow}
+        md:w-36 md:h-52
+        sm:w-32 sm:h-48
+      `}
     >
-      <div className="fifa-player-image" style={{ position: 'relative' }}>
+      {/* Shine effect on hover */}
+      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none" />
+
+      {/* Player Image */}
+      <div className="relative h-32 mb-2 flex items-center justify-center overflow-hidden rounded-xl">
         {shouldShowImage && currentImageUrl ? (
           <>
             <img
@@ -103,81 +143,48 @@ const FifaCard: React.FC<FifaCardProps> = ({ player, onClick }) => {
               alt={player.name}
               onLoad={handleImageLoad}
               onError={handleImageError}
-              style={{
-                maxWidth: '100%',
-                maxHeight: '100%',
-                borderRadius: '8px',
-                opacity: imageLoaded ? 1 : 0,
-                transition: 'opacity 0.3s ease-in-out'
-              }}
+              className="max-w-full max-h-full object-contain rounded-lg transition-opacity duration-300"
+              style={{ opacity: imageLoaded ? 1 : 0 }}
             />
             {!imageLoaded && (
-              <div className="fifa-placeholder" style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: getPositionColor(player.position),
-                color: 'white',
-                fontSize: '14px',
-                fontWeight: 'bold'
-              }}>
+              <div className={`absolute inset-0 flex items-center justify-center ${getPositionColor(player.position)} text-white text-sm font-bold rounded-lg`}>
                 <span>{player.position}</span>
               </div>
             )}
           </>
         ) : (
-          <div
-            className="fifa-placeholder"
-            style={{
-              display: 'flex',
-              backgroundColor: getPositionColor(player.position),
-              color: 'white',
-              fontSize: '14px',
-              fontWeight: 'bold'
-            }}
-          >
+          <div className={`w-full h-full flex items-center justify-center ${getPositionColor(player.position)} text-white text-sm font-bold rounded-lg`}>
             <span>{player.position}</span>
-          </div>
-        )}
-
-        {/* Debug info - remove in production */}
-        {imageSources.length > 0 && (
-          <div style={{
-            position: 'absolute',
-            bottom: '2px',
-            left: '2px',
-            fontSize: '8px',
-            opacity: 0.7,
-            background: 'rgba(0,0,0,0.5)',
-            color: 'white',
-            padding: '1px 3px',
-            borderRadius: '2px'
-          }}>
-            {allImagesFailed ? 'No img' : `${currentImageIndex + 1}/${imageSources.length}`}
           </div>
         )}
       </div>
 
-      <div className="fifa-player-info">
-        <div className="fifa-player-name">{player.name}</div>
-        <div className="fifa-stats">
-          <div className="fifa-stat">
-            <span className="fifa-stat-label">Predicted Points</span>
-            <span className="fifa-stat-value">{player.predicted_points.toFixed(1)}</span>
+      {/* Player Info */}
+      <div className="relative z-10 space-y-1">
+        <div className={`text-xs font-bold uppercase truncate text-center ${rarityStyle.text}`}>
+          {player.name}
+        </div>
+
+        <div className="space-y-1">
+          <div className="flex items-center justify-between text-xs">
+            <span className="text-white/70">Pred Pts</span>
+            <span className={`font-bold font-mono ${rarityStyle.pointsColor}`}>
+              {player.predicted_points.toFixed(1)}
+            </span>
           </div>
-          <div className="fifa-stat">
-            <span className="fifa-stat-label">Price</span>
-            <span className="fifa-stat-value">£{player.now_cost.toFixed(1)}m</span>
+          <div className="flex items-center justify-between text-xs">
+            <span className="text-white/70">Price</span>
+            <span className={`font-semibold font-mono ${rarityStyle.text}`}>
+              £{player.now_cost.toFixed(1)}m
+            </span>
           </div>
         </div>
       </div>
 
-      <div className="fifa-shine"></div>
+      {/* Rarity Badge - top right corner */}
+      <div className="absolute top-2 right-2 opacity-60">
+        <div className={`w-2 h-2 rounded-full ${rarityStyle.border.replace('border-', 'bg-')}`} />
+      </div>
     </div>
   )
 }

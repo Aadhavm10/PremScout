@@ -52,15 +52,14 @@ const TeamOfTheWeek: React.FC<TeamOfTheWeekProps> = ({ players, onPlayerClick })
     ]
 
     // Test each formation and find the one with highest total points
-    let bestFormation = null
     let bestPoints = 0
     let bestTeam = null
 
     for (const formation of validFormations) {
       // Check if we have enough players for this formation
-      if (gkp.length >= 1 && def.length >= formation.def && 
+      if (gkp.length >= 1 && def.length >= formation.def &&
           mid.length >= formation.mid && fwd.length >= formation.fwd) {
-        
+
         const team = {
           gkp: gkp.slice(0, 1),
           def: def.slice(0, formation.def),
@@ -79,7 +78,6 @@ const TeamOfTheWeek: React.FC<TeamOfTheWeekProps> = ({ players, onPlayerClick })
 
         if (totalPoints > bestPoints) {
           bestPoints = totalPoints
-          bestFormation = formation
           bestTeam = team
         }
       }
@@ -111,84 +109,101 @@ const TeamOfTheWeek: React.FC<TeamOfTheWeekProps> = ({ players, onPlayerClick })
 
   const averagePoints = totalPoints / 11
 
+  const stats = [
+    { label: 'Total Points', value: totalPoints.toFixed(1) },
+    { label: 'Team Cost', value: `£${totalCost.toFixed(1)}m` },
+    { label: 'Avg Points', value: averagePoints.toFixed(1) },
+    { label: 'Formation', value: bestEleven.formation },
+  ]
+
   return (
-    <div className="team-of-the-week">
-      <div className="totw-header">
-        <div className="totw-stats-compact">
-          <div className="totw-stat-compact">
-            <span className="stat-value">{totalPoints.toFixed(1)}</span>
-            <span className="stat-label">Points</span>
-          </div>
-          <div className="stat-separator">•</div>
-          <div className="totw-stat-compact">
-            <span className="stat-value">£{totalCost.toFixed(1)}m</span>
-            <span className="stat-label">Cost</span>
-          </div>
-          <div className="stat-separator">•</div>
-          <div className="totw-stat-compact">
-            <span className="stat-value">{averagePoints.toFixed(1)}</span>
-            <span className="stat-label">Avg</span>
-          </div>
-          <div className="stat-separator">•</div>
-          <div className="totw-stat-compact">
-            <span className="stat-value">{bestEleven.formation}</span>
-            <span className="stat-label">Formation</span>
-          </div>
-        </div>
-      </div>
+    <div className="relative mb-8 w-full overflow-hidden py-12">
+      {/* Pitch Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: 'url(/FplPitch.jpg)' }}
+      />
+      {/* Dark overlay for better contrast */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-900/70 to-slate-950/80" />
 
-      <div className="football-pitch">
-        {/* Forwards */}
-        <div className={`formation-line forwards forwards-${bestEleven.fwd.length}`}>
-          {bestEleven.fwd.map((player, index) => (
-            <div key={`fwd-${index}`} className="player-position">
-              <FifaCard 
-                player={player} 
-                onClick={() => onPlayerClick(player)}
-              />
+      <div className="relative z-10 mx-auto w-full px-4">
+        {/* Stats Display */}
+        <div className="mb-12 flex flex-wrap items-center justify-center gap-4">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-2xl border border-primary-400/30 bg-slate-800/50 px-6 py-4 backdrop-blur-xl transition-all hover:scale-105 hover:border-primary-400/50 hover:shadow-xl hover:shadow-primary-500/20"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="relative">
+                <div className="font-mono text-3xl font-bold text-primary-300">
+                  {stat.value}
+                </div>
+                <div className="mt-1 text-xs font-medium uppercase tracking-wider text-text-tertiary">
+                  {stat.label}
+                </div>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* Midfielders */}
-        <div className={`formation-line midfielders midfielders-${bestEleven.mid.length}`}>
-          {bestEleven.mid.map((player, index) => (
-            <div key={`mid-${index}`} className="player-position">
-              <FifaCard 
-                player={player} 
-                onClick={() => onPlayerClick(player)}
-              />
-            </div>
-          ))}
+        {/* Formation Display */}
+        <div className="space-y-8">
+          {/* Forwards */}
+          <div className={`flex items-center justify-center gap-4 ${bestEleven.fwd.length === 1 ? 'gap-0' : bestEleven.fwd.length === 2 ? 'gap-8' : 'gap-4'}`}>
+            {bestEleven.fwd.map((player, index) => (
+              <div key={`fwd-${index}`} className="animate-float" style={{ animationDelay: `${index * 100}ms` }}>
+                <FifaCard
+                  player={player}
+                  onClick={() => onPlayerClick(player)}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Midfielders */}
+          <div className={`flex items-center justify-center gap-4 ${bestEleven.mid.length >= 5 ? 'gap-2' : 'gap-4'}`}>
+            {bestEleven.mid.map((player, index) => (
+              <div key={`mid-${index}`} className="animate-float" style={{ animationDelay: `${(index + bestEleven.fwd.length) * 100}ms` }}>
+                <FifaCard
+                  player={player}
+                  onClick={() => onPlayerClick(player)}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Defenders */}
+          <div className={`flex items-center justify-center gap-4 ${bestEleven.def.length >= 5 ? 'gap-2' : 'gap-4'}`}>
+            {bestEleven.def.map((player, index) => (
+              <div key={`def-${index}`} className="animate-float" style={{ animationDelay: `${(index + bestEleven.fwd.length + bestEleven.mid.length) * 100}ms` }}>
+                <FifaCard
+                  player={player}
+                  onClick={() => onPlayerClick(player)}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Goalkeeper */}
+          <div className="flex items-center justify-center">
+            {bestEleven.gkp.map((player, index) => (
+              <div key={`gkp-${index}`} className="animate-float" style={{ animationDelay: `${(bestEleven.fwd.length + bestEleven.mid.length + bestEleven.def.length) * 100}ms` }}>
+                <FifaCard
+                  player={player}
+                  onClick={() => onPlayerClick(player)}
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Defenders */}
-        <div className={`formation-line defenders defenders-${bestEleven.def.length}`}>
-          {bestEleven.def.map((player, index) => (
-            <div key={`def-${index}`} className="player-position">
-              <FifaCard 
-                player={player} 
-                onClick={() => onPlayerClick(player)}
-              />
-            </div>
-          ))}
+        {/* Formation Label */}
+        <div className="mt-8 text-center">
+          <span className="inline-block rounded-full border border-primary-400/30 bg-slate-800/50 px-6 py-2 text-sm font-medium text-text-secondary backdrop-blur-xl">
+            {bestEleven.formation} Formation (Optimized for Max Points)
+          </span>
         </div>
-
-        {/* Goalkeeper */}
-        <div className="formation-line goalkeeper">
-          {bestEleven.gkp.map((player, index) => (
-            <div key={`gkp-${index}`} className="player-position">
-              <FifaCard 
-                player={player} 
-                onClick={() => onPlayerClick(player)}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="formation-label">
-        <span>{bestEleven.formation} Formation (Optimized for Max Points)</span>
       </div>
     </div>
   )

@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 import './App.css'
 import TeamOfTheWeek from './components/TeamOfTheWeek'
 import Papa from 'papaparse'
+import { Dialog, Transition } from '@headlessui/react'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 
 interface Player {
   name: string
@@ -383,58 +385,25 @@ function App() {
   }
 
   return (
-    <div className="app-wrapper">
+    <div className="min-h-screen w-full bg-slate-950">
       {/* Main Title */}
-      <div style={{
-        textAlign: 'center',
-        marginBottom: '30px',
-        padding: '30px 40px',
-        background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 54, 93, 0.8) 50%, rgba(45, 55, 72, 0.9) 100%)',
-        borderRadius: '20px',
-        backdropFilter: 'blur(20px)',
-        border: '2px solid rgba(255, 215, 0, 0.3)',
-        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 215, 0, 0.1)',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.05), transparent)',
-          pointerEvents: 'none'
-        }}></div>
-        <h1 style={{
-          color: 'white',
-          fontSize: '3.5rem',
-          fontWeight: '800',
-          margin: '0',
-          background: 'linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffa500 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          textShadow: '0 0 30px rgba(255, 215, 0, 0.8)',
-          letterSpacing: '-1px',
-          fontFamily: '"Poppins", "Inter", -apple-system, BlinkMacSystemFont, sans-serif',
-          position: 'relative',
-          zIndex: 2
-        }}>
-          PremScout
-        </h1>
-        <p style={{
-          color: 'rgba(255, 255, 255, 0.9)',
-          fontSize: '1.1rem',
-          margin: '8px 0 0 0',
-          fontWeight: '500',
-          letterSpacing: '0.5px',
-          fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif',
-          position: 'relative',
-          zIndex: 2
-        }}>
-          Fantasy Premier League Points Predictor
-        </p>
+      <div className="relative mx-auto mb-8 w-full overflow-hidden border-y border-primary-400/20 bg-gradient-to-br from-slate-900 via-slate-850 to-slate-900 py-10 shadow-2xl shadow-primary-500/10 backdrop-blur-xl">
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 animate-gradient-x bg-gradient-to-r from-primary-500/10 via-accent-400/10 to-primary-500/10 bg-200% opacity-50" />
+
+        {/* Mesh gradient background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(20,184,166,0.1),transparent)]" />
+
+        <div className="relative z-10 text-center">
+          <h1 className="mb-2 font-display text-6xl font-black tracking-tight">
+            <span className="text-gradient drop-shadow-2xl">
+              PremScout
+            </span>
+          </h1>
+          <p className="text-lg font-medium tracking-wide text-text-secondary">
+            Fantasy Premier League Points Predictor
+          </p>
+        </div>
       </div>
 
       {/* Team of the Week - Full Width */}
@@ -450,32 +419,32 @@ function App() {
         <div className="filters">
           <input
             type="text"
-            placeholder="🔍 Search players..."
+            placeholder="Search players..."
             value={searchFilter}
             onChange={(e) => setSearchFilter(e.target.value)}
           />
-          
+
           <select value={teamFilter} onChange={(e) => setTeamFilter(e.target.value)}>
-            <option value="">🏟️ All Teams</option>
+            <option value="">All Teams</option>
             {teams.map(team => (
               <option key={team} value={team}>{team}</option>
             ))}
           </select>
-          
+
           <select value={positionFilter} onChange={(e) => setPositionFilter(e.target.value)}>
-            <option value="">👤 All Positions</option>
-            <option value="GKP">🥅 Goalkeeper</option>
-            <option value="DEF">🛡️ Defender</option>
-            <option value="MID">⚡ Midfielder</option>
-            <option value="FWD">🎯 Forward</option>
+            <option value="">All Positions</option>
+            <option value="GKP">Goalkeeper</option>
+            <option value="DEF">Defender</option>
+            <option value="MID">Midfielder</option>
+            <option value="FWD">Forward</option>
           </select>
-          
-          <button onClick={handleFilter}>🔍 Apply Filters</button>
+
+          <button onClick={handleFilter}>Apply Filters</button>
         </div>
 
         <div className="column-toggles">
           <details>
-            <summary>📋 Show/Hide Columns ({visibleColumns.size}/{columnConfig.length})</summary>
+            <summary>Show/Hide Columns ({visibleColumns.size}/{columnConfig.length})</summary>
             <div className="column-grid">
               {columnConfig.map(col => (
                 <label key={col.key} className="column-toggle">
@@ -542,124 +511,259 @@ function App() {
       )}
 
       {/* Player Modal */}
-      {showModal && selectedPlayer && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <div className="player-info">
-                {selectedPlayer.image_url && (
-                  <img
-                    src={selectedPlayer.image_url}
-                    alt={selectedPlayer.name}
-                    className="player-image"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none'
-                    }}
-                  />
-                )}
-                <div className="player-details">
-                  <h2>{selectedPlayer.name}</h2>
-                  <p className="team-position">{selectedPlayer.team} • {selectedPlayer.position}</p>
-                  <p className="next-fixture">Next: vs {selectedPlayer.next_opponent}</p>
-                </div>
-              </div>
-              <button className="close-button" onClick={closeModal}>×</button>
-            </div>
-            
-            <div className="modal-body">
-              <div className="stats-grid">
-                <div className="stat-group">
-                  <h3>🎯 Predictions</h3>
-                  <div className="stat-item">
-                    <span>Predicted Points</span>
-                    <strong>{selectedPlayer.predicted_points.toFixed(1)}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Opponent Difficulty</span>
-                    <strong>{selectedPlayer.opponent_difficulty}/5</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Home/Away</span>
-                    <strong>{selectedPlayer.is_home ? 'Home' : 'Away'}</strong>
-                  </div>
-                </div>
+      <Transition show={showModal} as={Fragment}>
+        <Dialog onClose={closeModal} className="relative z-50">
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" />
+          </Transition.Child>
 
-                <div className="stat-group">
-                  <h3>💰 Value</h3>
-                  <div className="stat-item">
-                    <span>Current Price</span>
-                    <strong>£{selectedPlayer.now_cost.toFixed(1)}m</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Points per Game</span>
-                    <strong>{selectedPlayer.points_per_game.toFixed(1)}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Total Points</span>
-                    <strong>{selectedPlayer.total_points}</strong>
-                  </div>
-                </div>
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-4xl transform overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl transition-all">
+                  {selectedPlayer && (
+                    <>
+                      {/* Header */}
+                      <div className="border-b border-slate-700 bg-slate-850 p-6">
+                        <div className="flex items-start justify-between">
+                          <div className="flex items-start gap-4">
+                            {selectedPlayer.image_url && (
+                              <div className="h-20 w-20 overflow-hidden rounded-xl border-2 border-slate-700 bg-slate-800">
+                                <img
+                                  src={selectedPlayer.image_url}
+                                  alt={selectedPlayer.name}
+                                  className="h-full w-full object-cover"
+                                  onError={(e) => {
+                                    e.currentTarget.style.display = 'none'
+                                  }}
+                                />
+                              </div>
+                            )}
+                            <div>
+                              <Dialog.Title className="font-display text-3xl font-bold text-text-primary">
+                                {selectedPlayer.name}
+                              </Dialog.Title>
+                              <p className="mt-1 text-lg text-text-secondary">
+                                {selectedPlayer.team} • {selectedPlayer.position}
+                              </p>
+                              <p className="mt-1 text-sm text-text-tertiary">
+                                Next: vs {selectedPlayer.next_opponent} ({selectedPlayer.is_home ? 'H' : 'A'})
+                              </p>
+                            </div>
+                          </div>
+                          <button
+                            onClick={closeModal}
+                            className="rounded-lg p-2 text-text-tertiary transition-colors hover:bg-slate-800 hover:text-text-primary"
+                            aria-label="Close"
+                          >
+                            <XMarkIcon className="h-6 w-6" />
+                          </button>
+                        </div>
+                      </div>
 
-                <div className="stat-group">
-                  <h3>📈 Performance</h3>
-                  <div className="stat-item">
-                    <span>Form</span>
-                    <strong>{selectedPlayer.form.toFixed(1)}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Minutes Played</span>
-                    <strong>{selectedPlayer.minutes}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Expected Goals</span>
-                    <strong>{selectedPlayer.expected_goals.toFixed(2)}</strong>
-                  </div>
-                </div>
+                      {/* Body */}
+                      <div className="p-6">
+                        {/* Card Rarity Legend */}
+                        <div className="mb-6 rounded-xl border-2 border-slate-700 bg-slate-850 p-4 shadow-lg">
+                          <h3 className="mb-3 border-b border-slate-700 pb-2 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                            Card Rarity Guide
+                          </h3>
+                          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                            <div className="flex items-center gap-2">
+                              <div className="h-4 w-4 rounded border-2 border-purple-400/50 bg-gradient-to-br from-purple-900 via-fuchsia-900 to-purple-900" />
+                              <span className="text-sm text-text-secondary">Special (8+ pts)</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <div className="h-4 w-4 rounded border-2 border-amber-400/50 bg-gradient-to-br from-yellow-900 via-amber-900 to-yellow-900" />
+                              <span className="text-sm text-text-secondary">Gold (6-7.9 pts)</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <div className="h-4 w-4 rounded border-2 border-slate-400/50 bg-gradient-to-br from-slate-700 via-slate-600 to-slate-700" />
+                              <span className="text-sm text-text-secondary">Silver (4-5.9 pts)</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <div className="h-4 w-4 rounded border-2 border-orange-700/50 bg-gradient-to-br from-orange-950 via-stone-900 to-orange-950" />
+                              <span className="text-sm text-text-secondary">Bronze (&lt;4 pts)</span>
+                            </div>
+                          </div>
+                        </div>
 
-                <div className="stat-group">
-                  <h3>⚽ Season Stats</h3>
-                  <div className="stat-item">
-                    <span>Goals Scored</span>
-                    <strong>{selectedPlayer.goals_scored}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Assists</span>
-                    <strong>{selectedPlayer.assists}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Clean Sheets</span>
-                    <strong>{selectedPlayer.clean_sheets}</strong>
-                  </div>
-                </div>
+                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                          {/* Predictions */}
+                          <div className="rounded-xl border-2 border-slate-700 bg-slate-850 p-4 shadow-lg">
+                            <h3 className="mb-3 border-b border-slate-700 pb-2 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                              Predictions
+                            </h3>
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Predicted Points</span>
+                                <span className="font-mono text-lg font-bold text-primary-400">
+                                  {selectedPlayer.predicted_points.toFixed(1)}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Opponent Difficulty</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.opponent_difficulty}/5
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm text-text-secondary">Home/Away</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.is_home ? 'Home' : 'Away'}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
 
-                <div className="stat-group">
-                  <h3>🟨 Discipline</h3>
-                  <div className="stat-item">
-                    <span>Yellow Cards</span>
-                    <strong>{selectedPlayer.yellow_cards}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Red Cards</span>
-                    <strong>{selectedPlayer.red_cards}</strong>
-                  </div>
-                  <div className="stat-item">
-                    <span>Saves per 90</span>
-                    <strong>{selectedPlayer.saves_per_90.toFixed(1)}</strong>
-                  </div>
-                </div>
+                          {/* Value */}
+                          <div className="rounded-xl border-2 border-slate-700 bg-slate-850 p-4 shadow-lg">
+                            <h3 className="mb-3 border-b border-slate-700 pb-2 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                              Value
+                            </h3>
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Current Price</span>
+                                <span className="font-mono text-lg font-bold text-success-400">
+                                  £{selectedPlayer.now_cost.toFixed(1)}m
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Points per Game</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.points_per_game.toFixed(1)}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm text-text-secondary">Total Points</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.total_points}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
 
-                <div className="stat-group">
-                  <h3>🎲 Availability</h3>
-                  <div className="stat-item">
-                    <span>Chance of Playing</span>
-                    <strong>{selectedPlayer.chance_of_playing_this_round || 'Unknown'}%</strong>
-                  </div>
-                </div>
-              </div>
+                          {/* Performance */}
+                          <div className="rounded-xl border-2 border-slate-700 bg-slate-850 p-4 shadow-lg">
+                            <h3 className="mb-3 border-b border-slate-700 pb-2 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                              Performance
+                            </h3>
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Form</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.form.toFixed(1)}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Minutes Played</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.minutes}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm text-text-secondary">Expected Goals</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.expected_goals.toFixed(2)}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Season Stats */}
+                          <div className="rounded-xl border-2 border-slate-700 bg-slate-850 p-4 shadow-lg">
+                            <h3 className="mb-3 border-b border-slate-700 pb-2 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                              Season Stats
+                            </h3>
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Goals Scored</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.goals_scored}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Assists</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.assists}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm text-text-secondary">Clean Sheets</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.clean_sheets}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Discipline */}
+                          <div className="rounded-xl border-2 border-slate-700 bg-slate-850 p-4 shadow-lg">
+                            <h3 className="mb-3 border-b border-slate-700 pb-2 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                              Discipline
+                            </h3>
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Yellow Cards</span>
+                                <span className="font-mono text-lg font-semibold text-warning-400">
+                                  {selectedPlayer.yellow_cards}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                                <span className="text-sm text-text-secondary">Red Cards</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.red_cards}
+                                </span>
+                              </div>
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm text-text-secondary">Saves per 90</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.saves_per_90.toFixed(1)}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Availability */}
+                          <div className="rounded-xl border-2 border-slate-700 bg-slate-850 p-4 shadow-lg">
+                            <h3 className="mb-3 border-b border-slate-700 pb-2 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                              Availability
+                            </h3>
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm text-text-secondary">Chance of Playing</span>
+                                <span className="font-mono text-lg font-semibold text-text-primary">
+                                  {selectedPlayer.chance_of_playing_this_round || 'Unknown'}%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </Dialog.Panel>
+              </Transition.Child>
             </div>
           </div>
-        </div>
-      )}
+        </Dialog>
+      </Transition>
 
         <footer style={{ textAlign: 'center', marginTop: '20px', color: '#718096' }}>
           {data && (
@@ -673,7 +777,7 @@ function App() {
                 marginBottom: '10px',
                 border: '1px solid #4a5568'
               }}>
-                📅 Gameweek {data.gameweek} • 👥 {filteredData?.filtered_players || 0} of {data.total_players} players • 📁 {data.csv_file}
+                Gameweek {data.gameweek} • {filteredData?.filtered_players || 0} of {data.total_players} players
               </div>
               {data?.last_updated && (
                 <div style={{
@@ -681,13 +785,13 @@ function App() {
                   opacity: 0.7,
                   marginTop: '5px'
                 }}>
-                  🕐 Last updated: {data.last_updated}
+                  Last updated: {data.last_updated}
                 </div>
               )}
             </div>
           )}
           <div style={{ marginBottom: '10px', fontSize: '0.8rem', opacity: 0.6 }}>
-            🤖 Updates automatically daily at 9:00 AM UTC
+            Updates automatically daily at 9:00 AM UTC
           </div>
           <div style={{
             marginTop: '20px',
