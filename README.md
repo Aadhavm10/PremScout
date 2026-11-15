@@ -9,7 +9,7 @@ PremScout is your **intelligent FPL assistant** that:
 - **Builds optimal formations** (3-4-3, 4-4-2, 5-3-2, etc.) automatically
 - **Shows player cards** with FIFA-style design
 - **Analyzes player form** and recommends transfers
-- **Updated daily** with fresh predictions for each gameweek of the 2025-26 season
+- **Updated daily** with fresh predictions for each gameweek during the season
 
 ## Key Features
 
@@ -93,7 +93,7 @@ PremScout is your **intelligent FPL assistant** that:
 
 ## Automatic Updates
 
-During the 2025-26 season the system updated daily at 9 AM UTC via GitHub Actions (279 automated runs; the last was May 24, 2026, at the end of the season):
+During the season the system updates daily at 9 AM UTC via GitHub Actions (279 automated runs in 2025-26; that season's predictions are in `archive/2025-26/`):
 - Fetches latest FPL data
 - Retrains the prediction model
 - Generates new gameweek predictions
