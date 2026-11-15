@@ -40,17 +40,18 @@ jobs:
         echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt
         echo "Last updated: $(cat last_updated.txt)"
         
-    - name: Create latest.csv symlink copy
+    - name: Check the gameweek just predicted
       run: |
-        latest_gw=$(ls -1 gameweek_*_predictions.csv | awk -F_ '{print $2}' | sort -n | tail -1)
-        cp "gameweek_${latest_gw}_predictions.csv" latest.csv
-        echo "Using gameweek ${latest_gw} as latest.csv"
+        gw=$(cat current_gameweek.txt)
+        test -f "gameweek_${gw}_predictions.csv"
+        echo "FPL.py predicted gameweek ${gw}; it also wrote latest.csv"
 
     - name: Build static predictions.json
       run: |
         python - << 'PY'
         import glob, os, csv, json, time
-        latest = sorted(glob.glob('gameweek_*_predictions.csv'), key=lambda p:int(os.path.basename(p).split('_')[1]))[-1]
+        gameweek = int(open('current_gameweek.txt').read().strip())
+        latest = f'gameweek_{gameweek}_predictions.csv'
         with open(latest, newline='') as f:
             rows = list(csv.DictReader(f))
         numeric = {'predicted_points','now_cost','points_per_game','form','total_points',
@@ -70,7 +71,6 @@ jobs:
                         r[k] = None
                 elif r[k] == '' or r[k] == 'NaN':
                     r[k] = None
-        gameweek = int(os.path.basename(latest).split('_')[1])
         os.makedirs('frontend/public', exist_ok=True)
         out = {
           "gameweek": gameweek,
@@ -90,7 +90,7 @@ jobs:
         git config --local user.name "GitHub Action Bot"
         
         # Add all CSV files, latest.csv, predictions.json, and timestamp
-        git add gameweek_*_predictions.csv latest.csv frontend/public/predictions.json last_updated.txt
+        git add gameweek_*_predictions.csv latest.csv current_gameweek.txt frontend/public/predictions.json last_updated.txt
         
         # Check if there are changes to commit
         if git diff --staged --quiet; then

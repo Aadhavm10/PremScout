@@ -441,4 +441,8 @@ def generate_predictions(
         raise
 if __name__ == "__main__":
     df, gw, out_path = generate_predictions(save_csv=True)
+    # The workflow reads this to publish the gameweek just predicted. Picking the highest
+    # gameweek number instead would keep serving last season's GW38 after a new season starts.
+    with open("current_gameweek.txt", "w") as f:
+        f.write(f"{gw}\n")
     print(f"Predictions for Gameweek {gw} saved to {out_path}")
