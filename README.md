@@ -1,6 +1,6 @@
 # PremScout - Fantasy Premier League Predictions
 
-**AI-powered Fantasy Premier League predictions**  uses machine learning to predict player points and automatically builds the optimal formation for maximum points. On average gets a 15-point improvement for the average player.
+**AI-powered Fantasy Premier League predictions**  uses machine learning to predict player points and automatically builds the optimal formation for maximum points.
 
 ## What Does PremScout Do?
 
@@ -9,16 +9,16 @@ PremScout is your **intelligent FPL assistant** that:
 - **Builds optimal formations** (3-4-3, 4-4-2, 5-3-2, etc.) automatically
 - **Shows player cards** with FIFA-style design
 - **Analyzes player form** and recommends transfers
-- **Updates daily** with fresh predictions for each gameweek
+- **Updated daily** with fresh predictions for each gameweek of the 2025-26 season
 
 ## Key Features
 
-- **Smart AI Predictions** - Random Forest model trained on historical FPL data
+- **Smart AI Predictions** - Random Forest model trained on player stats from the live Fantasy Premier League API
 - **Dynamic Formation Builder** - Finds the highest-scoring 11-player team
 - **Interactive Dashboard** - Beautiful FIFA-style player cards with detailed stats
 - **Dark Mode Interface** - Sleek, professional design that's easy on the eyes
 - **Mobile Responsive** - Perfect experience on all devices
-- **Daily Auto-Updates** - Fresh predictions every morning
+- **Daily Auto-Updates** - A scheduled GitHub Actions pipeline retrained and redeployed every morning during the season
 
 
 ## Issues
@@ -35,7 +35,7 @@ PremScout is your **intelligent FPL assistant** that:
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Aadhavm10/PremScout.git
    cd PremScout-1
    ```
 
@@ -87,13 +87,13 @@ PremScout is your **intelligent FPL assistant** that:
 
 1. **Data Collection** - Fetches live player data from FPL API
 2. **Feature Engineering** - Creates 15+ predictive features
-3. **Model Training** - Random Forest learns from historical performance
+3. **Model Training** - Random Forest learns from this season's player stats
 4. **Formation Optimization** - Tests all valid formations to find highest-scoring team
 5. **Visual Display** - Beautiful pitch layout with FIFA-style cards
 
 ## Automatic Updates
 
-The system updates daily at 9 AM UTC via GitHub Actions:
+During the 2025-26 season the system updated daily at 9 AM UTC via GitHub Actions (279 automated runs; the last was May 24, 2026, at the end of the season):
 - Fetches latest FPL data
 - Retrains the prediction model
 - Generates new gameweek predictions
@@ -117,9 +117,8 @@ The machine learning model analyzes these key factors:
 - Recent performance trends
 - Opposition difficulty
 
-## Model Accuracy
+## Model Notes
 
-- **R² Score**: ~0.85+ on validation data
-- **Improves** throughout the season as more data becomes available
 - **Optimized** for gameweek-ahead predictions
+- The training target (`points_per_game`) is also one of the input features, so a validation score would overstate accuracy; no accuracy figure is claimed here
 
